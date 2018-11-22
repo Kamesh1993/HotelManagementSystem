@@ -60,3 +60,15 @@ class RoomBooking(models.Model):
 
     class Meta:
         db_table = 'roombooking'
+
+class BookingInformation(models.Model):
+    firstname = models.CharField(max_length=100)
+    lastname = models.CharField(max_length=100)
+    email = models.EmailField(max_length=100)
+    phone = models.IntegerField()
+    address = models.CharField(max_length=150)
+    requirements = models.CharField(max_length=100,blank=True)
+    booking_id = models.CharField(max_length=100,primary_key=True)
+
+    class Meta:
+        db_table = 'bookinginfo'
