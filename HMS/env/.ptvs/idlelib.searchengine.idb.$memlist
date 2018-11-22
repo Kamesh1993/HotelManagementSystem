@@ -1,0 +1,17 @@
+get_line_col
+get_selection
+search_reverse
+re
+__builtins__
+__file__
+SearchEngine
+__package__
+TclError
+StringVar
+get
+BooleanVar
+__name__
+tkMessageBox
+unittest
+__cached__
+__spec__

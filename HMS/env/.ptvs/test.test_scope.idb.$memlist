@@ -1,0 +1,13 @@
+weakref
+__spec__
+__file__
+ScopeTests
+__package__
+__name__
+global_nest_x
+check_syntax_error
+__builtins__
+__cached__
+a
+cpython_only
+unittest

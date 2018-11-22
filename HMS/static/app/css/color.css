@@ -1,0 +1,406 @@
+/*========================================
+				color
+	========================================*/
+
+		body,
+		option,
+		.btn.dropdown-toggle.btn-default,
+		.rh-news-email .news-email-form input,
+		.event-ticket .multiple-fees .fees-data .fees-price a,
+		.rh-blog-category span a,
+        .rh-blog-category ul li a,
+        .rh-blog-sidebar ul li a{
+		    color: #666666;
+		}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		
+		.nav>li>a,
+		.navbar-default .navbar-nav>li>a,
+		.navbar-collapse .nav li ul.dropdown-nav li a,
+		.tabs-menu a i,
+		.feature-detail h4 a,
+		.ournews-detail h4 a,
+		.rh-testimonial-slider span a,
+		.navbar-collapse .nav li ul.dropdown-nav li.rh-dropdown-second:after,
+		.rh-detail-left .rh-about-hotel .rh-order-list span,
+		.rh-reservation ul li .why-book-list span a,
+		.rh-review .review-detail span,
+		.rh-comment .rh-user-comment .user-detail span a,
+		.rh-about-hotel .submit p,
+		.rh-comment .rh-user-comment .category span a,
+		.event-ticket .multiple-fees .fees-data .fees-label,
+		.rh-contact-add p,
+        .rh-contact-add p a{
+		    color: #333333;
+		}
+		a,
+		a:hover,
+		a:focus,
+		select,
+		.rh-header .dropdown-menu>li>a:hover span,
+		.rh-header .dropdown-menu>li>a span,
+		.rh-header .rh-language:after,
+		.rh-header .btn.dropdown-toggle.btn-default span,
+		.navbar-default .navbar-nav>li>a.active,
+		.navbar-default .navbar-nav>li:hover>a,
+		.navbar-default .navbar-nav>li>a:active,
+		.navbar-default .navbar-nav>li>a:focus,
+		.navbar-collapse .nav li ul.dropdown-nav li a:hover,
+		.rh-banner-widgets h1,
+		.rh-banner-widgets span,
+		.stay-box .overley .stay-detail h5,
+		.stay-box .overley .stay-detail span,
+		.rh-our-services .rh-section-title h2,
+		.rh-our-services .rh-section-title p,
+		.rh-news-email .news-email-form a,
+		.footer-btm h6,
+		.footer-btm span,
+		.rh-header .btn-group.bootstrap-select .dropdown-toggle,
+		.rh-detail-left .slick-dots li button:before,
+		.detail-right span,
+        .detail-right h3,
+        .rh-need-help h5,
+        .rh-need-help p,
+        .list-view-column2 .rh.text-center h2,
+        .list-view-column2 .rh.text-center p,
+        .sort-view-list .sort-by .buttons button.current i,
+        .event-sigle-btn.social a:hover,
+        .rh-reservation.event-venue,
+        .rh-reservation.event-venue h4,
+        .data-container .data-content,
+        .multiple-fees .fees-data .fees-price:hover a span,
+        .date-range-selected > .ui-state-active, .date-range-selected > .ui-state-default,
+        .form-wizard .rh-reservation-complate,
+        .form-wizard .rh-reservation-complate h4,
+        .rh-blog .pagination>.disabled>a,
+        .pagination>li>a:hover, 
+        .pagination>li>a:focus,
+        .rh-blog .pagination > li > a:hover,
+        #back_to_top i,
+        .modal-header h4,
+        button.close i,
+        .rh-history-list .panel-group .panel-heading .panel-title,
+        .rh-contact-add .icon-box i{
+		    color: #ffffff;
+		}
+		.rh-banner-widgets h1 span,
+		.rh-img i,
+		.rh-img:hover i,
+		.tabs-menu .current a i,
+		.tabs-menu .current a h5,
+		.tab-content .tab-content-detail h2,
+		.rh-testimonial-slider p,
+		.rh-newsletter,
+		.rh-newsletter .rh-news-sign h5,
+		.rh-newsletter .news-social li a:hover i,
+		.footer-about li a,
+		.rh-footer-box h5,
+		.footer-menu li a:hover,
+		.footer-btm span a,
+		.stay-box:hover .overley .stay-detail h5,
+		.rh-feature-box:hover .feature-detail h4 a,
+		.rh-ournews-box:hover .ournews-detail h4 a,
+		.rh-reservation ul li i,
+		.rh-reservation ul li:hover .why-book-list span a,
+		.rh-next-prew .arrow:hover i,
+		.rh-next-prew .arrow:hover a,
+		.rh-comment .rh-user-comment .category span a:hover,
+		.carousel-control:hover,
+        .carousel-control:active,
+        .carousel-control:focus,
+        .event-sigle-btn.social a,
+        .event-ticket h3 i,
+        .form-wizard .rh-reservation-complate p a,
+        .rh-blog-category ul li a:hover,
+        .rh-blog-sidebar ul li a:hover{
+		    color: #D5A677;
+		}
+		.rh-feature-box .feature-detail span a,
+		.rh-footer-box p,
+		.footer-menu li a {
+		    color: #999999;
+		}
+		.rh-news-email .news-email-form a:hover i ,
+		.rh-detail-left .slick-dots li.slick-active button:before,
+		.rh-blog .pagination>li>a{
+		    color: #0E2646;
+		}
+		.footer-btm span a:hover {
+		    color: #F7F1EB;
+		}
+		.rating-star ul li i ,
+		.rh-review .review-detail ul li i,
+		.rh-comment .rh-user-comment .user-detail ul li i,
+		.rh-about-hotel .submit .submit-star ul li i,
+		.rh-about-hotel .submit .submit-star ul li:hover i:before{
+		    color: #EDA100;
+		}
+		.bootstrap-select.btn-group .dropdown-toggle .filter-option,
+		.sort-view-list .sort-by .buttons button i {
+		    color: #ababab;
+		}
+		.rh-detail-bg span a,
+		.rh-detail-bg .rh p,
+		.rh-detail-bg .rh i{
+		    color: #c9c2bb;
+		}
+		.rh-detail-left .rh-about-hotel ul li i{
+			color: #82B73A;
+		}
+		.rh-detail-left .rh-about-hotel ul li.red i{
+			color: #F1572F;
+		}
+		.rh-next-prew a{
+			color: #666666;
+		}
+		.fc-ltr .fc-basic-view .fc-day-top .fc-day-number{
+			color: #444444;
+		}
+		.rh-about-hotel .availability-right ul li:nth-child(1) i{
+			color: #73E237;
+		}
+        .rh-about-hotel .availability-right ul li:nth-child(2) i{
+        	color: #EEA4E8;
+        }
+        .rh-about-hotel .availability-right ul li:nth-child(3) i{
+        	color: #F06565;
+        }
+        .rh-about-hotel .availability-right ul li:nth-child(4) i{
+        	color: #F2B601;
+        }
+        .data-container .rh-check-btn:hover{
+            color: #102848;
+        }
+        .red{
+            color: #ED1C24;
+        }
+		@media screen and (max-width: 991px) {
+			.navbar-default .navbar-nav > li > a.active,
+            .navbar-default .navbar-nav > li > a:active, 
+            .navbar-default .navbar-nav > li > a:focus,
+            .navbar-default .nav li ul.dropdown-nav li a:active,
+            .navbar-default .nav li ul.dropdown-nav li a:focus{
+				color: #333;
+			}
+			.navbar-default .navbar-nav > li > a:hover,
+			.navbar-collapse .nav li ul.dropdown-nav li a:hover{
+				color: #666;
+			} 
+			.navbar-collapse .nav li ul.dropdown-nav li a:hover .dropdown-nav-list.open li a{
+				color: #333;
+			}
+			.navbar-toggle{
+				border-color: #D5A677 !important;
+			}
+		}
+
+/*========================================
+			background-color
+	========================================*/
+
+		body,
+		.rh-history-list .panel-default{
+		    background-color: #F7F1EB;
+		}
+		.rh-header,
+		.rh-header .bootstrap-select.btn-group .dropdown-menu,
+		.rh-ournews-box:hover .ournews-detail a.rh-check-btn,
+		.rh-newsletter,
+		.rh-need-help ,
+		.rh-review .review-button .rh-check-btn,
+		.availability-right a.rh-check-btn,
+		.rh-contact-add .icon-box i:hover{
+		    background-color: #0E2646;
+		}
+		.navbar-default .navbar-nav>li>a.active,
+		.navbar-default .navbar-nav>li>a:active,
+		.navbar-collapse .nav li ul.dropdown-nav li a:hover,
+		.carousel-indicators .active,
+		.rh-need-help a:hover,
+		.rh-review .review-button .rh-check-btn:hover,
+		.availability-right a.rh-check-btn:hover,
+		.modal-header{
+			background-color:rgba(2, 27, 61, 1.0);
+		    /* background-color: #D5A677; */
+		}
+		.navbar-default .navbar-nav>li:hover>a,
+		.navbar-default .navbar-nav>li>a:active,
+		.navbar-default .navbar-nav>li>a:focus,
+		.select-list .bootstrap-select.btn-group .dropdown-menu>li>a:hover,
+		.select-list .bootstrap-select.btn-group .dropdown-menu>li>a:focus,
+		.rh-banner-widgets .book-now:hover,
+		.rh-check-btn,
+		a.rh-check-btn,
+		.rh-news-email .news-email-form a,
+		.sort-view-list .sort-by .buttons button.current,
+		.rh-blog-tag ul li a:hover,
+		.rh-contact-add .icon-box i{
+			 background-color:rgba(2, 27, 61, 1.0);
+		    /* background-color: #D5A677; */
+		}
+		.rh-header .dropdown-menu>li>a:focus,
+		.rh-header .dropdown-menu>li>a:hover{
+			background-color: rgba(2, 27, 61, 1.0)
+		}
+		.check-availability,
+		.rh-feature-box,
+		.navbar-default ,
+		.navbar-collapse .nav li ul.dropdown-nav,
+		.navbar-collapse .nav li ul.dropdown-nav li .dropdown-nav-list,
+		.rh-tab-section .tab,
+		.rh-tab-section .tabs-menu li.current,
+		.rh-your-stay,
+		.rh-ournews .rh-ournews-box ,
+		.rh-reservation,
+        .rh-detail-left,
+        .sort-view-list .form-group .btn.dropdown-toggle.btn-default,
+        .sort-view-list .sort-by .buttons button,
+        .event-single-detail,
+        .well,
+        .rh-about,
+        .rh-our-history,
+        .rh-contact-form{
+		    background-color: #ffffff;
+		}
+		.rh-tab-section .tabs-menu li,
+		.rh-testimonial {
+		    background-color: #F7F1EB;
+		}
+		.rh-check-btn:hover{
+		    background-color: #102848;
+		}
+		.rh-testimonial,
+		.multiple-fees .fees-data .fees-label,
+        .data-container .rh-check-btn:hover{
+		    background: #F7F1EB;
+		}
+		.rh-img,
+		.stay-box,
+		.ournews-img {
+		    background-color: #000000;
+		}
+		.rh-footer {
+		    background-color: #1C1C1C;
+		}
+		.footer-btm {
+		    background-color: #121212;
+		}
+		.rh-our-services:before {
+		    background: rgba(0, 0, 0, 0.20);
+		}
+		.rh-next-prew{
+			background-color: #FAF6F1;
+		}
+		.event-single-content.tickets .feature-detail,
+		.event-sigle-btn.social a{
+		    border-color: rgba(0,0,0,0.04);
+		}
+		.multiple-fees .fees-data .fees-price:hover,
+		.event-single-content.tickets .rh-feature-box:hover .feature-detail .rh-check-btn,
+		.rh-reservation.event-venue,
+		.event-sigle-btn.social a:hover,
+		.rh-reservation.event-time,
+		.data-container .data-content .event-cell strong.title{
+		    background: #102848;
+		}
+		.multiple-fees .fees-data .fees-arrow,
+		.multiple-fees .fees-data .fees-price{
+		    background: #ECDDCF;
+		}
+		.date-range-selected > .ui-state-active, .date-range-selected > .ui-state-default,
+		.form-wizard .rh-reservation-complate,
+		.rh-blog .pagination>.disabled>a,
+        .pagination>li>a:hover, 
+        .pagination>li>a:focus,
+        .rh-blog-tag ul li a{
+            background-color: #0E2646;
+        }
+        .bootstrap-select.btn-group .dropdown-menu li a:active,
+        .bootstrap-select.btn-group .dropdown-menu li a:hover,
+        .rh-history-list .panel-group .panel-heading{
+            background: #D5A677;
+        }
+        .modal{
+        	background-color: rgba(4, 4, 4, 0.8);
+        }
+		@media screen and (max-width: 991px) {
+			.navbar-collapse,
+			.navbar-collapse .nav li ul.dropdown-nav li{
+				background-color: #F7F1EB;
+			}
+			.navbar-default .navbar-nav > li > a.active,
+			.navbar-default .nav li ul.dropdown-nav li a:active,
+			.navbar-default .nav li ul.dropdown-nav li a:focus,
+			.navbar-default .navbar-nav > li > a:focus{
+				background-color: transparent;
+			}
+			.navbar-default .navbar-nav > li > a:hover,  
+            .navbar-collapse .nav li ul.dropdown-nav li a:hover{
+				background-color: #F6EBE0;
+			}
+			.navbar-collapse .nav li a{
+				border-color: #EDE6DF;
+			}
+			.navbar-default .navbar-nav>li:hover>a{
+				background: transparent;
+				color: #666;
+			}
+			.navbar-default .navbar-toggle .icon-bar{
+			    background-color: #D5A677;
+			}	
+		}
+		
+/*========================================
+			border-color
+	========================================*/
+
+		.rh-banner-widgets .book-now,
+		.rh-need-help a,
+		.address-container,
+        .data-container .data-content{
+		    border-color: #ffffff;
+		}
+            .form-control,
+            .form-control:focus,
+            .btn.dropdown-toggle.btn-default,
+            .check-availability .bootstrap-select.btn-group .dropdown-menu,
+            .carousel-indicators .active,
+            .rh-banner-widgets .book-now:hover,
+            .rh-need-help a:hover {
+                border-color: #0E2646;
+            }
+		.rh-header .btn-default .caret {
+		    border-top-color: #fff;
+		}
+		.rh-reservation ul li,
+		.event-single-detail ul li,
+		.event-ticket,
+		.rh-blog .pagination>li>a,
+        .rh-blog .rh-about-hotel.rh-blog-list,
+        .rh-reservation ul.similar li,
+        .rh-blog-sidebar ul li{
+			border-color: #F7F1EB;
+		}
+		.select-list .btn-default .caret{
+			border-top-color: #ababab;
+		}
+		.rh-review{
+			border-bottom-color: #E5E5E5;
+		}
+		.rh-about-hotel .submit-form .form-control,
+		.rh-check-availability.check-availability,
+		.ui-widget.ui-widget-content,
+		.well{
+			border-color: #DDDDDD;
+		}
+		.rh-next-prew .arrow.pull-right{
+			border-color: #EDE6DF;
+		}
+		.rh-blog-category ul li{
+		    border-color: #666;
+		}

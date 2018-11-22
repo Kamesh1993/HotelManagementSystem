@@ -1,0 +1,16 @@
+__name__
+GEOSBase
+__builtins__
+threading
+__file__
+__package__
+__cached__
+GEOSContextHandle
+CONTEXT_PTR
+GEOSContext
+thread_context
+lgeos
+notice_h
+GEOSFunc
+error_h
+__spec__

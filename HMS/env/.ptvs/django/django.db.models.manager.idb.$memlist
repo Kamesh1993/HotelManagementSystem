@@ -1,0 +1,15 @@
+copy
+Manager
+inspect
+__spec__
+__file__
+import_module
+router
+__name__
+BaseManager
+ManagerDescriptor
+QuerySet
+__builtins__
+__cached__
+EmptyManager
+__package__

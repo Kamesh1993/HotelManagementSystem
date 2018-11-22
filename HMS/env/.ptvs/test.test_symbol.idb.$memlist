@@ -1,0 +1,15 @@
+SYMBOL_FILE
+os
+__spec__
+__file__
+subprocess
+__package__
+__name__
+TEST_PY_FILE
+support
+GRAMMAR_FILE
+__builtins__
+__cached__
+TestSymbolGeneration
+sys
+unittest

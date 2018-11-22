@@ -1,0 +1,16 @@
+set_language
+path
+__builtins__
+LocalePrefixPattern
+__file__
+is_language_prefix_patterns_used
+__package__
+settings
+URLResolver
+urlpatterns
+__name__
+i18n_patterns
+functools
+get_resolver
+__cached__
+__spec__

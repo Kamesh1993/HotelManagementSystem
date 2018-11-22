@@ -1,0 +1,10 @@
+patch_vary_headers
+__cached__
+__spec__
+__file__
+__name__
+vary_on_cookie
+vary_on_headers
+__builtins__
+wraps
+__package__

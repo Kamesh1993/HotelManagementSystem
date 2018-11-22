@@ -1,0 +1,10 @@
+CDefError
+VerificationError
+__spec__
+__file__
+__name__
+VerificationMissing
+__builtins__
+__cached__
+FFIError
+__package__

@@ -1,0 +1,14 @@
+DeprecationInstanceCheck
+RemovedInNextVersionWarning
+__cached__
+__spec__
+inspect
+warnings
+__name__
+RenameMethodsBase
+RemovedInDjango30Warning
+__builtins__
+__file__
+warn_about_renamed_method
+MiddlewareMixin
+__package__

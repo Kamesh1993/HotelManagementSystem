@@ -1,0 +1,16 @@
+GDALBase
+byref
+force_bytes
+capi
+__builtins__
+__file__
+c_int
+__package__
+c_char_p
+SpatialReference
+SRSException
+__name__
+force_text
+CoordTransform
+__cached__
+__spec__

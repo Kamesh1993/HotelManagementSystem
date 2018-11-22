@@ -1,0 +1,16 @@
+script_helper
+os
+base64
+__builtins__
+__file__
+unittest
+support
+__package__
+BaseXYTestCase
+array
+LegacyBase64TestCase
+__name__
+TestMain
+binascii
+__cached__
+__spec__

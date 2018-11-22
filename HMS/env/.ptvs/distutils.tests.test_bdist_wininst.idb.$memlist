@@ -1,0 +1,12 @@
+test_suite
+__spec__
+__file__
+BuildWinInstTestCase
+__package__
+__name__
+support
+__builtins__
+__cached__
+bdist_wininst
+run_unittest
+unittest

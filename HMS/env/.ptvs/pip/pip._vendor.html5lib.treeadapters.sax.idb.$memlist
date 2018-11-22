@@ -1,0 +1,17 @@
+adjustForeignAttributes
+prefix_mapping
+unicode_literals
+unadjustForeignAttributes
+AttributesNSImpl
+__builtins__
+__file__
+__package__
+prefix
+absolute_import
+division
+namespace
+localName
+to_sax
+__name__
+__cached__
+__spec__

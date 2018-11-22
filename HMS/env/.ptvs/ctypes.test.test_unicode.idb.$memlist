@@ -1,0 +1,13 @@
+ctypes
+need_symbol
+__spec__
+__file__
+UnicodeTestCase
+__package__
+__name__
+StringTestCase
+_ctypes_test
+__builtins__
+__cached__
+func
+unittest

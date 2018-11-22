@@ -1,0 +1,16 @@
+TESTFN
+AudioWriteTests
+pickle
+__builtins__
+__file__
+UnseekableIO
+__spec__
+io
+array
+AudioTestsWithSourceFile
+unlink
+findfile
+__name__
+__package__
+__cached__
+AudioTests

@@ -1,0 +1,12 @@
+Cmd
+IDENTCHARS
+__all__
+__spec__
+__file__
+__name__
+string
+PROMPT
+__builtins__
+__cached__
+sys
+__package__

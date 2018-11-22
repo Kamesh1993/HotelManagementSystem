@@ -1,0 +1,17 @@
+connections
+SearchLookup
+_
+TrigramSimilar
+connection_created
+TextField
+__builtins__
+__file__
+__cached__
+CharField
+AppConfig
+Unaccent
+__name__
+register_type_handlers
+PostgresConfig
+__package__
+__spec__

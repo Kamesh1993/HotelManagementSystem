@@ -1,0 +1,15 @@
+check_warnings
+os
+__spec__
+__file__
+run_unittest
+__package__
+__name__
+read_setup_file
+test_suite
+Extension
+__builtins__
+__cached__
+ExtensionTestCase
+warnings
+unittest

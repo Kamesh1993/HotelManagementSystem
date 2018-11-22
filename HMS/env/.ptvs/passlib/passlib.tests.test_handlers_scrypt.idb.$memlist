@@ -1,0 +1,17 @@
+scrypt_scrypt_test
+TEST_MODE
+log
+hash
+__builtins__
+__file__
+__cached__
+logging
+scrypt_builtin_test
+_scrypt_test
+warnings
+UPASS_TABLE
+__name__
+HandlerCase
+PASS_TABLE_UTF8
+__package__
+__spec__

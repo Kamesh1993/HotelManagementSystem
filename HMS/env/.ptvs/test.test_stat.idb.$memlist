@@ -1,0 +1,16 @@
+TestFilemodePyStat
+py_stat
+os
+__builtins__
+TestFilemodeCStat
+__file__
+sys
+__package__
+TESTFN
+c_stat
+TestFilemode
+import_fresh_module
+__name__
+unittest
+__cached__
+__spec__

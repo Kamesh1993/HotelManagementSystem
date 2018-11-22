@@ -1,0 +1,16 @@
+rewind_body
+b
+__builtins__
+integer_types
+__file__
+__package__
+ACCEPT_ENCODING
+absolute_import
+set_file_position
+make_headers
+_FAILEDTELL
+__name__
+b64encode
+UnrewindableBodyError
+__cached__
+__spec__

@@ -1,0 +1,14 @@
+os
+core
+__spec__
+__file__
+__version__
+__path__
+__name__
+warnings
+old_where
+__builtins__
+__cached__
+__main__
+where
+__package__

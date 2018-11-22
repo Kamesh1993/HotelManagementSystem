@@ -1,0 +1,11 @@
+PY2
+base_str
+PY3
+__spec__
+__file__
+__name__
+text_type
+__builtins__
+__cached__
+sys
+__package__

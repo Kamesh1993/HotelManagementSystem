@@ -1,0 +1,16 @@
+sys
+dedent
+os
+__builtins__
+kill_python
+__file__
+SuppressCrashReport
+__cached__
+subprocess
+spawn_repl
+TestInteractiveInterpreter
+__name__
+cpython_only
+__package__
+unittest
+__spec__

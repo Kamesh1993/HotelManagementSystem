@@ -1,0 +1,364 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+
+<!-- Mirrored from bsquaresoft.com/demo/royalluxurystay/booking.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Nov 2018 14:40:30 GMT -->
+<head>
+    <!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7"> <![endif]-->
+    <!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7"> <![endif]-->
+    <!--[if IE 8]>     <html class="ie ie8 lte9 lte8"> <![endif]-->
+    <!--[if IE 9]>     <html class="ie ie9 lte9"> <![endif]-->
+    <!--[if gt IE 9]>  <html> <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Royal Luxury Stay - Online Booking Smart Responsive HTML5 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Royal Luxury Stay - Online Booking Smart Responsive HTML5 Template">
+    <meta name="keywords" content="accommodation,apartment,B&B,bed and breakfast,booking,hostel,inn,motel,reservation,reservation form,resort,responsive,spa,travel,bootstrap,cruise,flights,holiday,hotel,html5 template,online booking,real estate,rentals,tour,tourism,uber">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../static/app/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../static/app/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../static/app/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../../static/app/images/favicons/manifest.json">
+    <link rel="mask-icon" href="../../static/app/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- CSS Files ================================================== -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../static/app/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../static/app/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../static/app/css/jquery-ui-date.css">
+    <link rel="stylesheet" type="text/css" href="../../static/app/css/form-wizard.css">
+    <link rel="stylesheet" type="text/css" href="../../static/app/css/color.css" />
+    <link rel="stylesheet" type="text/css" href="../../static/app/css/style.css" />
+    <!-- Javascript Files ================================================== -->
+    <script type="text/javascript" src="../../static/app/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../static/app/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../static/app/js/bootstrap-select.js"></script>
+    <script type="text/javascript" src="../../static/app/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="../../static/app/js/jquery-ui-date.js"></script>
+    <script type="text/javascript" src="../../static/app/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../../static/app/js/slick.min.js"></script>
+    <!-- Date Javascript Files -->
+    <script type="text/javascript" src='../../static/app/js/moment.min.js'></script>
+    <script type="text/javascript" src='../../static/app/js/fullcalendar.js'></script>
+    <!-- Theme Functions -->
+    <script type="text/javascript" src="../../static/app/js/form-wizard.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="../../static/app/js/themefunction.js"></script>
+    <script type="text/javascript" src="../../static/app/js/valid-date.js"></script>
+	<script>
+        window.addEventListener("pageshow", function (event) {
+            var historyTraversal = event.persisted ||
+                (typeof window.performance != "undefined" &&
+                    window.performance.navigation.type === 2);
+            if (historyTraversal) {
+                // Handle page restore.
+                window.location.reload();
+            }
+        });
+    </script>
+    <script>
+        function logoutFunction() {
+            window.location.reload();
+        }
+    </script>
+    
+</head>
+
+<body>
+    {% block body %}
+    <!-- Header Begin -->
+    <header class="rh">
+        <!-- ========== Top Menu ========== -->
+        <div class="rh-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4">
+                        
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
+                        <ul class="pull-right">
+                            <li>
+                                <a href="/logout" onclick="logoutFunction()">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ========== Nav Menu ========== -->
+        <nav class="rh navbar navbar-default">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><h2>HMS</h2></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse rh-toggle" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right main-navbar">
+                        <li>
+                            <a href="/">Home</a>
+                            
+                        </li>
+                        
+                        <li>
+                            <a href="single-rooms.html">Single Rooms</a>
+                        </li>
+                        <li>
+                            <a class="active" href="/booking">Booking</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">Events</a>
+                        </li>
+                        <li><a href="blog.html">Blog</a>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header Close -->
+<section class="rh-check-availability">
+            <img src="../../static/app/images/event/event-background.jpg" alt="1">
+</section>
+    <!-- Main Content Begin -->
+    <div class="rh rh-100 section-booking">
+        <!-- Booking Page Begin -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-wizard">
+                    <!-- Form Wizard -->
+                    <form action="/roombooking/" method="post">
+                        <!-- Form progress -->
+                        <div class="form-wizard-steps form-wizard-tolal-steps-4">
+                            <div class="form-wizard-progress">
+                                <div class="form-wizard-progress-line" data-now-value="12.25" data-number-of-steps="4" style="width: 12.25%;"></div>
+                            </div>
+                            <!-- Step 1 -->
+                            <div class="form-wizard-step active">
+                                <div class="form-wizard-step-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                <p>Choose Your Date</p>
+                            </div>
+                            <!-- Step 1 -->
+                            <!-- Step 2 -->
+                            <div class="form-wizard-step">
+                                <div class="form-wizard-step-icon"><i class="fa fa-building-o" aria-hidden="true"></i></div>
+                                <p>Choose Your Room</p>
+                            </div>
+                            <!-- Step 2 -->
+                            <!-- Step 3 -->
+                            <div class="form-wizard-step">
+                                <div class="form-wizard-step-icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+                                <p>Reservation</p>
+                            </div>
+                            <!-- Step 3 -->
+                            <!-- Step 4 -->
+                            <div class="form-wizard-step">
+                                <div class="form-wizard-step-icon"><i class="fa fa-check" aria-hidden="true"></i></div>
+                                <p>Confirmation</p>
+                            </div>
+                            <!-- Step 4 -->
+                        </div>
+                        <!-- Form progress -->
+                        <!-- Form Step 1 -->
+                        <fieldset style="display: block;">
+                            <div class="row">
+                                
+                                <div class="col-lg-12">
+
+                                    <!-- Check Availability Begin -->
+                                    <section class="rh rh-100 check-availability rh-check-availability select-list">
+                                        <div class="container">
+                                            {% csrf_token %}
+                                            <div class="row">
+                                                        <div class="col-lg-2 col-md-2 co-sm-2 col-xs-6 rh-xs-12">
+                                                            <h5>Check in</h5>
+                                                            <input type="text" name="checkin" class="form-control" id="datepicker_CIn" title="datepicker" onchange="handler(event);"/>
+                                                       </div>
+                                                        <div class="col-lg-2 col-md-2 co-sm-2 col-xs-6 rh-xs-12">
+                                                            <h5>Check out</h5>
+                                                                <input type="text" name ="checkout" id="datepicker_COut" class="form-control" onchange="handler(event); date(event);">
+                                                        </div>
+                                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 rh-xs-12">
+                                                    <h5>Room</h5>
+                                                    <select name="rooms" class="selectpicker">
+                                                        <option value="Deluxe">Deluxe Room</option>
+                                                        <option value="Royal">Royal Room</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2 co-sm-2 col-xs-6 rh-xs-12">
+                                                    <h5 class="fw-x15">Adults</h5>
+                                                    <select name="adults" class="selectpicker">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2 co-sm-2 col-xs-6 rh-xs-12">
+                                                    <h5 class="fw-15">Children</h5>
+                                                    <select name="children" class="selectpicker">
+                                                        <option value="0">0</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                    </select>
+                                                </div>
+                                                
+                                            </div>
+                    
+                                        </div>
+                                    </section>
+                                    <div class="form-wizard-buttons">
+                                <button type="submit" class="btn btn-next">Next</button>
+                            </div>
+                                    <!-- Check Availability Close -->
+                                </div>
+                            </div>
+                            
+                        </fieldset>
+                        <!-- Form Step 1 -->
+
+                    </form>
+                    <!-- Form Wizard -->
+                </div>
+            </div>
+        </div>
+        <!-- Booking Page Close -->
+    </div>
+    <!-- Main Content Close -->
+     <!-- Royal Services and Facilities -->
+     <div class="rh section-booking">        
+        <!-- About Royal Hotel Begin -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="rh-detail-right">
+                        <div class="row rh-flex">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <!-- Need Royal Help? Begin -->
+                                <div class="rh-need-help">
+                                    <h5>Need Royal Help?</h5>
+                                    <p>We would be more than happy to help you. Our team advisor are 24/7 at your service to help you.</p>
+                                    <a href="tel:+919173495648">917 349 5648</a>
+                                </div>
+                                <!-- Need Royal Help? Close -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-wizard">
+                    <div class="rh-detail-left">
+                        <!-- Royal Services and Facilities -->
+                        <div class="rh-about-hotel rh rh-rsf">
+                            <h4>Royal Services and Facilities</h4>
+                            <ul class="rh-ul-30">
+                                <li><i class="fa fa-check" aria-hidden="true"></i><p>24 hour reception</p></li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Internet point</p></li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Wi-Fi</p></li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Fax service</p></li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Tourist information</p></li>
+                                <li class="red"><i class="fa fa-check" aria-hidden="true"></i><p>Bookings for trips</p></li>
+                            </ul>
+                            <ul class="rh-ul-40">
+                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Bookings for guided tours</p></li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Bookings for shows and museums</p></li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Concierge</p></li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Night porter</p></li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Left luggage</p></li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Ironing service</p></li>
+                            </ul>
+                            <ul class="rh-ul-30">
+                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Hall</li>
+                                <li class="red"><i class="fa fa-check" aria-hidden="true"></i><p>Terrace</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Bar</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Breakfast</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Gluten free breakfast available</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- About Royal Hotel Close -->
+    </div>
+    <!-- Footer Begin -->
+    <footer class="rh">
+        <div class="rh-100 rh-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 rh-f-30 rh-f-100">
+                        <div class="rh-footer-box">
+                            <img class="footer-logo" src="../../static/app/images/Logo-footer.png" alt="footer-logo" />
+                            <p>You have questions regarding our services? Contact us, we will be happy to help you out!</p>
+                            <ul class="footer-about">
+                                <li><a href="mailto:royalluxurystay@gmail.com">royalluxurystay@gmail.com</a></li>
+                                <li><a href="javascript:;">70 Bowman St.South Windsor, CT 06074</a></li>
+                                <li><a href="tel:+91000-000-0000">+91 000-000-0000</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 rh-f-30 rh-f-50">
+                        <div class="rh-footer-box">
+                            <h5>Hotel</h5>
+                            <ul class="footer-menu list">
+                                <li><a href="javascript:;">Accommodation</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="javascript:;">Services & Amenities</a></li>
+                                <li><a href="javascript:;">Dining</a></li>
+                                <li><a href="javascript:;">Spa</a></li>
+                                <li><a href="javascript:;">Destination</a></li>
+                                <li><a href="javascript:;">Offer</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 rh-fs-30 rh-f-50">
+                        <div class="rh-footer-box">
+                            <h5>Inquires</h5>
+                            <ul class="footer-menu list">
+                                <li><a href="javascript:;">About  Four Seasons</a></li>
+                                <li><a href="javascript:;">Press Room</a></li>
+                                <li><a href="javascript:;">Gift Cards</a></li>
+                                <li><a href="javascript:;">Residences</a></li>
+                                <li><a href="javascript:;">Careers</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="rh footer-btm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h6 class="pull-left">Copyrights &copy; 2017 Royal Luxury Stay</h6>
+                        <span class="pull-right">Powered by <a target="_blank" href="http://www.bsquaresoft.com/">Bsquaresoft.com</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Close -->
+
+    <!-- Backe To Top Begin -->
+    <div id="back_to_top" class="active">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </div>
+    <!-- Backe To Top Close -->
+    {% endblock %}
+</body>
+
+<!-- Mirrored from bsquaresoft.com/demo/royalluxurystay/booking.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Nov 2018 14:40:30 GMT -->
+</html>

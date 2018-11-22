@@ -1,0 +1,17 @@
+pyfunc
+PYTHON_INSTANCE
+FastCallTests
+IGNORE_RESULT
+pyfunc_noarg
+__builtins__
+__file__
+__cached__
+datetime
+PythonClass
+_testcapi
+CFunctionCalls
+__name__
+cpython_only
+__package__
+unittest
+__spec__

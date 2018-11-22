@@ -1,0 +1,17 @@
+BytesIO
+StreamReader
+__builtins__
+__file__
+__package__
+binascii
+StreamWriter
+IncrementalDecoder
+codecs
+uu_encode
+__name__
+getregentry
+Codec
+uu_decode
+IncrementalEncoder
+__cached__
+__spec__

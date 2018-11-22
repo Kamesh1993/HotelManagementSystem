@@ -1,0 +1,12 @@
+TestMockingMagicMethods
+__spec__
+__file__
+_magics
+__package__
+__name__
+MagicMock
+Mock
+__builtins__
+__cached__
+sys
+unittest

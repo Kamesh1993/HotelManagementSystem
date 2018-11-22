@@ -1,0 +1,17 @@
+unicode_literals
+tag_regexp
+getETreeBuilder
+re
+__builtins__
+__file__
+OrderedDict
+string_types
+__cached__
+absolute_import
+base
+division
+__name__
+getETreeModule
+__package__
+moduleFactoryFactory
+__spec__

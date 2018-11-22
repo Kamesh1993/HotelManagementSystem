@@ -1,0 +1,17 @@
+apps
+BaseCommand
+warnings
+CommandError
+__builtins__
+__file__
+OrderedDict
+ProxyModelWarning
+__cached__
+Command
+router
+parse_apps_and_model_labels
+__name__
+serializers
+DEFAULT_DB_ALIAS
+__package__
+__spec__

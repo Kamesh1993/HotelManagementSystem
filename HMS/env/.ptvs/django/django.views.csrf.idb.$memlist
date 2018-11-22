@@ -1,0 +1,17 @@
+loader
+CSRF_FAILURE_TEMPLATE
+CSRF_FAILURE_TEMPLATE_NAME
+__builtins__
+__file__
+__package__
+settings
+csrf_failure
+TemplateDoesNotExist
+HttpResponseForbidden
+_
+Engine
+Context
+__name__
+get_docs_version
+__cached__
+__spec__

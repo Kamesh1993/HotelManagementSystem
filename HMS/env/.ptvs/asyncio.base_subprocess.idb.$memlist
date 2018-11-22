@@ -1,0 +1,17 @@
+ReadSubprocessPipeProto
+protocols
+collections
+logger
+transports
+__file__
+__package__
+subprocess
+compat
+warnings
+__name__
+BaseSubprocessTransport
+__builtins__
+WriteSubprocessPipeProto
+coroutine
+__cached__
+__spec__

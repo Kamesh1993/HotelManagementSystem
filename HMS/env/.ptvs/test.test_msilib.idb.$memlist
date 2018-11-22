@@ -1,0 +1,15 @@
+msilib
+unlink
+os
+__spec__
+__file__
+import_module
+unittest
+__name__
+Test_make_id
+TESTFN
+__builtins__
+__cached__
+init_database
+MsiDatabaseTestCase
+__package__

@@ -1,0 +1,17 @@
+sys
+BuildCLibTestCase
+os
+__builtins__
+run_unittest
+__file__
+unittest
+support
+__package__
+build_clib
+test_suite
+missing_compiler_executable
+find_executable
+__name__
+__cached__
+DistutilsSetupError
+__spec__

@@ -1,0 +1,16 @@
+setup_testing_defaults
+posixpath
+is_hop_by_hop
+__file__
+_hoppish
+__cached__
+__all__
+shift_path_info
+guess_scheme
+__name__
+__builtins__
+application_uri
+request_uri
+FileWrapper
+__package__
+__spec__

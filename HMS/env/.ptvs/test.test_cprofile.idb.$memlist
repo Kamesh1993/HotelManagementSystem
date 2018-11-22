@@ -1,0 +1,17 @@
+sys
+TESTFN
+ProfileTest
+unlink
+__builtins__
+run_unittest
+__file__
+_ProfileOutput
+__cached__
+test_main
+regenerate_expected_output
+__name__
+cProfile
+main
+CProfileTest
+__package__
+__spec__

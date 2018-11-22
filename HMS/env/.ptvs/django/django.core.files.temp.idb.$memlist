@@ -1,0 +1,13 @@
+gettempdir
+TemporaryFile
+os
+__spec__
+__file__
+NamedTemporaryFile
+__name__
+__all__
+__builtins__
+__cached__
+FileProxyMixin
+tempfile
+__package__

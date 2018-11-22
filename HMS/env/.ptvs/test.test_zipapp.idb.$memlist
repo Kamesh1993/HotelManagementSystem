@@ -1,0 +1,17 @@
+sys
+pathlib
+tempfile
+__builtins__
+__file__
+__package__
+__cached__
+ZipAppCmdlineTest
+io
+zipapp
+ZipAppTest
+patch
+stat
+__name__
+zipfile
+unittest
+__spec__

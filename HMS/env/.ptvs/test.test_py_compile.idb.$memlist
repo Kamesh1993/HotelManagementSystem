@@ -1,0 +1,16 @@
+sys
+py_compile
+tempfile
+os
+__builtins__
+__file__
+support
+__cached__
+importlib
+PyCompileTests
+stat
+__name__
+shutil
+__package__
+unittest
+__spec__

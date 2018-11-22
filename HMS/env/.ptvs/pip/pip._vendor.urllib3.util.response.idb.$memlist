@@ -1,0 +1,12 @@
+assert_header_parsing
+__spec__
+absolute_import
+__file__
+httplib
+is_fp_closed
+__name__
+HeaderParsingError
+__builtins__
+__cached__
+is_response_to_head
+__package__

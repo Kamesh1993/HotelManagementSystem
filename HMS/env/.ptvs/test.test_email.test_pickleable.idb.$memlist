@@ -1,0 +1,17 @@
+parameterize
+copy
+pickle
+textwrap
+__builtins__
+__file__
+TestPickleCopyMessage
+__cached__
+__package__
+policy
+HeaderRegistry
+TestEmailBase
+TestPickleCopyHeader
+__name__
+unittest
+email
+__spec__

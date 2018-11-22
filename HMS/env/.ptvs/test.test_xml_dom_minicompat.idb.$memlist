@@ -1,0 +1,16 @@
+xml
+StringTypes
+EmptyNodeList
+NodeList
+copy
+pickle
+EmptyNodeListTestCase
+__builtins__
+defproperty
+__file__
+__package__
+__cached__
+NodeListTestCase
+__name__
+unittest
+__spec__

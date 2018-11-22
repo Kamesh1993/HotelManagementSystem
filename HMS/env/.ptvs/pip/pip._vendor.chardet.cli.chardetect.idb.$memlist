@@ -1,0 +1,16 @@
+sys
+PY2
+__version__
+__name__
+__builtins__
+__file__
+__package__
+__cached__
+absolute_import
+unicode_literals
+print_function
+argparse
+description_of
+main
+UniversalDetector
+__spec__

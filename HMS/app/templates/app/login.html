@@ -1,0 +1,104 @@
+﻿<!--
+    Author: W3layouts
+    Author URL: http://w3layouts.com
+    License: Creative Commons Attribution 3.0 Unported
+    License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Switch Login Form Flat Responsive Widget Template :: w3layouts</title>
+    <!-- Meta-Tags -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Switch Login Form a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- //Meta-Tags -->
+    <!-- Index-Page-CSS -->
+    <link rel="stylesheet" href="../../static/login/css/style.css" type="text/css" media="all">
+    <!-- //Custom-Stylesheet-Links -->
+    <!--fonts -->
+    <link href="//fonts.googleapis.com/css?family=Mukta+Mahee:200,300,400,500,600,700,800" rel="stylesheet">
+    <!-- //fonts -->
+    <!-- Font-Awesome-File-Links -->
+    <link rel="stylesheet" href="../../static/login/css/font-awesome.css" type="text/css" media="all">
+    <script>
+        function logoutFunction() {
+            location.reload();
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1 class="title-agile text-center"></h1>
+    <div class="content-w3ls">
+        <div class="content-top-agile">
+            <h2>Sign in to proceed</h2>
+           
+        </div>
+        <div class="content-bottom">
+                {% if messages %}
+                    <ul class="messages">
+                    {% for message in messages %}
+                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+                    {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Important: {% endif %}
+                    {{ message }}
+                    </li>
+                    {% endfor %}
+                    </ul>
+                {% endif %}
+               <form action="/login/" method="post">
+                   {% csrf_token %}
+                <div class="field-group">
+                    <span class="fa fa-user" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="email" id="email" type="email" value="" placeholder="email" required>
+                    </div>
+                </div>
+                <div class="field-group">
+                    <span class="fa fa-lock" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="password" id="password" type="Password" placeholder="password" required>
+                    </div>
+                </div>
+                <ul class="list-login">
+                    <li class="switch-agileits">
+                        <label class="switch">
+                            <input type="checkbox" name="remember_me">
+                            <span class="slider round"></span>
+                            keep me signed in
+                        </label>
+                    </li>
+                    <li>
+                        <a href="/ForgotPassword" class="text-right">Forgot password?</a>
+                    </li>
+                    <li class="clearfix"></li>
+                </ul>
+                <div class="wthree-field">
+                    <input id="saveForm" name="saveForm" type="submit" value="Log In" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="copyright text-center">
+        <p>
+            © 2018 Switch Login Form. All rights reserved | Design by MSIT
+        </p>
+    </div>
+</body>
+<!-- //Body -->
+
+</html>

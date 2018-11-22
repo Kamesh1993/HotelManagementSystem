@@ -1,0 +1,17 @@
+INFO
+CRITICAL
+DEBUG
+ERROR
+CheckMessage
+__builtins__
+Info
+Error
+__cached__
+Debug
+Critical
+__name__
+WARNING
+Warning
+__file__
+__package__
+__spec__

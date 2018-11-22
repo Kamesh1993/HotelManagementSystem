@@ -1,0 +1,16 @@
+Lock
+time
+_expire_info
+pickle
+_caches
+__builtins__
+_locks
+BaseCache
+LocMemCache
+__cached__
+DEFAULT_TIMEOUT
+__name__
+__file__
+OrderedDict
+__package__
+__spec__

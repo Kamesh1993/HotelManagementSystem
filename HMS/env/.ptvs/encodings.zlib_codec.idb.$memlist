@@ -1,0 +1,16 @@
+StreamReader
+zlib_encode
+__builtins__
+__file__
+zlib_decode
+IncrementalEncoder
+StreamWriter
+IncrementalDecoder
+codecs
+__name__
+Codec
+getregentry
+__package__
+zlib
+__cached__
+__spec__

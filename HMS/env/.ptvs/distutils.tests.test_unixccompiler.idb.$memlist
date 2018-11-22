@@ -1,0 +1,14 @@
+UnixCCompilerTestCase
+EnvironmentVarGuard
+__spec__
+__file__
+run_unittest
+unittest
+__name__
+test_suite
+UnixCCompiler
+__builtins__
+__cached__
+sysconfig
+sys
+__package__

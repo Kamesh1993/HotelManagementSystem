@@ -1,0 +1,16 @@
+spaceCharacters
+unicode_literals
+rcdataElements
+re
+__builtins__
+__file__
+__cached__
+absolute_import
+base
+division
+collapse_spaces
+Filter
+__name__
+SPACES_REGEX
+__package__
+__spec__

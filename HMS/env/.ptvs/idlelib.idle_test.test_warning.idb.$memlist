@@ -1,0 +1,17 @@
+__builtins__
+__file__
+captured_stderr
+unittest
+showwarning
+__package__
+shell
+running_in_idle
+ShellWarnTest
+warnings
+__name__
+RunWarnTest
+shellmsg
+run
+__cached__
+idlemsg
+__spec__

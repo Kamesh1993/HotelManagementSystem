@@ -1,0 +1,17 @@
+op
+tokenize
+pickle
+__name__
+collections
+__builtins__
+__file__
+line
+opmap_raw
+Grammar
+opmap
+token
+name
+_make_deterministic
+__package__
+__cached__
+__spec__

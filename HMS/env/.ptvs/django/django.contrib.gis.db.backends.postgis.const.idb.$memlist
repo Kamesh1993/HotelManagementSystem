@@ -1,0 +1,11 @@
+POSTGIS_HEADER_STRUCTURE
+STRUCT_SIZE
+POSTGIS_TO_GDAL
+__spec__
+__file__
+__package__
+GDAL_TO_POSTGIS
+__builtins__
+__cached__
+GDAL_TO_STRUCT
+__name__

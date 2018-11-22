@@ -1,0 +1,17 @@
+dedent
+shorten
+_whitespace
+re
+_leading_whitespace_re
+__builtins__
+__file__
+__cached__
+__all__
+TextWrapper
+indent
+wrap
+__name__
+fill
+_whitespace_only_re
+__package__
+__spec__

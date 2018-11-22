@@ -1,0 +1,14 @@
+is_jython
+unify_callables
+__spec__
+__file__
+sys
+__package__
+__name__
+PyCF_DONT_IMPLY_DEDENT
+CodeopTests
+__builtins__
+__cached__
+io
+compile_command
+unittest

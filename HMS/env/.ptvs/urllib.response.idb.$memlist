@@ -1,0 +1,12 @@
+addclosehook
+addinfo
+__all__
+__spec__
+__file__
+__name__
+addinfourl
+addbase
+__builtins__
+__cached__
+tempfile
+__package__

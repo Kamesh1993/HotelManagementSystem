@@ -1,0 +1,16 @@
+codec
+_codecs_iso2022
+mbc
+StreamReader
+getregentry
+__file__
+IncrementalEncoder
+StreamWriter
+IncrementalDecoder
+codecs
+__name__
+__builtins__
+Codec
+__package__
+__cached__
+__spec__

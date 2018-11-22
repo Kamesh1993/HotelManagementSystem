@@ -1,0 +1,17 @@
+BytesIO
+endswith_lf
+os
+cached_property
+endswith_cr
+StringIO
+__file__
+ContentFile
+File
+__cached__
+equals_lf
+FileProxyMixin
+__name__
+__builtins__
+UnsupportedOperation
+__package__
+__spec__

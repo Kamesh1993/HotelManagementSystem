@@ -1,0 +1,108 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register and get enrolled</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Classy Register Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+    <script type="application/x-javascript">
+         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+        function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- Meta tag Keywords -->
+    <!-- css files -->
+    <link href="../../static/register/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <!-- //css files -->
+    <!-- online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
+    <!--//online-fonts -->
+    <link rel="stylesheet" href="../../static/login/css/style.css" type="text/css" media="all">
+    <!-- //Custom-Stylesheet-Links -->
+    <!--fonts -->
+    <link href="//fonts.googleapis.com/css?family=Mukta+Mahee:200,300,400,500,600,700,800" rel="stylesheet">
+    <!-- //fonts -->
+    <!-- Font-Awesome-File-Links -->
+    <link rel="stylesheet" href="../../static/login/css/font-awesome.css" type="text/css" media="all">
+</head>
+<body>
+    {% block content %}
+    <div class="content-w3ls">
+        <div class="content-top-agile">
+            <h2>Register</h2>
+        </div>
+        <div class="content-bottom">
+            <form action="/register/" method="post">
+                {% csrf_token %}
+                <div class="field-group">
+                    <span class="fa fa-user" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="firstname" id="firstname" type="text" value="" placeholder="First Name" required>
+                    </div>
+                </div>
+                <div class="field-group">
+                    <span class="fa fa-user" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="lastname" id="lastname" type="text" value="" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="field-group">
+                    <span class="fa fa-at" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="email" id="email" type="text" value="" placeholder="Email" required>
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <span class="fa fa-address-book" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="address" id="address" type="text" value="" placeholder="Address" required>
+                    </div>
+                </div>
+                <div class="field-group">
+                    <span class="fa fa-lock" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="password" id="password" type="Password" placeholder="Password" required>
+                    </div>
+                </div>
+                
+                <ul class="list-login">
+                    <li class="switch-agileits">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                            keep me signed in
+                        </label>
+                    </li>
+                    <li>
+                        <a href="#" class="text-right">forgot password?</a>
+                    </li>
+                    <li class="clearfix"></li>
+                </ul>
+                <div class="wthree-field">
+                    <input id="saveForm" name="saveForm" type="submit" value="Register" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer-w3l">
+        <p>&copy; 2017 Classy Register Form. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+    </div>
+    <!-- //footer -->
+    <!-- js-scripts-->
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <script type="text/javascript" src="../../static/register/js/jquery-2.1.4.min.js"></script>
+    <script>
+        $(document).ready(function (c) {
+            $('.alert-close').on('click', function (c) {
+                $('.main-agile').fadeOut('slow', function (c) {
+                    $('.main-agile').remove();
+                });
+            });
+        });
+    </script>
+    <!-- //js-scripts-->
+    {% endblock %}
+</body>
+</html>

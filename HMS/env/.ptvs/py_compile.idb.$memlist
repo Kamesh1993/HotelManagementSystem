@@ -1,0 +1,14 @@
+PyCompileError
+compile
+os
+__spec__
+__file__
+traceback
+__name__
+importlib
+__all__
+__builtins__
+__cached__
+main
+sys
+__package__

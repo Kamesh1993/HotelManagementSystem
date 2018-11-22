@@ -1,0 +1,14 @@
+scriptsdir
+assert_python_ok
+os
+__spec__
+__file__
+MD5SumTests
+unittest
+__name__
+skip_if_missing
+support
+assert_python_failure
+__builtins__
+__cached__
+__package__

@@ -1,0 +1,15 @@
+test_suite
+msvccompilerTestCase
+os
+__spec__
+__file__
+DistutilsPlatformError
+unittest
+__name__
+support
+SKIP_MESSAGE
+__builtins__
+__cached__
+run_unittest
+sys
+__package__

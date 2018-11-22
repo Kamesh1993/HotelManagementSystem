@@ -1,0 +1,16 @@
+FeedParser
+__builtins__
+StringIO
+__file__
+BytesHeaderParser
+__package__
+__cached__
+HeaderParser
+__all__
+BytesParser
+compat32
+TextIOWrapper
+__name__
+Parser
+BytesFeedParser
+__spec__

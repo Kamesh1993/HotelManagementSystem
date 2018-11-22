@@ -1,0 +1,10 @@
+examine_warnings
+X
+__spec__
+__file__
+SomeClass
+is_instance
+__name__
+__builtins__
+__cached__
+__package__

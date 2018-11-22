@@ -1,0 +1,14 @@
+copy
+pickle
+os
+__spec__
+__file__
+defaultdict
+unittest
+__name__
+TestDefaultDict
+__builtins__
+__cached__
+foobar
+tempfile
+__package__

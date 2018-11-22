@@ -1,0 +1,13 @@
+func_accepts_kwargs
+func_accepts_var_args
+get_func_args
+__builtins__
+__file__
+func_supports_parameter
+__cached__
+get_func_full_args
+__name__
+func_has_no_args
+__package__
+inspect
+__spec__

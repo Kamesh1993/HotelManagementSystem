@@ -1,0 +1,17 @@
+SingleObjectTemplateResponseMixin
+models
+BaseDetailView
+_
+DetailView
+__builtins__
+__file__
+View
+__cached__
+__spec__
+ImproperlyConfigured
+TemplateResponseMixin
+Http404
+__name__
+ContextMixin
+__package__
+SingleObjectMixin

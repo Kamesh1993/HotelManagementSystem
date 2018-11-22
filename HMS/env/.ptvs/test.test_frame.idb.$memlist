@@ -1,0 +1,14 @@
+ClearTest
+weakref
+__cached__
+__spec__
+__file__
+FrameLocalsTest
+unittest
+__name__
+support
+types
+__builtins__
+gc
+sys
+__package__

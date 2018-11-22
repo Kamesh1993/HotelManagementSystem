@@ -1,0 +1,15 @@
+ResourceTest
+resource
+os
+__spec__
+__file__
+unittest
+__name__
+test_main
+support
+time
+__builtins__
+__cached__
+contextlib
+sys
+__package__

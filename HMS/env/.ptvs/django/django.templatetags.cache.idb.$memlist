@@ -1,0 +1,16 @@
+VariableDoesNotExist
+Library
+__builtins__
+__file__
+register
+__cached__
+make_template_fragment_key
+InvalidCacheBackendError
+caches
+Node
+__name__
+CacheNode
+do_cache
+__package__
+TemplateSyntaxError
+__spec__

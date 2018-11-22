@@ -1,0 +1,12 @@
+enable_colourful_output
+LogFormatter
+__cached__
+__spec__
+logging
+__name__
+curses
+_stderr_supports_color
+__builtins__
+__file__
+sys
+__package__

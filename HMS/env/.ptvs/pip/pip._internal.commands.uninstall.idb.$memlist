@@ -1,0 +1,14 @@
+install_req_from_line
+UninstallCommand
+parse_requirements
+__spec__
+absolute_import
+__file__
+Command
+__name__
+protect_pip_from_modification_on_windows
+canonicalize_name
+__builtins__
+__cached__
+InstallationError
+__package__

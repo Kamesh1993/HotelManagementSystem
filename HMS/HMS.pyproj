@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>HMS</Name>
+    <RootNamespace>HMS</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>570e584b-7146-46f7-8725-58583b49226e</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>HMS.settings</DjangoSettingsModule>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app\forms.py" />
+    <Compile Include="app\models.py" />
+    <Compile Include="app\tests.py" />
+    <Compile Include="app\views.py" />
+    <Compile Include="app\__init__.py" />
+    <Compile Include="app\migrations\__init__.py" />
+    <Compile Include="HMS\admin.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="manage.py" />
+    <Compile Include="HMS\__init__.py" />
+    <Compile Include="HMS\settings.py" />
+    <Compile Include="HMS\urls.py" />
+    <Compile Include="HMS\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\" />
+    <Folder Include="app\migrations\" />
+    <Folder Include="app\static\" />
+    <Folder Include="app\static\app\" />
+    <Folder Include="app\static\app\css\" />
+    <Folder Include="app\static\app\css\fonts\" />
+    <Folder Include="app\static\app\css\images\" />
+    <Folder Include="app\static\app\fonts\" />
+    <Folder Include="app\static\app\images\" />
+    <Folder Include="app\static\app\images\about\" />
+    <Folder Include="app\static\app\images\author\" />
+    <Folder Include="app\static\app\images\blog\" />
+    <Folder Include="app\static\app\images\detail\" />
+    <Folder Include="app\static\app\images\event\" />
+    <Folder Include="app\static\app\images\favicons\" />
+    <Folder Include="app\static\app\images\feature\" />
+    <Folder Include="app\static\app\images\grid-list\" />
+    <Folder Include="app\static\app\images\home\" />
+    <Folder Include="app\static\app\images\ournews\" />
+    <Folder Include="app\static\app\images\services\" />
+    <Folder Include="app\static\app\js\" />
+    <Folder Include="app\static\app\scripts\" />
+    <Folder Include="app\static\booking\css\" />
+    <Folder Include="app\static\booking\fonts\" />
+    <Folder Include="app\static\booking\images\" />
+    <Folder Include="app\static\booking\js\" />
+    <Folder Include="app\static\login\" />
+    <Folder Include="app\static\login\css\" />
+    <Folder Include="app\static\login\fonts\" />
+    <Folder Include="app\static\login\images\" />
+    <Folder Include="app\static\booking\" />
+    <Folder Include="app\static\rooms\" />
+    <Folder Include="app\static\register\" />
+    <Folder Include="app\static\register\css\" />
+    <Folder Include="app\static\register\images\" />
+    <Folder Include="app\static\register\js\" />
+    <Folder Include="app\static\rooms\css\" />
+    <Folder Include="app\static\rooms\css\fonts\" />
+    <Folder Include="app\static\rooms\fonts\" />
+    <Folder Include="app\static\rooms\images\" />
+    <Folder Include="app\static\rooms\img\" />
+    <Folder Include="app\static\rooms\js\" />
+    <Folder Include="app\templates\" />
+    <Folder Include="app\templates\app\" />
+    <Folder Include="app\templates\includes\" />
+    <Folder Include="HMS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\static\app\css\bootstrap-select.min.css" />
+    <Content Include="app\static\app\css\bootstrap.min.css" />
+    <Content Include="app\static\app\css\color.css" />
+    <Content Include="app\static\app\css\font-awesome.min.css" />
+    <Content Include="app\static\app\css\fonts\glyphicons-halflings-regular-2.html" />
+    <Content Include="app\static\app\css\fonts\glyphicons-halflings-regular-3.html" />
+    <Content Include="app\static\app\css\fonts\glyphicons-halflings-regular.html" />
+    <Content Include="app\static\app\css\fonts\glyphicons-halflings-regulard41d.html" />
+    <Content Include="app\static\app\css\fonts\slick.html" />
+    <Content Include="app\static\app\css\form-wizard.css" />
+    <Content Include="app\static\app\css\fullcalendar.css" />
+    <Content Include="app\static\app\css\fullcalendar.print.css" />
+    <Content Include="app\static\app\css\images\ui-icons_444444_256x240.html" />
+    <Content Include="app\static\app\css\images\ui-icons_555555_256x240.html" />
+    <Content Include="app\static\app\css\images\ui-icons_777620_256x240.html" />
+    <Content Include="app\static\app\css\images\ui-icons_777777_256x240.html" />
+    <Content Include="app\static\app\css\images\ui-icons_cc0000_256x240.html" />
+    <Content Include="app\static\app\css\images\ui-icons_ffffff_256x240.html" />
+    <Content Include="app\static\app\css\jquery-ui-date.css" />
+    <Content Include="app\static\app\css\jquery-ui.css" />
+    <Content Include="app\static\app\css\slick-theme.css" />
+    <Content Include="app\static\app\css\slick.css" />
+    <Content Include="app\static\app\css\style.css" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.html" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="app\static\app\fonts\slick.eot" />
+    <Content Include="app\static\app\fonts\slick.ttf" />
+    <Content Include="app\static\app\fonts\slick.woff" />
+    <Content Include="app\static\app\fonts\slickd41d.eot" />
+    <Content Include="app\static\app\images\about\2.jpg" />
+    <Content Include="app\static\app\images\advertise.jpg" />
+    <Content Include="app\static\app\images\author\1.jpg" />
+    <Content Include="app\static\app\images\author\2.jpg" />
+    <Content Include="app\static\app\images\author\3.jpg" />
+    <Content Include="app\static\app\images\blog\1.jpg" />
+    <Content Include="app\static\app\images\blog\2.jpg" />
+    <Content Include="app\static\app\images\blog\3.jpg" />
+    <Content Include="app\static\app\images\blog\4.html" />
+    <Content Include="app\static\app\images\calnder-left.png" />
+    <Content Include="app\static\app\images\calnder-right.png" />
+    <Content Include="app\static\app\images\comment_1.jpg" />
+    <Content Include="app\static\app\images\comment_2.jpg" />
+    <Content Include="app\static\app\images\comment_3.jpg" />
+    <Content Include="app\static\app\images\detail\1.jpg" />
+    <Content Include="app\static\app\images\detail\10.jpg" />
+    <Content Include="app\static\app\images\detail\11.jpg" />
+    <Content Include="app\static\app\images\detail\12.jpg" />
+    <Content Include="app\static\app\images\detail\13.jpg" />
+    <Content Include="app\static\app\images\detail\14.jpg" />
+    <Content Include="app\static\app\images\detail\15.jpg" />
+    <Content Include="app\static\app\images\detail\16.jpg" />
+    <Content Include="app\static\app\images\detail\17.jpg" />
+    <Content Include="app\static\app\images\detail\18.jpg" />
+    <Content Include="app\static\app\images\detail\2.jpg" />
+    <Content Include="app\static\app\images\detail\3.jpg" />
+    <Content Include="app\static\app\images\detail\4.jpg" />
+    <Content Include="app\static\app\images\detail\5.jpg" />
+    <Content Include="app\static\app\images\detail\6.jpg" />
+    <Content Include="app\static\app\images\detail\7.jpg" />
+    <Content Include="app\static\app\images\detail\8.jpg" />
+    <Content Include="app\static\app\images\detail\9.jpg" />
+    <Content Include="app\static\app\images\detail_page_bg1.jpg" />
+    <Content Include="app\static\app\images\event\1.png" />
+    <Content Include="app\static\app\images\event\11.jpg" />
+    <Content Include="app\static\app\images\event\2.png" />
+    <Content Include="app\static\app\images\event\22.jpg" />
+    <Content Include="app\static\app\images\event\3.png" />
+    <Content Include="app\static\app\images\event\33.jpg" />
+    <Content Include="app\static\app\images\event\4.png" />
+    <Content Include="app\static\app\images\event\44.jpg" />
+    <Content Include="app\static\app\images\event\5.png" />
+    <Content Include="app\static\app\images\event\55.jpg" />
+    <Content Include="app\static\app\images\event\6.png" />
+    <Content Include="app\static\app\images\event\7.png" />
+    <Content Include="app\static\app\images\event\8.png" />
+    <Content Include="app\static\app\images\event\9.png" />
+    <Content Include="app\static\app\images\event\event-background.jpg" />
+    <Content Include="app\static\app\images\favicons\apple-touch-icon.png" />
+    <Content Include="app\static\app\images\favicons\favicon-16x16.png" />
+    <Content Include="app\static\app\images\favicons\favicon-32x32.png" />
+    <Content Include="app\static\app\images\favicons\manifest.json" />
+    <Content Include="app\static\app\images\favicons\safari-pinned-tab.svg" />
+    <Content Include="app\static\app\images\feature\feature_1.jpg" />
+    <Content Include="app\static\app\images\feature\feature_2.jpg" />
+    <Content Include="app\static\app\images\feature\feature_3.jpg" />
+    <Content Include="app\static\app\images\footer-gallery-1.jpg" />
+    <Content Include="app\static\app\images\footer-gallery-2.jpg" />
+    <Content Include="app\static\app\images\footer-gallery-3.jpg" />
+    <Content Include="app\static\app\images\footer-gallery-4.jpg" />
+    <Content Include="app\static\app\images\footer-gallery-5.jpg" />
+    <Content Include="app\static\app\images\footer-gallery-6.jpg" />
+    <Content Include="app\static\app\images\grid-list\1.jpg" />
+    <Content Include="app\static\app\images\grid-list\2.jpg" />
+    <Content Include="app\static\app\images\grid-list\3.jpg" />
+    <Content Include="app\static\app\images\grid-list\4.jpg" />
+    <Content Include="app\static\app\images\grid-list\5.jpg" />
+    <Content Include="app\static\app\images\grid-list\6.jpg" />
+    <Content Include="app\static\app\images\home\1.jpg" />
+    <Content Include="app\static\app\images\home\2.jpg" />
+    <Content Include="app\static\app\images\home\3.jpg" />
+    <Content Include="app\static\app\images\Logo-footer.png" />
+    <Content Include="app\static\app\images\logo.png" />
+    <Content Include="app\static\app\images\our-serivesc-background.jpg" />
+    <Content Include="app\static\app\images\our-serivesc-bar.jpg" />
+    <Content Include="app\static\app\images\our-serivesc-club.jpg" />
+    <Content Include="app\static\app\images\our-serivesc-gym.jpg" />
+    <Content Include="app\static\app\images\our-serivesc-picup.jpg" />
+    <Content Include="app\static\app\images\our-serivesc-restorant.jpg" />
+    <Content Include="app\static\app\images\ournews\ournews-1.jpg" />
+    <Content Include="app\static\app\images\ournews\ournews-2.jpg" />
+    <Content Include="app\static\app\images\ournews\ournews-3.jpg" />
+    <Content Include="app\static\app\images\ournews\ournews-4.jpg" />
+    <Content Include="app\static\app\images\ournews\ournews-5.jpg" />
+    <Content Include="app\static\app\images\ournews\ournews-6.jpg" />
+    <Content Include="app\static\app\images\services\1.jpg" />
+    <Content Include="app\static\app\images\services\2.jpg" />
+    <Content Include="app\static\app\images\services\3.jpg" />
+    <Content Include="app\static\app\images\services\4.jpg" />
+    <Content Include="app\static\app\images\services\5.jpg" />
+    <Content Include="app\static\app\images\services\6.jpg" />
+    <Content Include="app\static\app\images\similer_img1.jpg" />
+    <Content Include="app\static\app\images\similer_img2.jpg" />
+    <Content Include="app\static\app\images\similer_img3.jpg" />
+    <Content Include="app\static\app\images\ui-icons_777620_256x240.html" />
+    <Content Include="app\static\app\images\ui-icons_777777_256x240.html" />
+    <Content Include="app\static\app\images\ui-icons_cc0000_256x240.html" />
+    <Content Include="app\static\app\images\ui-icons_ffffff_256x240.html" />
+    <Content Include="app\static\app\images\your-stay1.jpg" />
+    <Content Include="app\static\app\images\your-stay2.jpg" />
+    <Content Include="app\static\app\js\bootstrap-datepicker.js" />
+    <Content Include="app\static\app\js\bootstrap-select.js" />
+    <Content Include="app\static\app\js\bootstrap.min.js" />
+    <Content Include="app\static\app\js\form-wizard.js" />
+    <Content Include="app\static\app\js\fullcalendar.js" />
+    <Content Include="app\static\app\js\jquery-ui-date.js" />
+    <Content Include="app\static\app\js\jquery-ui.js" />
+    <Content Include="app\static\app\js\jquery.min.js" />
+    <Content Include="app\static\app\js\moment.min.js" />
+    <Content Include="app\static\app\js\slick.min.js" />
+    <Content Include="app\static\app\js\themefunction.js" />
+    <Content Include="app\static\app\js\valid-date.js" />
+    <Content Include="app\static\app\scripts\bootstrap.js" />
+    <Content Include="app\static\app\scripts\bootstrap.min.js" />
+    <None Include="app\static\app\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.min.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.min.map" />
+    <None Include="app\static\app\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.min.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="app\static\app\scripts\modernizr-2.6.2.js" />
+    <Content Include="app\static\app\scripts\respond.js" />
+    <Content Include="app\static\app\scripts\respond.min.js" />
+    <None Include="app\static\app\scripts\_references.js" />
+    <Content Include="app\static\booking\css\font-awesome.css" />
+    <Content Include="app\static\booking\css\jquery-ui.css" />
+    <Content Include="app\static\booking\css\style.css" />
+    <Content Include="app\static\booking\css\wickedpicker.css" />
+    <Content Include="app\static\booking\fonts\fontawesome-webfont.eot" />
+    <Content Include="app\static\booking\fonts\fontawesome-webfont.svg" />
+    <Content Include="app\static\booking\fonts\fontawesome-webfont.ttf" />
+    <Content Include="app\static\booking\fonts\fontawesome-webfont.woff" />
+    <Content Include="app\static\booking\fonts\fontawesome-webfont.woff2" />
+    <Content Include="app\static\booking\fonts\FontAwesome.otf" />
+    <Content Include="app\static\booking\fonts\fontello.eot" />
+    <Content Include="app\static\booking\fonts\fontello.svg" />
+    <Content Include="app\static\booking\fonts\fontello.ttf" />
+    <Content Include="app\static\booking\fonts\fontello.woff" />
+    <Content Include="app\static\booking\images\banner3.jpg" />
+    <Content Include="app\static\booking\images\c-arrows.png" />
+    <Content Include="app\static\booking\js\jquery-2.1.4.min.js" />
+    <Content Include="app\static\booking\js\jquery-ui.js" />
+    <Content Include="app\static\booking\js\wickedpicker.js" />
+    <Content Include="app\static\login\css\font-awesome.css" />
+    <Content Include="app\static\login\css\style.css" />
+    <Content Include="app\static\login\fonts\fontawesome-webfont.eot" />
+    <Content Include="app\static\login\fonts\fontawesome-webfont.ttf" />
+    <Content Include="app\static\login\fonts\fontawesome-webfont.woff" />
+    <Content Include="app\static\login\fonts\fontawesome-webfont.woff2" />
+    <Content Include="app\static\login\fonts\FontAwesome.otf" />
+    <Content Include="app\static\login\images\banner.jpg" />
+    <Content Include="app\static\register\css\style.css" />
+    <Content Include="app\static\register\images\1.jpg" />
+    <Content Include="app\static\register\images\2.jpg" />
+    <Content Include="app\static\register\images\close.png" />
+    <Content Include="app\static\register\js\jquery-2.1.4.min.js" />
+    <Content Include="app\static\rooms\css\AjaxLoader.html" />
+    <Content Include="app\static\rooms\css\bootstrap.min.css" />
+    <Content Include="app\static\rooms\css\datepicker.css" />
+    <Content Include="app\static\rooms\css\flexslider.css" />
+    <Content Include="app\static\rooms\css\font-awesome.min.css" />
+    <Content Include="app\static\rooms\css\fonts\flexslider-icon-2.html" />
+    <Content Include="app\static\rooms\css\fonts\flexslider-icon-3.html" />
+    <Content Include="app\static\rooms\css\fonts\flexslider-icon-4.html" />
+    <Content Include="app\static\rooms\css\fonts\flexslider-icon.html" />
+    <Content Include="app\static\rooms\css\fonts\flexslider-icond41d.html" />
+    <Content Include="app\static\rooms\css\grabbing.html" />
+    <Content Include="app\static\rooms\css\jquery.colorpanel.css" />
+    <Content Include="app\static\rooms\css\magnific-popup.css" />
+    <Content Include="app\static\rooms\css\owl.carousel.css" />
+    <Content Include="app\static\rooms\css\owl.theme.css" />
+    <Content Include="app\static\rooms\css\responsive.css" />
+    <Content Include="app\static\rooms\css\styles.css" />
+    <Content Include="app\static\rooms\css\yellow.css" />
+    <Content Include="app\static\rooms\fonts\fontawesome-webfont3e6e.eot" />
+    <Content Include="app\static\rooms\fonts\fontawesome-webfont3e6e.svg" />
+    <Content Include="app\static\rooms\fonts\fontawesome-webfont3e6e.ttf" />
+    <Content Include="app\static\rooms\fonts\fontawesome-webfont3e6e.woff" />
+    <Content Include="app\static\rooms\fonts\fontawesome-webfont3e6e.woff2" />
+    <Content Include="app\static\rooms\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="app\static\rooms\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\static\rooms\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\static\rooms\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\static\rooms\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="app\static\rooms\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="app\static\rooms\fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="app\static\rooms\images\about-background.jpg" />
+    <Content Include="app\static\rooms\images\about-cover.jpg" />
+    <Content Include="app\static\rooms\images\about-img.jpg" />
+    <Content Include="app\static\rooms\images\about-intro.png" />
+    <Content Include="app\static\rooms\images\about-us-2.jpg" />
+    <Content Include="app\static\rooms\images\about-us.jpg" />
+    <Content Include="app\static\rooms\images\about-video.jpg" />
+    <Content Include="app\static\rooms\images\background.jpg" />
+    <Content Include="app\static\rooms\images\banner-1.jpg" />
+    <Content Include="app\static\rooms\images\banner-2.jpg" />
+    <Content Include="app\static\rooms\images\banner-3.jpg" />
+    <Content Include="app\static\rooms\images\banner-4.jpg" />
+    <Content Include="app\static\rooms\images\banner-6.jpg" />
+    <Content Include="app\static\rooms\images\blog-1.jpg" />
+    <Content Include="app\static\rooms\images\blog-2.jpg" />
+    <Content Include="app\static\rooms\images\blog-3.jpg" />
+    <Content Include="app\static\rooms\images\blog-details-cover.jpg" />
+    <Content Include="app\static\rooms\images\blog-list-1.jpg" />
+    <Content Include="app\static\rooms\images\blog-list-2.jpg" />
+    <Content Include="app\static\rooms\images\blog-list-3.jpg" />
+    <Content Include="app\static\rooms\images\blog-list-4.jpg" />
+    <Content Include="app\static\rooms\images\blog-listing-cover.jpg" />
+    <Content Include="app\static\rooms\images\color.png" />
+    <Content Include="app\static\rooms\images\coming-soon.jpg" />
+    <Content Include="app\static\rooms\images\contact-cover.jpg" />
+    <Content Include="app\static\rooms\images\contact-form.jpg" />
+    <Content Include="app\static\rooms\images\custom-form-wrapper.jpg" />
+    <Content Include="app\static\rooms\images\dining-cover.jpg" />
+    <Content Include="app\static\rooms\images\dinning-1.jpg" />
+    <Content Include="app\static\rooms\images\dinning-2.jpg" />
+    <Content Include="app\static\rooms\images\dinning-3.jpg" />
+    <Content Include="app\static\rooms\images\dinning-4.jpg" />
+    <Content Include="app\static\rooms\images\dinning-5.jpg" />
+    <Content Include="app\static\rooms\images\dish-1.jpg" />
+    <Content Include="app\static\rooms\images\dish-2.jpg" />
+    <Content Include="app\static\rooms\images\dish-3.jpg" />
+    <Content Include="app\static\rooms\images\dish-breakfast-1.jpg" />
+    <Content Include="app\static\rooms\images\dish-breakfast-2.jpg" />
+    <Content Include="app\static\rooms\images\dish-breakfast-3.jpg" />
+    <Content Include="app\static\rooms\images\dish-breakfast-4.jpg" />
+    <Content Include="app\static\rooms\images\dish-breakfast-5.jpg" />
+    <Content Include="app\static\rooms\images\dish-breakfast-6.jpg" />
+    <Content Include="app\static\rooms\images\dish-deal.jpg" />
+    <Content Include="app\static\rooms\images\dish-dessert-1.jpg" />
+    <Content Include="app\static\rooms\images\dish-dessert-2.jpg" />
+    <Content Include="app\static\rooms\images\dish-dessert-3.jpg" />
+    <Content Include="app\static\rooms\images\dish-dessert-4.jpg" />
+    <Content Include="app\static\rooms\images\dish-dessert-5.jpg" />
+    <Content Include="app\static\rooms\images\dish-dessert-6.jpg" />
+    <Content Include="app\static\rooms\images\dish-dinner-1.jpg" />
+    <Content Include="app\static\rooms\images\dish-dinner-2.jpg" />
+    <Content Include="app\static\rooms\images\dish-dinner-3.jpg" />
+    <Content Include="app\static\rooms\images\dish-dinner-4.jpg" />
+    <Content Include="app\static\rooms\images\dish-dinner-5.jpg" />
+    <Content Include="app\static\rooms\images\dish-dinner-6.jpg" />
+    <Content Include="app\static\rooms\images\dish-lunch-1.jpg" />
+    <Content Include="app\static\rooms\images\dish-lunch-2.jpg" />
+    <Content Include="app\static\rooms\images\dish-lunch-3.jpg" />
+    <Content Include="app\static\rooms\images\dish-lunch-4.jpg" />
+    <Content Include="app\static\rooms\images\dish-lunch-5.jpg" />
+    <Content Include="app\static\rooms\images\dish-lunch-6.jpg" />
+    <Content Include="app\static\rooms\images\dish-m.jpg" />
+    <Content Include="app\static\rooms\images\e-offer-1.jpg" />
+    <Content Include="app\static\rooms\images\e-offer-2.jpg" />
+    <Content Include="app\static\rooms\images\e-offer-3.jpg" />
+    <Content Include="app\static\rooms\images\error-cover.jpg" />
+    <Content Include="app\static\rooms\images\event-1.jpg" />
+    <Content Include="app\static\rooms\images\event-2.jpg" />
+    <Content Include="app\static\rooms\images\event-3.jpg" />
+    <Content Include="app\static\rooms\images\event-4.jpg" />
+    <Content Include="app\static\rooms\images\event-5.jpg" />
+    <Content Include="app\static\rooms\images\event-6.jpg" />
+    <Content Include="app\static\rooms\images\event-details-cover.jpg" />
+    <Content Include="app\static\rooms\images\event-details-image.jpg" />
+    <Content Include="app\static\rooms\images\event-listing-cover.jpg" />
+    <Content Include="app\static\rooms\images\favicon.html" />
+    <Content Include="app\static\rooms\images\full-page-form.jpg" />
+    <Content Include="app\static\rooms\images\gallery-1.jpg" />
+    <Content Include="app\static\rooms\images\gallery-10.jpg" />
+    <Content Include="app\static\rooms\images\gallery-2.jpg" />
+    <Content Include="app\static\rooms\images\gallery-3.jpg" />
+    <Content Include="app\static\rooms\images\gallery-4.jpg" />
+    <Content Include="app\static\rooms\images\gallery-5.jpg" />
+    <Content Include="app\static\rooms\images\gallery-6.jpg" />
+    <Content Include="app\static\rooms\images\gallery-7.jpg" />
+    <Content Include="app\static\rooms\images\gallery-8.jpg" />
+    <Content Include="app\static\rooms\images\gallery-9.jpg" />
+    <Content Include="app\static\rooms\images\gallery-cover.jpg" />
+    <Content Include="app\static\rooms\images\gallery-masonry-1.jpg" />
+    <Content Include="app\static\rooms\images\gallery-masonry-2.jpg" />
+    <Content Include="app\static\rooms\images\gallery-masonry-3.jpg" />
+    <Content Include="app\static\rooms\images\gallery-masonry-4.jpg" />
+    <Content Include="app\static\rooms\images\gallery-masonry-5.jpg" />
+    <Content Include="app\static\rooms\images\gallery-masonry-6.jpg" />
+    <Content Include="app\static\rooms\images\gallery-masonry-7.jpg" />
+    <Content Include="app\static\rooms\images\gallery-masonry-8.jpg" />
+    <Content Include="app\static\rooms\images\home-background-2.jpg" />
+    <Content Include="app\static\rooms\images\home-background-3.jpg" />
+    <Content Include="app\static\rooms\images\insta-1.jpg" />
+    <Content Include="app\static\rooms\images\insta-2.jpg" />
+    <Content Include="app\static\rooms\images\insta-3.jpg" />
+    <Content Include="app\static\rooms\images\insta-4.jpg" />
+    <Content Include="app\static\rooms\images\insta-5.jpg" />
+    <Content Include="app\static\rooms\images\insta-6.jpg" />
+    <Content Include="app\static\rooms\images\insta-7.jpg" />
+    <Content Include="app\static\rooms\images\insta-8.jpg" />
+    <Content Include="app\static\rooms\images\insta-9.jpg" />
+    <Content Include="app\static\rooms\images\loader-yellow.gif" />
+    <Content Include="app\static\rooms\images\mas-gallery-1.jpg" />
+    <Content Include="app\static\rooms\images\mas-gallery-2.jpg" />
+    <Content Include="app\static\rooms\images\mas-gallery-3.jpg" />
+    <Content Include="app\static\rooms\images\mas-gallery-4.jpg" />
+    <Content Include="app\static\rooms\images\mas-gallery-5.jpg" />
+    <Content Include="app\static\rooms\images\mas-gallery-6.jpg" />
+    <Content Include="app\static\rooms\images\mas-gallery-7.jpg" />
+    <Content Include="app\static\rooms\images\mas-gallery-8.jpg" />
+    <Content Include="app\static\rooms\images\master-chef.jpg" />
+    <Content Include="app\static\rooms\images\newsletter.jpg" />
+    <Content Include="app\static\rooms\images\offer-1.jpg" />
+    <Content Include="app\static\rooms\images\offer-2.jpg" />
+    <Content Include="app\static\rooms\images\offer-cover.jpg" />
+    <Content Include="app\static\rooms\images\page-cover.jpg" />
+    <Content Include="app\static\rooms\images\pattern.jpg" />
+    <Content Include="app\static\rooms\images\pricing-cover.jpg" />
+    <Content Include="app\static\rooms\images\recent-post-1.jpg" />
+    <Content Include="app\static\rooms\images\recent-post-2.jpg" />
+    <Content Include="app\static\rooms\images\recent-post-3.jpg" />
+    <Content Include="app\static\rooms\images\related-event-1.jpg" />
+    <Content Include="app\static\rooms\images\related-event-2.jpg" />
+    <Content Include="app\static\rooms\images\reservation-cover.jpg" />
+    <Content Include="app\static\rooms\images\reservation-modal.jpg" />
+    <Content Include="app\static\rooms\images\restaurant-footer.jpg" />
+    <Content Include="app\static\rooms\images\restaurant-slider-1.jpg" />
+    <Content Include="app\static\rooms\images\restaurant-slider-2.jpg" />
+    <Content Include="app\static\rooms\images\reviewer-1.jpg" />
+    <Content Include="app\static\rooms\images\reviewer-2.jpg" />
+    <Content Include="app\static\rooms\images\reviewer-3.jpg" />
+    <Content Include="app\static\rooms\images\reviewer-4.jpg" />
+    <Content Include="app\static\rooms\images\room-1.jpg" />
+    <Content Include="app\static\rooms\images\room-2-1.jpg" />
+    <Content Include="app\static\rooms\images\room-2-2.jpg" />
+    <Content Include="app\static\rooms\images\room-2-3.jpg" />
+    <Content Include="app\static\rooms\images\room-2-4.jpg" />
+    <Content Include="app\static\rooms\images\room-2.jpg" />
+    <Content Include="app\static\rooms\images\room-3.jpg" />
+    <Content Include="app\static\rooms\images\room-4.jpg" />
+    <Content Include="app\static\rooms\images\room-5.jpg" />
+    <Content Include="app\static\rooms\images\room-6.jpg" />
+    <Content Include="app\static\rooms\images\room-deal.jpg" />
+    <Content Include="app\static\rooms\images\room-details-cover.jpg" />
+    <Content Include="app\static\rooms\images\room-grid-cover.jpg" />
+    <Content Include="app\static\rooms\images\room-inner-1.jpg" />
+    <Content Include="app\static\rooms\images\room-list-1.jpg" />
+    <Content Include="app\static\rooms\images\room-list-2.jpg" />
+    <Content Include="app\static\rooms\images\room-list-3.jpg" />
+    <Content Include="app\static\rooms\images\room-listing-cover.jpg" />
+    <Content Include="app\static\rooms\images\selected-room.jpg" />
+    <Content Include="app\static\rooms\images\service-cover.jpg" />
+    <Content Include="app\static\rooms\images\slider-1.jpg" />
+    <Content Include="app\static\rooms\images\slider-2-1.jpg" />
+    <Content Include="app\static\rooms\images\slider-2-2.jpg" />
+    <Content Include="app\static\rooms\images\slider-2.jpg" />
+    <Content Include="app\static\rooms\images\slider-3-1.jpg" />
+    <Content Include="app\static\rooms\images\slider-3-2.jpg" />
+    <Content Include="app\static\rooms\images\spa-1.jpg" />
+    <Content Include="app\static\rooms\images\spa-2.jpg" />
+    <Content Include="app\static\rooms\images\spa-3.jpg" />
+    <Content Include="app\static\rooms\images\spa-cover.jpg" />
+    <Content Include="app\static\rooms\images\spa-service-1.jpg" />
+    <Content Include="app\static\rooms\images\spa-service-2.jpg" />
+    <Content Include="app\static\rooms\images\spa-service-3.jpg" />
+    <Content Include="app\static\rooms\images\spa-service-4.jpg" />
+    <Content Include="app\static\rooms\images\special-offer.jpg" />
+    <Content Include="app\static\rooms\images\specials-1.jpg" />
+    <Content Include="app\static\rooms\images\specials-2.jpg" />
+    <Content Include="app\static\rooms\images\specials-3.jpg" />
+    <Content Include="app\static\rooms\images\specials-4.jpg" />
+    <Content Include="app\static\rooms\images\specials-5.jpg" />
+    <Content Include="app\static\rooms\images\team-1.jpg" />
+    <Content Include="app\static\rooms\images\team-2-1.jpg" />
+    <Content Include="app\static\rooms\images\team-2-2.jpg" />
+    <Content Include="app\static\rooms\images\team-2-3.jpg" />
+    <Content Include="app\static\rooms\images\team-2-4.jpg" />
+    <Content Include="app\static\rooms\images\team-2.jpg" />
+    <Content Include="app\static\rooms\images\team-3.jpg" />
+    <Content Include="app\static\rooms\images\team-4.jpg" />
+    <Content Include="app\static\rooms\images\team-cover.jpg" />
+    <Content Include="app\static\rooms\images\test-user-1.jpg" />
+    <Content Include="app\static\rooms\images\test-user-2.jpg" />
+    <Content Include="app\static\rooms\images\test-user-3.jpg" />
+    <Content Include="app\static\rooms\images\testimonial-2.jpg" />
+    <Content Include="app\static\rooms\images\testimonial.jpg" />
+    <Content Include="app\static\rooms\images\testimonials-3.jpg" />
+    <Content Include="app\static\rooms\images\testimonials-cover.jpg" />
+    <Content Include="app\static\rooms\images\user.jpg" />
+    <Content Include="app\static\rooms\images\video.mp4" />
+    <Content Include="app\static\rooms\img\videoframe.html" />
+    <Content Include="app\static\rooms\js\bootstrap-datepicker.js" />
+    <Content Include="app\static\rooms\js\bootstrap.min.js" />
+    <Content Include="app\static\rooms\js\custom-date-picker.js" />
+    <Content Include="app\static\rooms\js\custom-flex.js" />
+    <Content Include="app\static\rooms\js\custom-gallery.js" />
+    <Content Include="app\static\rooms\js\custom-navigation.js" />
+    <Content Include="app\static\rooms\js\custom-owl.js" />
+    <Content Include="app\static\rooms\js\custom-validation.js" />
+    <Content Include="app\static\rooms\js\custom-video.js" />
+    <Content Include="app\static\rooms\js\jquery.colorpanel.js" />
+    <Content Include="app\static\rooms\js\jquery.flexslider.js" />
+    <Content Include="app\static\rooms\js\jquery.magnific-popup.min.js" />
+    <Content Include="app\static\rooms\js\jquery.min.js" />
+    <Content Include="app\static\rooms\js\jquery.validate.js" />
+    <Content Include="app\static\rooms\js\owl.carousel.min.js" />
+    <Content Include="app\templates\app\about.html" />
+    <Content Include="app\templates\app\available-rooms.html" />
+    <Content Include="app\templates\app\blog-single-page.html" />
+    <Content Include="app\templates\app\blog.html" />
+    <Content Include="app\templates\app\booking.html" />
+    <Content Include="app\templates\app\contact.html" />
+    <Content Include="app\templates\app\double-rooms.html" />
+    <Content Include="app\templates\app\event-single-page.html" />
+    <Content Include="app\templates\app\events.html" />
+    <Content Include="app\templates\app\index.html" />
+    <Content Include="app\templates\app\login.html" />
+    <Content Include="app\templates\app\register.html" />
+    <Content Include="app\templates\app\reservation.html" />
+    <Content Include="app\templates\app\rooms.html" />
+    <Content Include="app\templates\app\singlerooms.html" />
+    <Content Include="app\templates\includes\_formhelpers.html" />
+    <Content Include="app\templates\includes\_messages.html" />
+    <Content Include="app\templates\includes\_navbar.html" />
+    <Content Include="app\templates\includes\_rooms.html" />
+    <Content Include="requirements.txt" />
+    <Content Include="db.sqlite3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.html">
+      <SubType>WebBrowser</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.6</Version>
+      <Description>env (Python 3.6 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

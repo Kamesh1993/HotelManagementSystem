@@ -1,0 +1,15 @@
+pyshell
+macosx
+os
+__spec__
+__file__
+tabnanny
+ScriptBinding
+__name__
+tokenize
+indent_message
+idleConf
+__builtins__
+__cached__
+tkMessageBox
+__package__

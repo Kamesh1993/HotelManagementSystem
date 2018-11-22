@@ -1,0 +1,15 @@
+support
+Source_ExtensionCaseSensitivity
+util
+__spec__
+__file__
+unittest
+__name__
+importlib
+_bootstrap_external
+machinery
+__builtins__
+__cached__
+Frozen_ExtensionCaseSensitivity
+ExtensionModuleCaseSensitivityTest
+__package__

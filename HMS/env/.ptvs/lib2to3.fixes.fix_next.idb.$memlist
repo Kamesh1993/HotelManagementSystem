@@ -1,0 +1,17 @@
+find_assign
+syms
+is_subtree
+bind_warning
+__builtins__
+__file__
+__package__
+__cached__
+find_binding
+is_assign_target
+Name
+FixNext
+__name__
+token
+Call
+fixer_base
+__spec__

@@ -1,0 +1,12 @@
+test_suite
+__spec__
+__file__
+run_unittest
+unittest
+__name__
+support
+__builtins__
+__cached__
+BDistMSITestCase
+sys
+__package__

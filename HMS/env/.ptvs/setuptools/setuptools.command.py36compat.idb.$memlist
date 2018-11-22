@@ -1,0 +1,12 @@
+filter
+convert_path
+os
+__spec__
+__file__
+__name__
+sdist_add_defaults
+sdist
+glob
+__builtins__
+__cached__
+__package__

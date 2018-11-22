@@ -1,0 +1,15 @@
+test
+NullWriter
+AS_IS
+__spec__
+__file__
+AbstractFormatter
+warnings
+__name__
+AbstractWriter
+NullFormatter
+__builtins__
+__cached__
+DumbWriter
+sys
+__package__

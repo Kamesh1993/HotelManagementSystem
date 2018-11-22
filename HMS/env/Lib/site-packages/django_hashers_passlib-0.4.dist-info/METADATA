@@ -1,0 +1,35 @@
+Metadata-Version: 2.0
+Name: django-hashers-passlib
+Version: 0.4
+Summary: Django hashers using passlib
+Home-page: https://github.com/mathiasertl/django-hashers-passlib
+Author: Mathias Ertl
+Author-email: mati@er.tl
+License: GNU General Public License (GPL) v3
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 6 - Mature
+Classifier: Environment :: Other Environment
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Systems Administration :: Authentication/Directory
+Requires-Dist: passlib (>=1.6.5)
+Requires-Dist: Django (>=1.8)
+
+This library provides password hashers for the hash schemes provided by passlib for
+Djangos password hashing framework. Unlike passlibs ``passlib.apps.django``, it does not replace Djangos
+password hashing framework but adds additional hashers to its built in framework.
+
+Please see https://github.com/mathiasertl/django-hashers-passlib for more information and documentation.
+

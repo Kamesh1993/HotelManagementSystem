@@ -1,0 +1,16 @@
+CrasherTest
+test
+tearDownModule
+infinite_loops
+os
+__builtins__
+__file__
+unittest
+__package__
+assert_python_failure
+glob
+CRASHER_DIR
+__name__
+CRASHER_FILES
+__cached__
+__spec__

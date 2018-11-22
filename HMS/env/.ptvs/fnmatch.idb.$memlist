@@ -1,0 +1,16 @@
+translate
+posixpath
+fnmatch
+re
+os
+__builtins__
+functools
+__file__
+_compile_pattern
+__cached__
+__all__
+__name__
+filter
+fnmatchcase
+__package__
+__spec__

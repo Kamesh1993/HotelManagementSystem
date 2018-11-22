@@ -1,0 +1,15 @@
+get_host
+namedtuple
+__spec__
+absolute_import
+__file__
+split_first
+Url
+__name__
+parse_url
+url_attrs
+__builtins__
+__cached__
+LocationParseError
+NORMALIZABLE_SCHEMES
+__package__

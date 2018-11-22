@@ -1,0 +1,14 @@
+abstractstaticmethod
+abstractmethod
+ABC
+__spec__
+__file__
+ABCMeta
+abstractclassmethod
+__name__
+WeakSet
+__builtins__
+__cached__
+get_cache_token
+abstractproperty
+__package__

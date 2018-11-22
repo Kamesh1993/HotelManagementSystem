@@ -1,0 +1,11 @@
+is_py2
+__spec__
+__file__
+str
+__name__
+unicode_is_ascii
+builtin_str
+__builtins__
+__cached__
+to_native_string
+__package__

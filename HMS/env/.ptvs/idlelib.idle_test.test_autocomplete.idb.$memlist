@@ -1,0 +1,17 @@
+Func
+AutoCompleteTest
+Event
+ac
+__file__
+__cached__
+__package__
+Tk
+requires
+Text
+__name__
+__builtins__
+DummyEditwin
+AutoCompleteWindow
+unittest
+acw
+__spec__

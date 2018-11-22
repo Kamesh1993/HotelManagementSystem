@@ -1,0 +1,12 @@
+py_make_scanner
+NUMBER_RE
+__all__
+__spec__
+__file__
+__name__
+c_make_scanner
+make_scanner
+__builtins__
+__cached__
+re
+__package__

@@ -1,0 +1,16 @@
+varlist
+indent_block
+textwrap
+os
+__builtins__
+main
+write_encipher_function
+__package__
+write_expand_function
+render_encipher
+irange
+BFSTR
+__name__
+__file__
+__cached__
+__spec__

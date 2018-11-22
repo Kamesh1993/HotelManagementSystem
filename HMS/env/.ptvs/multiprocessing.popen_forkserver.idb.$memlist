@@ -1,0 +1,17 @@
+io
+_DupFd
+os
+util
+__file__
+__cached__
+popen_fork
+__all__
+spawn
+Popen
+__name__
+__builtins__
+reduction
+forkserver
+__package__
+set_spawning_popen
+__spec__

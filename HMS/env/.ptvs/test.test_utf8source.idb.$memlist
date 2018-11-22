@@ -1,0 +1,9 @@
+__spec__
+__file__
+__package__
+__name__
+BuiltinCompileTests
+__builtins__
+__cached__
+PEP3120Test
+unittest

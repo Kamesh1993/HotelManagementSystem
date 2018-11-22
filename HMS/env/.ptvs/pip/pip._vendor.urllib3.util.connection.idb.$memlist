@@ -1,0 +1,16 @@
+allowed_gai_family
+create_connection
+_has_ipv6
+NoWayToWaitForSocketError
+__file__
+__package__
+__cached__
+absolute_import
+HAS_IPV6
+_set_socket_options
+__name__
+__builtins__
+is_connection_dropped
+socket
+wait_for_read
+__spec__

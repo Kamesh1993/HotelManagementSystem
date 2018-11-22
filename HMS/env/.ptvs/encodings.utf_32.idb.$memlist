@@ -1,0 +1,15 @@
+getregentry
+encode
+StreamWriter
+__spec__
+__file__
+IncrementalEncoder
+__name__
+codecs
+decode
+IncrementalDecoder
+__builtins__
+__cached__
+StreamReader
+sys
+__package__

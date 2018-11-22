@@ -1,0 +1,14 @@
+module_has_submodule
+copy
+os
+__spec__
+__file__
+import_module
+autodiscover_modules
+__name__
+import_string
+module_dir
+__builtins__
+__cached__
+importlib_find
+__package__

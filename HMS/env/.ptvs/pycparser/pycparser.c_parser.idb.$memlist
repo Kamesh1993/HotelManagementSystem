@@ -1,0 +1,17 @@
+fix_switch_cases
+re
+Coord
+__builtins__
+parameterized
+__file__
+__cached__
+CLexer
+PLYParser
+ParseError
+__name__
+CParser
+c_ast
+template
+__package__
+yacc
+__spec__

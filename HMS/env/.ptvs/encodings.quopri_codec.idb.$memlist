@@ -1,0 +1,17 @@
+quopri
+BytesIO
+StreamReader
+__builtins__
+__file__
+__package__
+IncrementalEncoder
+StreamWriter
+IncrementalDecoder
+codecs
+quopri_decode
+__name__
+getregentry
+Codec
+quopri_encode
+__cached__
+__spec__

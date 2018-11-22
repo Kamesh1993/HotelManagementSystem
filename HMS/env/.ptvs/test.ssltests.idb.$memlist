@@ -1,0 +1,11 @@
+TESTS
+__spec__
+__file__
+subprocess
+__name__
+ssl
+run_regrtests
+__builtins__
+__cached__
+sys
+__package__

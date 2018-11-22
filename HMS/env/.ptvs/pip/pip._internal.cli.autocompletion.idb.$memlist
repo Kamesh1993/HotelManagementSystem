@@ -1,0 +1,16 @@
+get_summaries
+create_main_parser
+autocomplete
+os
+__builtins__
+optparse
+get_path_completion_type
+__cached__
+sys
+commands_dict
+__name__
+auto_complete_paths
+__file__
+get_installed_distributions
+__package__
+__spec__

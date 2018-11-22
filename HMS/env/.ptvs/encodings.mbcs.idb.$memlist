@@ -1,0 +1,16 @@
+decode
+encode
+StreamReader
+__builtins__
+__file__
+__package__
+__cached__
+StreamWriter
+IncrementalDecoder
+codecs
+mbcs_decode
+__name__
+getregentry
+IncrementalEncoder
+mbcs_encode
+__spec__

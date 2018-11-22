@@ -1,0 +1,16 @@
+sys
+StreamReader
+Codec
+rot13
+rot13_map
+__file__
+IncrementalEncoder
+StreamWriter
+IncrementalDecoder
+codecs
+__name__
+__builtins__
+getregentry
+__package__
+__cached__
+__spec__

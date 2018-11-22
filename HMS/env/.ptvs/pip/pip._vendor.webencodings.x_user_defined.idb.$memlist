@@ -1,0 +1,16 @@
+unicode_literals
+decoding_table
+StreamReader
+__builtins__
+__file__
+encoding_table
+IncrementalEncoder
+StreamWriter
+IncrementalDecoder
+codecs
+__name__
+Codec
+__package__
+codec_info
+__cached__
+__spec__

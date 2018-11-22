@@ -1,0 +1,17 @@
+ImproperlyConfigured
+SimpleLazyObject
+RemoteUserBackend
+PersistentRemoteUserMiddleware
+load_backend
+MiddlewareMixin
+__builtins__
+__file__
+__package__
+settings
+auth
+RemoteUserMiddleware
+__name__
+get_user
+AuthenticationMiddleware
+__cached__
+__spec__

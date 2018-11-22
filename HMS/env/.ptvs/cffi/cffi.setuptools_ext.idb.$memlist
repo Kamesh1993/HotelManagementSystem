@@ -1,0 +1,16 @@
+sys
+add_cffi_module
+os
+cffi_modules
+__builtins__
+__file__
+__package__
+__cached__
+_set_py_limited_api
+_add_c_module
+error
+execfile
+__name__
+basestring
+_add_py_module
+__spec__

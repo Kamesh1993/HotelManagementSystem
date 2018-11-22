@@ -1,0 +1,16 @@
+HAS_GEOIP2
+pathlib
+GeoIP2Exception
+__name__
+__builtins__
+__file__
+__package__
+__all__
+__path__
+base
+resources
+geoip2
+GeoIP2
+socket
+__cached__
+__spec__

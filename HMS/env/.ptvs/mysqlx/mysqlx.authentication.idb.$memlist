@@ -1,0 +1,16 @@
+PY3
+BaseAuthPlugin
+struct
+xor_string
+__builtins__
+__file__
+__cached__
+UNICODE_TYPES
+MySQL41AuthPlugin
+Sha256MemoryAuthPlugin
+hexlify
+__name__
+hashlib
+PlainAuthPlugin
+__package__
+__spec__

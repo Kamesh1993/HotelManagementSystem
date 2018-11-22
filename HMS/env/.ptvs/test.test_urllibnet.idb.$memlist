@@ -1,0 +1,17 @@
+time
+os
+__builtins__
+unittest
+__file__
+__cached__
+support
+email
+urlopenNetworkTests
+urlretrieveNetworkTests
+contextlib
+__name__
+URLTimeoutTest
+socket
+urllib
+__package__
+__spec__

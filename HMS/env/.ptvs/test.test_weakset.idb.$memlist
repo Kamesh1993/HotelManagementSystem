@@ -1,0 +1,15 @@
+string
+TestWeakSet
+gc
+__spec__
+__file__
+ustr
+__package__
+__name__
+WeakSet
+RefCycle
+__builtins__
+__cached__
+contextlib
+Foo
+unittest

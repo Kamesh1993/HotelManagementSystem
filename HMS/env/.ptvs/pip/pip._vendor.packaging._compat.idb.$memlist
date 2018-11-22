@@ -1,0 +1,14 @@
+PY2
+string_types
+__spec__
+absolute_import
+__file__
+with_metaclass
+division
+__name__
+print_function
+PY3
+__builtins__
+__cached__
+sys
+__package__
