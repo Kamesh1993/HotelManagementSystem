@@ -74,7 +74,77 @@
 
     <!-- Header Begin -->
     
-    {% include 'includes/_navbar.html' %}
+    <header class="rh">
+        <!-- ========== Top Menu ========== -->
+        <div class="rh-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4">
+                        
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
+                        <ul class="pull-right">
+                            <li>
+                                <a href="/login">Login</a>
+                            </li>
+                            <li>
+                                <a href="/register">Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ========== Nav Menu ========== -->
+        <nav class="rh navbar navbar-default">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index-2.html"><h2>HMS</h2></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse rh-toggle" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right main-navbar">
+                        <li>
+                            <a href="index-2.html">Home</a>
+                            
+                        </li>
+                        <li>
+                            <a href="available-rooms.html">Available Rooms</a>
+                        </li>
+                        <li>
+                            <a href="single-rooms.html">Single Rooms</a>
+                        </li>
+                        <li>
+                            <a class="active" href="booking.html">Booking</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">Events</a>
+                            <ul class="dropdown-nav rh-drop-menu">
+                                <li>
+                                    <a href="events.html">Event</a>
+                                </li>
+                                <li>
+                                    <a href="event-single-page.html">Events Single Page</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html">Blog</a>
+                            
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <!-- Header Close -->
 
     <!-- Slider Begin -->
@@ -446,63 +516,7 @@
     <!-- Main Content Close -->
 
     <!-- Footer Begin -->
-    <footer class="rh">
-        <div class="rh-100 rh-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 rh-f-30 rh-f-100">
-                        <div class="rh-footer-box">
-                            <img class="footer-logo" src="../../static/app/images/Logo-footer.png" alt="footer-logo" />
-                            <p>You have questions regarding our services? Contact us, we will be happy to help you out!</p>
-                            <ul class="footer-about">
-                                <li>royalluxurystay@gmail.com</li>
-                                <li>70 Bowman St.South Windsor, CT 06074</li>
-                                <li>+91 000-000-0000</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 rh-f-30 rh-f-50">
-                        <div class="rh-footer-box">
-                            <h5>Hotel</h5>
-                            <ul class="footer-menu list">
-                                <li><a href="javascript:;">Accommodation</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="javascript:;">Services & Amenities</a></li>
-                                <li><a href="javascript:;">Dining</a></li>
-                                <li><a href="javascript:;">Spa</a></li>
-                                <li><a href="javascript:;">Destination</a></li>
-                                <li><a href="javascript:;">Offer</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 rh-fs-30 rh-f-50">
-                        <div class="rh-footer-box">
-                            <h5>Inquires</h5>
-                            <ul class="footer-menu list">
-                                <li>About  Four Seasons</li>
-                                <li>Press Room</li>
-                                <li>Gift Cards</li>
-                                <li>Residences</li>
-                                <li>Careers</li>
-                                <li>Contact us</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="rh footer-btm">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h6 class="pull-left">Copyrights &copy; 2017 Royal Luxury Stay</h6>
-                        <span class="pull-right">Powered by <a target="_blank" href="http://www.bsquaresoft.com/">Bsquaresoft.com</a></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+        {% include 'includes/_footer.html' %}
     <!-- Footer Close -->
 
     <!-- Backe To Top Begin -->

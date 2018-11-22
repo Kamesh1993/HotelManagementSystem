@@ -10,7 +10,7 @@
     <!--[if IE 9]>     <html class="ie ie9 lte9"> <![endif]-->
     <!--[if gt IE 9]>  <html> <![endif]-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Royal Luxury Stay - Online Booking Smart Responsive HTML5 Template</title>
+    <title>Hotel Management System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Royal Luxury Stay - Online Booking Smart Responsive HTML5 Template">
     <meta name="keywords" content="accommodation,apartment,B&B,bed and breakfast,booking,hostel,inn,motel,reservation,reservation form,resort,responsive,spa,travel,bootstrap,cruise,flights,holiday,hotel,html5 template,online booking,real estate,rentals,tour,tourism,uber">
@@ -68,74 +68,7 @@
 <body>
     {% block body %}
     <!-- Header Begin -->
-    <header class="rh">
-        <!-- ========== Top Menu ========== -->
-        <div class="rh-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4">
-                        
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
-                        <ul class="pull-right">
-                            <li>
-                                <a href="/logout" onclick="logoutFunction()">Logout</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ========== Nav Menu ========== -->
-        <nav class="rh navbar navbar-default">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index-2.html"><h2>HMS</h2></a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse rh-toggle" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right main-navbar">
-                        <li>
-                            <a href="index-2.html">Home</a>
-                            
-                        </li>
-                        <li>
-                            <a href="available-rooms.html">Available Rooms</a>
-                        </li>
-                        <li>
-                            <a href="single-rooms.html">Single Rooms</a>
-                        </li>
-                        <li>
-                            <a class="active" href="booking.html">Booking</a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">Events</a>
-                            <ul class="dropdown-nav rh-drop-menu">
-                                <li>
-                                    <a href="events.html">Event</a>
-                                </li>
-                                <li>
-                                    <a href="event-single-page.html">Events Single Page</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="blog.html">Blog</a>
-                            
-                        </li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    {% include 'includes/_navbar.html' %}
     <!-- Header Close -->
 <section class="rh-check-availability">
             <img src="../../static/app/images/event/event-background.jpg" alt="1">
@@ -145,7 +78,14 @@
         <!-- Booking Page Begin -->
         <div class="container">
             <div class="row">
+                
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-wizard">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="rh-section-title">
+                            <h2><b>Single Room</b></h2>
+                            <p><h5>Please fill in your details and confirm your booking</h5></p>
+                        </div>
+                    </div>
                     <!-- Form Wizard -->
                     <form action="#" method="post">
                         <!-- Form progress -->
@@ -238,87 +178,7 @@
     <!-- Main Content Close -->
 
     <!-- Footer Begin -->
-    <footer class="rh">
-        <div class="rh-100 rh-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 rh-f-30 rh-f-100">
-                        <div class="rh-footer-box">
-                            <img class="footer-logo" src="../../static/app/images/Logo-footer.png" alt="footer-logo" />
-                            <p>You have questions regarding our services? Contact us, we will be happy to help you out!</p>
-                            <ul class="footer-about">
-                                <li><a href="mailto:royalluxurystay@gmail.com">royalluxurystay@gmail.com</a></li>
-                                <li><a href="javascript:;">70 Bowman St.South Windsor, CT 06074</a></li>
-                                <li><a href="tel:+91000-000-0000">+91 000-000-0000</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 rh-f-30 rh-f-50">
-                        <div class="rh-footer-box">
-                            <h5>Hotel</h5>
-                            <ul class="footer-menu list">
-                                <li><a href="javascript:;">Accommodation</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="javascript:;">Services & Amenities</a></li>
-                                <li><a href="javascript:;">Dining</a></li>
-                                <li><a href="javascript:;">Spa</a></li>
-                                <li><a href="javascript:;">Destination</a></li>
-                                <li><a href="javascript:;">Offer</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 rh-fs-30 rh-f-50">
-                        <div class="rh-footer-box">
-                            <h5>Inquires</h5>
-                            <ul class="footer-menu list">
-                                <li><a href="javascript:;">About  Four Seasons</a></li>
-                                <li><a href="javascript:;">Press Room</a></li>
-                                <li><a href="javascript:;">Gift Cards</a></li>
-                                <li><a href="javascript:;">Residences</a></li>
-                                <li><a href="javascript:;">Careers</a></li>
-                                <li><a href="contact.html">Contact us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 rh-f-100">
-                        <div class="rh-footer-box">
-                            <h5>Photo Gallery</h5>
-                            <ul class="footer-menu gallery">
-                                <li>
-                                    <a href="single-rooms.html"><img src="../../static/app/images/footer-gallery-1.jpg" alt="footer-gallery-1" /></a>
-                                </li>
-                                <li>
-                                    <a href="single-rooms.html"><img src="../../static/app/images/footer-gallery-2.jpg" alt="footer-gallery-2" /></a>
-                                </li>
-                                <li>
-                                    <a href="single-rooms.html"><img src="../../static/app/images/footer-gallery-3.jpg" alt="footer-gallery-3" /></a>
-                                </li>
-                                <li>
-                                    <a href="single-rooms.html"><img src="../../static/app/images/footer-gallery-4.jpg" alt="footer-gallery-4" /></a>
-                                </li>
-                                <li>
-                                    <a href="single-rooms.html"><img src="../../static/app/images/footer-gallery-5.jpg" alt="footer-gallery-5" /></a>
-                                </li>
-                                <li>
-                                    <a href="single-rooms.html"><img src="../../static/app/images/footer-gallery-6.jpg" alt="footer-gallery-6" /></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="rh footer-btm">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h6 class="pull-left">Copyrights &copy; 2017 Royal Luxury Stay</h6>
-                        <span class="pull-right">Powered by <a target="_blank" href="http://www.bsquaresoft.com/">Bsquaresoft.com</a></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    {% include 'includes/_footer.html' %}
     <!-- Footer Close -->
 
     <!-- Backe To Top Begin -->
@@ -327,6 +187,7 @@
     </div>
     <!-- Backe To Top Close -->
     {% endblock %}
+
 </body>
 
 <!-- Mirrored from bsquaresoft.com/demo/royalluxurystay/booking.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Nov 2018 14:40:30 GMT -->

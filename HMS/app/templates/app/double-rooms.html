@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 
-<!-- Mirrored from bsquaresoft.com/demo/royalluxurystay/single-rooms.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Nov 2018 14:40:24 GMT -->
+<!-- Mirrored from bsquaresoft.com/demo/royalluxurystay/booking.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Nov 2018 14:40:30 GMT -->
 <head>
     <!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7"> <![endif]-->
     <!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7"> <![endif]-->
@@ -21,20 +21,15 @@
     <link rel="manifest" href="../../static/app/images/favicons/manifest.json">
     <link rel="mask-icon" href="../../static/app/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- CSS Files ================================================== -->
     <link rel="stylesheet" type="text/css" href="../../static/app/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="../../static/app/css/bootstrap-select.min.css" />
     <link rel="stylesheet" type="text/css" href="../../static/app/css/jquery-ui-date.css">
-    <link rel="stylesheet" type="text/css" href="../../static/app/css/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="../../static/app/css/slick.css">
-    <!-- Date css Files -->
-    <link rel="stylesheet" type="text/css" href="../../static/app/css/fullcalendar.css">
-    <link rel="stylesheet" type="text/css" href="../../static/app/css/fullcalendar.print.css">
-
+    <link rel="stylesheet" type="text/css" href="../../static/app/css/form-wizard.css">
     <link rel="stylesheet" type="text/css" href="../../static/app/css/color.css" />
     <link rel="stylesheet" type="text/css" href="../../static/app/css/style.css" />
-
     <!-- Javascript Files ================================================== -->
     <script type="text/javascript" src="../../static/app/js/jquery.min.js"></script>
     <script type="text/javascript" src="../../static/app/js/bootstrap.min.js"></script>
@@ -50,499 +45,137 @@
     <script type="text/javascript" src="../../static/app/js/form-wizard.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="../../static/app/js/themefunction.js"></script>
+    <script type="text/javascript" src="../../static/app/js/valid-date.js"></script>
+	<script>
+        window.addEventListener("pageshow", function (event) {
+            var historyTraversal = event.persisted ||
+                (typeof window.performance != "undefined" &&
+                    window.performance.navigation.type === 2);
+            if (historyTraversal) {
+                // Handle page restore.
+                window.location.reload();
+            }
+        });
+    </script>
+    <script>
+        function logoutFunction() {
+            window.location.reload();
+        }
+    </script>
+    
 </head>
 
 <body>
+    {% block body %}
 
     <!-- Header Begin -->
-    <header class="rh">
-        <!-- ========== Top Menu ========== -->
-        <div class="rh-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4">
-                        
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
-                        <ul class="pull-right">
-                            <li>
-                                <a href="/logout">Logout</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- ========== Nav Menu ========== -->
-        <nav class="rh navbar navbar-default">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index-2.html"><img src="../../static/app/images/logo.png" alt="logo"></a>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse rh-toggle" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right main-navbar">
-                        <li>
-                            <a href="index-2.html">Home</a>
-                            <ul class="dropdown-nav rh-drop-menu">
-                                <li>
-                                    <a href="javascript:;">Home2</a>
-                                    <ul class="dropdown-nav-list rh-drop-menu">
-                                        <li><a href="javascript:;">1</a></li>
-                                        <li><a href="javascript:;">2</a></li>
-                                        <li><a href="javascript:;">3</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="available-rooms.html">Available Rooms</a>
-                        </li>
-                        <li>
-                            <a class="active" href="single-rooms.html">Single Rooms</a>
-                        </li>
-                        <li>
-                            <a href="booking.html">Booking</a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">Events</a>
-                            <ul class="dropdown-nav rh-drop-menu">
-                                <li>
-                                    <a href="events.html">Event</a>
-                                </li>
-                                <li>
-                                    <a href="event-single-page.html">Events Single Page</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="blog.html">Blog</a>
-                            <ul class="dropdown-nav rh-drop-menu">
-                                <li>
-                                    <a href="blog-single-page.html">Blog Single Page</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    {% include 'includes/_navbar.html' %}
     <!-- Header Close -->
 
-    <!-- Detail-page back Begin -->
-    <section class="rh-detail-bg">
-        <div class="container">
-            <div class="row">
-                <div class="rh-detail-widgets">
-                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 rh-de-12">
-                        <h2><a href="javascript:;">Corinthia Hotel Lisboa & Spa</a></h2>
-                        <div class="rating-star">
-                            <ul>
-                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            </ul>
-                            <span><a href="javascript:;">9 Reviews</a></span>
-                        </div>
-                        <div class="rh">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            <p>2600 Benjamin Franklin Pkwy, Philadelphia, PA 19130, USA</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 rh-de-12">
-                        <div class="pull-right detail-right">
-                            <span>Start From</span>
-                            <h3>$190.00 / Day</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="rh-check-availability">
+            <img src="../../static/app/images/event/event-background.jpg" alt="1">
     </section>
-    <!-- Detail-page back Close -->
-
     <!-- Main Content Begin -->
-    <div class="rh rh-100">        
-        <!-- About Royal Hotel Begin -->
+    <div class="rh rh-100 section-booking">
+        <!-- Booking Page Begin -->
         <div class="container">
             <div class="row">
-                <div class="col-lg-9 col-md-8 col-sm-12">
-                    <div class="rh-detail-left">
-                        <!-- About Royal Hotel Slider -->
-                        <div class="regular slider">
-                            <div><img src="../../static/app/images/detail/1.jpg" alt="1" /></div>
-                            <div><img src="../../static/app/images/detail/2.jpg" alt="2" /></div>
-                            <div><img src="../../static/app/images/detail/3.jpg" alt="3" /></div>
-                            <div><img src="../../static/app/images/detail/4.jpg" alt="4" /></div>
-                            <div><img src="../../static/app/images/detail/5.jpg" alt="5" /></div>
-                            <div><img src="../../static/app/images/detail/6.jpg" alt="6" /></div>
-                            <div><img src="../../static/app/images/detail/7.jpg" alt="7" /></div>
-                            <div><img src="../../static/app/images/detail/8.jpg" alt="8" /></div>
-                            <div><img src="../../static/app/images/detail/9.jpg" alt="9" /></div>
-                            <div><img src="../../static/app/images/detail/10.jpg" alt="10" /></div>
-                            <div><img src="../../static/app/images/detail/11.jpg" alt="11" /></div>
-                            <div><img src="../../static/app/images/detail/12.jpg" alt="12" /></div>
-                            <div><img src="../../static/app/images/detail/13.jpg" alt="13" /></div>
-                            <div><img src="../../static/app/images/detail/14.jpg" alt="14" /></div>
-                            <div><img src="../../static/app/images/detail/15.jpg" alt="15" /></div>
-                            <div><img src="../../static/app/images/detail/16.jpg" alt="16" /></div>
-                            <div><img src="../../static/app/images/detail/17.jpg" alt="17" /></div>
-                            <div><img src="../../static/app/images/detail/18.jpg" alt="18" /></div>
-                        </div>
-
-                        <!-- About Royal Hotel Detail -->
-                        <div class="rh-about-hotel rh">
-                            <h4>About Royal Hotel</h4>
-                            <p>Lorem ipsum dolor sit amet, te his solum dicunt eligendi. Adhuc malis exerci ne eum. Ne vel errem similique, pro id veri postea atomorum. Et mei tincidunt efficiendi adversarium. Vero consequat cotidieque ad eam. Ea duis errem qui, impedit blandit sed eu. Ius diam vivendo ne.</p>
-                            <p>Iudico omnesque vis at, ius an laboramus adversarium. An eirmod doctus admodum est, vero numquam et mel, an duo modo error. No affert timeam mea, legimus ceteros his in. Aperiri honestatis sit at. Eos aeque fuisset ei, case denique eam ne. Augue invidunt has ad, ullum debitis mea ei, ne aliquip dignissim nec. </p>
-                            <div class="rh-order-list">
-                                <span>Ordered list:</span>
-                                <ul>
-                                    <li>Vero numquam et mel, an duo modo error</li>
-                                    <li>Case denique eam ne</li>
-                                    <li>Ea duis errem qui</li>
-                                </ul>
-                            </div>
-                            <div class="rh-order-list rh-un">
-                                <span>Unordered list:</span>
-                                <ul>
-                                    <li>Vero numquam et mel, an duo modo error</li>
-                                    <li>Case denique eam ne</li>
-                                    <li>Ea duis errem qui</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Royal Services and Facilities -->
-                        <div class="rh-about-hotel rh rh-rsf">
-                            <h4>Royal Services and Facilities</h4>
-                            <ul class="rh-ul-30">
-                                <li><i class="fa fa-check" aria-hidden="true"></i><p>24 hour reception</p></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Internet point</p></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Wi-Fi</p></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Fax service</p></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Tourist information</p></li>
-                                <li class="red"><i class="fa fa-check" aria-hidden="true"></i><p>Bookings for trips</p></li>
-                            </ul>
-                            <ul class="rh-ul-40">
-                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Bookings for guided tours</p></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Bookings for shows and museums</p></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Concierge</p></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Night porter</p></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Left luggage</p></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Ironing service</p></li>
-                            </ul>
-                            <ul class="rh-ul-30">
-                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Hall</li>
-                                <li class="red"><i class="fa fa-check" aria-hidden="true"></i><p>Terrace</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Bar</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Breakfast</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><p>Gluten free breakfast available</li>
-                            </ul>
-                        </div>
-
-                        <!-- Availability -->
-                        <div class="rh-about-hotel rh rh-rsf">
-                            <h4>Availability</h4>
-                            <div id='calendar'></div>
-                            <div class="availability-right">
-                                <ul>
-                                    <li><i class="fa fa-circle" aria-hidden="true"></i>Available</li>
-                                    <li><i class="fa fa-circle" aria-hidden="true"></i>Not Available</li>
-                                    <li><i class="fa fa-circle" aria-hidden="true"></i>Booking Closed</li>
-                                    <li><i class="fa fa-circle" aria-hidden="true"></i>Number of rooms/house left</li>
-                                </ul>
-                                <a href="javascript:;" class="rh-check-btn">Book Now</a>
-                            </div>
-                        </div>
-
-                        <!-- Next And Preview -->
-                        <div class="rh-next-prew">
-                            <div class="arrow pull-left">
-                                <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
-                                <a href="javascript:;">Royal Phuket City Hotel Russia</a>
-                            </div>
-                            <div class="arrow pull-right">
-                                <a href="javascript:;">France Effiel Tower</a>
-                                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                            </div>
-                        </div>
-
-                        <!-- Review -->
-                        <div class="rh-review">
-                            <div class="review-detail pull-left">
-                                <span>4.9</span>
-                                <ul>
-                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                    <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                </ul>
-                                <p>211 Reviews</p>
-                            </div>
-                            <div class="review-button pull-right">
-                                <a class="rh-check-btn" href="javascript:;">Write a review</a>
-                            </div>
-                        </div>
-
-                        <!-- User Comments -->
-                        <div class="rh-comment">
-                            <ul>
-                                <li>
-                                    <div class="rh-user-comment">
-                                        <img src="../../static/app/images/comment_1.jpg" alt="comment_1" />
-                                        <div class="user-detail">
-                                            <span><a href="javascript:;">Jamies Giroux</a></span>
-                                            <ul>
-                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                            </ul>
-                                            <p>Curabitur eleifend ut magna nec cursus. Aliquam odio orci, dictum id justo ut, porttitor dictum neque. Ut volutpat nunc dolor, eget maximus dui gravida sed. !</p>
-                                            <div class="category">
-                                                <p>Oct 8, 2016 at 5:31 pm</p>
-                                                <span><a href="javascript:;">Replay</a></span>
-                                            </div>
-                                        </div> 
-                                    </div>
-                                    <div class="rh-user-comment in-review">
-                                        <img src="../../static/app/images/comment_2.jpg" alt="comment_2" />
-                                        <div class="user-detail">
-                                            <span><a href="javascript:;">Clara Barton</a></span>
-                                            <ul>
-                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                            </ul>
-                                            <p>Curabitur eleifend ut magna nec cursus. Aliquam odio orci, dictum id justo ut, porttitor dictum neque. Ut volutpat nunc dolor, eget maximus dui gravida sed. !</p>
-                                            <div class="category">
-                                                <p>Oct 8, 2016 at 5:31 pm</p>
-                                                <span><a href="javascript:;">Replay</a></span>
-                                            </div>
-                                        </div> 
-                                    </div>
-                                    <div>
-                                        
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="rh-user-comment">
-                                        <img src="../../static/app/images/comment_3.jpg" alt="comment_3" />
-                                        <div class="user-detail">
-                                            <span><a href="javascript:;">Rosa Parks</a></span>
-                                            <ul>
-                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                            </ul>
-                                            <p>Curabitur eleifend ut magna nec cursus. Aliquam odio orci, dictum id justo ut, porttitor dictum neque. Ut volutpat nunc dolor, eget maximus dui gravida sed. !</p>
-                                            <div class="category">
-                                                <p>Oct 8, 2016 at 5:31 pm</p>
-                                                <span><a href="javascript:;">Replay</a></span>
-                                             </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- Submit a Review -->
-                        <div class="rh-about-hotel rh-btm rh">
-                            <h4>Submit a review</h4>
-                            <form class="submit-form pull-left">
-                                <div class="form-group">
-                                    <textarea cols="20" class="form-control" placeholder="Tell about your experience or leave a tip for others"></textarea>
-                                </div>
-                                <div class="form-group rh-f-50">
-                                    <input type="text" name="name" class="form-control" placeholder="name">
-                                </div>
-                                <div class="form-group rh-f-50">
-                                    <input type="email" name="email" class="form-control" placeholder="email">
-                                </div>
-                            </form>
-                            <div class="submit pull-right">
-                                <p>Give your Rating</p>
-                                <div class="submit-star">
-                                    <span>Quaility</span>
-                                    <ul >
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="submit-star">
-                                    <span>Service</span>
-                                    <ul>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="submit-star">
-                                    <span>Response</span>
-                                    <ul>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <a href="javascript:;" class="rh-check-btn">Submit</a>
-                            </div>
+                
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-wizard">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="rh-section-title">
+                            <h2><b>Double Room</b></h2>
+                            <p><h5>Please fill in your details and confirm your booking</h5></p>
                         </div>
                     </div>
-                </div>
-            
-                <!-- Sidebar Detail -->
-                <div class="col-lg-3 col-md-4 col-sm-12">
-                    <div class="rh-detail-right">
-
-                        <div class="row rh-flex">
-                            <div class="col-md-12 col-sm-6 col-xs-6 col-sxs-12">
-                                <!-- Your Reservation Begin -->
-                                <div class="rh-reservation">
-                                    <h5>Your Reservation</h5>
-                                    <form method="post" action="#">
-                                        <div class="form-group">
-                                            <input id="arrivalDate" type="text" name="Arrival date" class="form-control" placeholder="Arrival date">
-                                        </div>
-                                        <div class="form-group">
-                                            <input id="departureDate" type="text" name="Arrival date" class="form-control" placeholder="Departure date">
-                                        </div>
-                                        <div class="form-group">
-                                            <select class="selectpicker">
-                                                <option>Adult</option>
-                                                <option>1 Adult</option>
-                                                <option>2 Adult</option>
-                                                <option>3 Adult</option>
-                                                <option>4 Adult</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <select class="selectpicker">
-                                                <option>Children</option>
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                            </select>
-                                        </div>
-                                        <a class="rh-check-btn" href="javascript:;">Book Now</a>
-                                    </form>
-                                </div>
-                                <!-- Your Reservation Close -->
+                    <!-- Form Wizard -->
+                    <form action="#" method="post">
+                        <!-- Form progress -->
+                        <div class="form-wizard-steps form-wizard-tolal-steps-4">
+                            <div class="form-wizard-progress">
+                                <div class="form-wizard-progress-line" data-now-value="98" data-number-of-steps="4" style="width: 98%;"></div>
                             </div>
-
-                            <div class="col-md-12 col-sm-6 col-xs-6 col-sxs-12">
-                                <!-- Need Royal Help? Begin -->
-                                <div class="rh-need-help">
-                                    <h5>Need Royal Help?</h5>
-                                    <p>We would be more than happy to help you. Our team advisor are 24/7 at your service to help you.</p>
-                                    <a href="tel:+919173495648">917 349 5648</a>
-                                </div>
-                                <!-- Need Royal Help? Close -->
+                            <!-- Step 1 -->
+                            <div class="form-wizard-step active">
+                                <div class="form-wizard-step-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                <p>Choose Your Date</p>
                             </div>
-
-                            <div class="col-md-12 col-sm-6 col-xs-6 col-sxs-12">
-                                <!-- Why Book with us? Begin -->
-                                <div class="rh-reservation">
-                                    <h5>Why Book with us?</h5>
-                                    <ul class="wbws">
-                                        <li>
-                                            <i class="fa fa-building-o" aria-hidden="true"></i>
-                                            <div class="why-book-list">
-                                                <span><a href="javascript:;">176,00+ Hotels</a></span>
-                                                <p>Nunc cursus libero pur congue arut nimspnty.</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-life-ring" aria-hidden="true"></i>
-                                            <div class="why-book-list">
-                                                <span><a href="javascript:;">Low Rates & Savings</a></span>
-                                                <p>Nunc cursus libero pur congue arut nimspnty.</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-user" aria-hidden="true"></i>
-                                            <div class="why-book-list">
-                                                <span><a href="javascript:;">Excellent Support</a></span>
-                                                <p>Nunc cursus libero pur congue arut nimspnty.</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- Why Book with us? Close -->
+                            <!-- Step 1 -->
+                            <!-- Step 2 -->
+                            <div class="form-wizard-step active">
+                                <div class="form-wizard-step-icon"><i class="fa fa-building-o" aria-hidden="true"></i></div>
+                                <p>Choose Your Room</p>
                             </div>
-
-                            <div class="col-md-12 col-sm-6 col-xs-6 col-sxs-12">
-                                <!-- Similar Listings Begin -->
-                                <div class="rh-reservation">
-                                    <h5>Similar Listings</h5>
-                                    <ul class="similar">
-                                        <li>
-                                            <img src="../../static/app/images/similer_img1.jpg" alt="similer_img1" />
-                                            <div class="why-book-list">
-                                                <span><a href="single-rooms.html">Luxury Hotel And Resort</a></span>
-                                                <p>$ 230.00 per day</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <img src="../../static/app/images/similer_img2.jpg" alt="similer_img2" />
-                                            <div class="why-book-list">
-                                                <span><a href="single-rooms.html">Deluxe Hotel And Resort</a></span>
-                                                <p>$ 111.00 per day</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <img src="../../static/app/images/similer_img3.jpg" alt="similer_img3" />
-                                            <div class="why-book-list">
-                                                <span><a href="single-rooms.html">Sluite Hotel And Resort</a></span>
-                                                <p>$ 99.00 per day</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- Similar Listings Close -->
+                            <!-- Step 2 -->
+                            <!-- Step 3 -->
+                            <div class="form-wizard-step active">
+                                <div class="form-wizard-step-icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+                                <p>Reservation</p>
                             </div>
-
-                            <div class="col-md-12 col-sm-6 col-xs-6 col-sxs-12">
-                                <!-- AdVertise Begin -->
-                                <div class="rh-reservation addvertise">
-                                    <img src="../../static/app/images/advertise.jpg" alt="advertise" />
-                                </div>
-                                <!-- AdVertise Close -->
+                            <!-- Step 3 -->
+                            <!-- Step 4 -->
+                            <div class="form-wizard-step">
+                                <div class="form-wizard-step-icon"><i class="fa fa-check" aria-hidden="true"></i></div>
+                                <p>Confirmation</p>
                             </div>
+                            <!-- Step 4 -->
                         </div>
-                    </div>
+                        
+                         <fieldset>
+                            <div class="rh rh-reservation-form">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6 col-xs-6 rh-xs-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="First Name /">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-6 rh-xs-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Last Name" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-6 rh-xs-12">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-6 rh-xs-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Phone" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-6 rh-xs-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="City" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-6 rh-xs-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Address" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea cols="12" rows="10" class="form-control" placeholder="Special Requirements"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-wizard-buttons">
+                                <div class="">
+                                    
+                                </div>
+                                <button type="button" class="btn btn-previous">Previous</button>
+                                <button type="button" class="btn btn-next">Next</button>
+                            </div>
+                        </fieldset>
+                            
+                    </form>
+                    <!-- Form Wizard -->
                 </div>
             </div>
         </div>
-        <!-- About Royal Hotel Close -->
+        <!-- Booking Page Close -->
     </div>
     <!-- Main Content Close -->
 
@@ -556,9 +189,9 @@
                             <img class="footer-logo" src="../../static/app/images/Logo-footer.png" alt="footer-logo" />
                             <p>You have questions regarding our services? Contact us, we will be happy to help you out!</p>
                             <ul class="footer-about">
-                                <li><a href="mailto:royalluxurystay@gmail.com">royalluxurystay@gmail.com</a></li>
-                                <li><a href="javascript:;">70 Bowman St.South Windsor, CT 06074</a></li>
-                                <li><a href="tel:+91000-000-0000">+91 000-000-0000</a></li>
+                                <li>royalluxurystay@gmail.com</li>
+                                <li>70 Bowman St.South Windsor, CT 06074</li>
+                                <li>+91 000-000-0000</li>
                             </ul>
                         </div>
                     </div>
@@ -635,8 +268,8 @@
         <i class="fa fa-angle-up" aria-hidden="true"></i>
     </div>
     <!-- Backe To Top Close -->
+    {% endblock %}
 </body>
 
-
-<!-- Mirrored from bsquaresoft.com/demo/royalluxurystay/single-rooms.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Nov 2018 14:40:30 GMT -->
+<!-- Mirrored from bsquaresoft.com/demo/royalluxurystay/booking.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Nov 2018 14:40:30 GMT -->
 </html>

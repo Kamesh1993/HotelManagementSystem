@@ -543,10 +543,10 @@
     <Content Include="app\templates\app\reservation.html" />
     <Content Include="app\templates\app\rooms.html" />
     <Content Include="app\templates\app\singlerooms.html" />
+    <Content Include="app\templates\includes\_footer.html" />
     <Content Include="app\templates\includes\_formhelpers.html" />
     <Content Include="app\templates\includes\_messages.html" />
     <Content Include="app\templates\includes\_navbar.html" />
-    <Content Include="app\templates\includes\_rooms.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
   </ItemGroup>
