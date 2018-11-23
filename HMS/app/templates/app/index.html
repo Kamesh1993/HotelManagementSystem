@@ -2,17 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <head>
-    <!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7"> <![endif]-->
-    <!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7"> <![endif]-->
-    <!--[if IE 8]>     <html class="ie ie8 lte9 lte8"> <![endif]-->
-    <!--[if IE 9]>     <html class="ie ie9 lte9"> <![endif]-->
-    <!--[if gt IE 9]>  <html> <![endif]-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Hotel Management System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Royal Luxury Stay - Online Booking Smart Responsive HTML5 Template">
     <meta name="keywords" content="accommodation,apartment,B&B,bed and breakfast,booking,hostel,inn,motel,reservation,reservation form,resort,responsive,spa,travel,bootstrap,cruise,flights,holiday,hotel,html5 template,online booking,real estate,rentals,tour,tourism,uber">
-
     <link rel="apple-touch-icon" sizes="180x180" href="../../static/app/images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../../static/app/images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../../static/app/images/favicons/favicon-16x16.png">
@@ -28,7 +22,6 @@
     <link rel="icon" href="../../static/app/fonts/slick.woff">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- CSS Files ================================================== -->
     <!-- CSS Files ================================================== -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../../static/app/css/bootstrap.min.css" />
@@ -69,10 +62,9 @@
 </script>
 </head>
 
-<body>
+<body class="ht">
 
     <!-- Header Begin -->
-    
     <header class="rh">
         <!-- ========== Top Menu ========== -->
         <div class="rh-header">
@@ -84,54 +76,44 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
                         <ul class="pull-right">
                             <li>
-                                <a href="/login">Login</a>
+                               <a href="/login"> <input type="button" id ="login" class="button" value="Login"></a>
                             </li>
                             <li>
-                                <a href="/register">Register</a>
+                                <a href="/login"><input type="button" id ="register" class="button1" value="Register"></a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- ========== Nav Menu ========== -->
+
         <nav class="rh navbar navbar-default">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
                     <a class="navbar-brand" href="index-2.html"><h2>HMS</h2></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse rh-toggle" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right main-navbar">
                         <li>
-                            <a href="/home">Home</a>
-                            
+                            <a class="active" href="/">Home</a>    
                         </li>
                         <li>
-                            <a href="available-rooms.html">Available Rooms</a>
+                            <a  href="/booking">Booking</a>
                         </li>
                         <li>
-                            <a href="single-rooms.html">Single Rooms</a>
+                            <a  href="/rooms">Rooms</a>
                         </li>
                         <li>
-                            <a class="active" href="booking.html">Booking</a>
+                            <a  href="/restaurant">Restaurant</a>
                         </li>
                         <li>
-                            <a href="javascript:;">Events</a>
-                            
+                            <a href="/about">About</a>
                         </li>
-                        <li><a href="blog.html">Blog</a>
-                            
+                        <li>
+                            <a href="/contact">Contact</a>
                         </li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -204,7 +186,7 @@
             </div>
         </div>
     </section>
-    <!-- slider Close -->
+    <!-- Slider Close -->
 
     <!-- Main Content Begin -->
     <div class="rh">
@@ -283,7 +265,7 @@
                                 <a href="single-rooms.html"></a>
                             </div>
                             <div class="feature-detail">
-                                <h4><a href="single-rooms.html">Luxury with ultra superior room</a></h4>
+                                <h4><a href="single-rooms.html">Single and double Rooms</a></h4>
                                 <div class="rating-star">
                                     <ul>
                                         <li><i class="fa fa-star" aria-hidden="true"></i></li>
@@ -308,7 +290,7 @@
                                 <a href="single-rooms.html"></a>
                             </div>
                             <div class="feature-detail">
-                                <h4><a href="single-rooms.html">Classic Room In 5 Star Hotel</a></h4>
+                                <h4><a href="single-rooms.html">Triple and Executive Rooms</a></h4>
                                 <div class="rating-star">
                                     <ul>
                                         <li><i class="fa fa-star" aria-hidden="true"></i></li>
@@ -333,7 +315,7 @@
                                 <a href="single-rooms.html"></a>
                             </div>
                             <div class="feature-detail">
-                                <h4><a href="single-rooms.html">Corinthia Hotel Lisboa & Spa</a></h4>
+                                <h4><a href="single-rooms.html">Deluxe and Royal Rooms</a></h4>
                                 <div class="rating-star">
                                     <ul>
                                         <li><i class="fa fa-star" aria-hidden="true"></i></li>
@@ -366,7 +348,7 @@
                                 <div class="col-md-12">
                                     <div class="rh-left">
                                         <h2>Your Stay</h2>
-                                        <p><span class="rh">is run by a group of experienced hotel professionals who have worked with leading luxury hotel brands and across industries including Consulting, FMCG, Banking and Insurance, Telecom, Automobiles and offshore business processing</span></p>
+                                        <p><span class="rh">We guarantee check-in from 3.00 p.m., but if the room is ready upon your arrival, you are welcome to check-in before. If, on the other hand, the room is not ready when you arrive, you can store your luggage with us at no charge until the room is available.</span></p>
                                         
                                     </div>
                                 </div>
@@ -409,106 +391,13 @@
         <!-- Your stay Close -->
 
         <!-- Ournews & Events Begin -->
-        <section class="rh rh-100 rh-ournews">
-            <div class="container">
-                <div class="row">
-                    <!-- ournews & Events Title -->
-                    <div class="col-lg-12 col-md-12">
-                        <div class="rh-section-title">
-                            <h2>Our News & Events</h2>
-                            <p>The text goes here</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row rh-flex">
-                    <!-- ournews & Events Box -->
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 rh-on-12">
-                        <div class="rh rh-ournews-box rh-mar-30">
-                            <div class="ournews-img">
-                                <img src="../../static/app/images/ournews/ournews-1.jpg" alt="ournews-1" />
-                                <a href="event-single-page.html"></a>
-                            </div>
-                            <div class="ournews-detail">
-                                <h4><a href="event-single-page.html">luxury hotel in New create palaceluxury hotel in New creat</a></h4>
-                                <span class="rh">15 Jun 2017</span>
-                                <a href="event-single-page.html" class="rh-check-btn">View More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 rh-on-12">
-                        <div class="rh rh-ournews-box rh-mar-30">
-                            <div class="ournews-img">
-                                <img src="../../static/app/images/ournews/ournews-2.jpg" alt="ournews-2" />
-                                <a href="event-single-page.html"></a>
-                            </div>
-                            <div class="ournews-detail">
-                                <h4><a href="event-single-page.html">French fury over doing up the Ritz</a></h4>
-                                <span class="rh">15 Jun 2017</span>
-                                <a href="event-single-page.html" class="rh-check-btn">View More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 rh-on-12">
-                        <div class="rh rh-ournews-box rh-mar-30">
-                            <div class="ournews-img">
-                                <img src="../../static/app/images/ournews/ournews-3.jpg" alt="ournews-3" />
-                                <a href="event-single-page.html"></a>
-                            </div>
-                            <div class="ournews-detail">
-                                <h4><a href="event-single-page.html">French fury over doing up the Ritz</a></h4>
-                                <span class="rh">15 Jun 2017</span>
-                                <a href="event-single-page.html" class="rh-check-btn">View More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 rh-on-12">
-                        <div class="rh rh-ournews-box rh-mar-30">
-                            <div class="ournews-img">
-                                <img src="../../static/app/images/ournews/ournews-4.jpg" alt="ournews-4" />
-                                <a href="event-single-page.html"></a>
-                            </div>
-                            <div class="ournews-detail">
-                                <h4><a href="event-single-page.html">China Luxury Star Hotel President Bedroom</a></h4>
-                                <span class="rh">15 Jun 2017</span>
-                                <a href="event-single-page.html" class="rh-check-btn">View More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 rh-on-12">
-                        <div class="rh rh-ournews-box rh-sm-30">
-                            <div class="ournews-img">
-                                <img src="../../static/app/images/ournews/ournews-5.jpg" alt="ournews-5" />
-                                <a href="event-single-page.html"></a>
-                            </div>
-                            <div class="ournews-detail">
-                                <h4><a href="event-single-page.html">5 Star Hotels Ireland  Savoy Hotel Limerick</a></h4>
-                                <span class="rh">15 Jun 2017</span>
-                                <a href="event-single-page.html" class="rh-check-btn">View More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 rh-on-12">
-                        <div class="rh rh-ournews-box">
-                            <div class="ournews-img">
-                                <img src="../../static/app/images/ournews/ournews-6.jpg" alt="ournews-6" />
-                                <a href="event-single-page.html"></a>
-                            </div>
-                            <div class="ournews-detail">
-                                <h4><a href="event-single-page.html">Most Expensive Hotels In NYC</a></h4>
-                                <span class="rh">15 Jun 2017</span>
-                                <a href="event-single-page.html" class="rh-check-btn">View More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
         <!-- Ournews & Events Close -->
     </div>
     <!-- Main Content Close -->
 
     <!-- Footer Begin -->
-        {% include 'includes/_footer.html' %}
+    {% include 'includes/_footer.html' %}
     <!-- Footer Close -->
 
     <!-- Backe To Top Begin -->
@@ -516,6 +405,7 @@
         <i class="fa fa-angle-up" aria-hidden="true"></i>
     </div>
     <!-- Backe To Top Close -->
+
 </body>
 
 

@@ -1,4 +1,9 @@
 ﻿{% block body %}
+ <script>
+     function logoutFunction() {
+            window.location.reload();
+        }
+ </script>
     <!-- Header Begin -->
     <header class="rh">
         <!-- ========== Top Menu ========== -->
@@ -11,7 +16,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
                         <ul class="pull-right">
                             <li>
-                                <a href="/logout" onclick="logoutFunction()">Logout</a>
+                                 <a href="/logout"> <input type="button" id ="logout" class="button1" value="Logout" onclick="logoutFunction()"></a>
                             </li>
                         </ul>
                     </div>
@@ -53,7 +58,7 @@
                             <a href="about.html">About</a>
                         </li>
                         <li>
-                            <a href="contact.html">Contact</a>
+                            <a href="/contact">Contact</a>
                         </li>
                     </ul>
                 </div>

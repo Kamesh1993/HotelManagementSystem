@@ -1,16 +1,9 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
-
-<!-- Mirrored from bsquaresoft.com/demo/royalluxurystay/booking.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Nov 2018 14:40:30 GMT -->
 <head>
-    <!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7"> <![endif]-->
-    <!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7"> <![endif]-->
-    <!--[if IE 8]>     <html class="ie ie8 lte9 lte8"> <![endif]-->
-    <!--[if IE 9]>     <html class="ie ie9 lte9"> <![endif]-->
-    <!--[if gt IE 9]>  <html> <![endif]-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Royal Luxury Stay - Online Booking Smart Responsive HTML5 Template</title>
+    <title>Hotel Management System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Royal Luxury Stay - Online Booking Smart Responsive HTML5 Template">
     <meta name="keywords" content="accommodation,apartment,B&B,bed and breakfast,booking,hostel,inn,motel,reservation,reservation form,resort,responsive,spa,travel,bootstrap,cruise,flights,holiday,hotel,html5 template,online booking,real estate,rentals,tour,tourism,uber">
@@ -57,12 +50,11 @@
             }
         });
     </script>
-    <script>
+     <script>
         function logoutFunction() {
             window.location.reload();
         }
-    </script>
-    
+ </script>
 </head>
 
 <body>
@@ -179,88 +171,8 @@
     </div>
     <!-- Main Content Close -->
 
-    <!-- Footer Begin -->
-    <footer class="rh">
-        <div class="rh-100 rh-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 rh-f-30 rh-f-100">
-                        <div class="rh-footer-box">
-                            <img class="footer-logo" src="../../static/app/images/Logo-footer.png" alt="footer-logo" />
-                            <p>You have questions regarding our services? Contact us, we will be happy to help you out!</p>
-                            <ul class="footer-about">
-                                <li>royalluxurystay@gmail.com</li>
-                                <li>70 Bowman St.South Windsor, CT 06074</li>
-                                <li>+91 000-000-0000</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 rh-f-30 rh-f-50">
-                        <div class="rh-footer-box">
-                            <h5>Hotel</h5>
-                            <ul class="footer-menu list">
-                                <li><a href="javascript:;">Accommodation</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="javascript:;">Services & Amenities</a></li>
-                                <li><a href="javascript:;">Dining</a></li>
-                                <li><a href="javascript:;">Spa</a></li>
-                                <li><a href="javascript:;">Destination</a></li>
-                                <li><a href="javascript:;">Offer</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 rh-fs-30 rh-f-50">
-                        <div class="rh-footer-box">
-                            <h5>Inquires</h5>
-                            <ul class="footer-menu list">
-                                <li><a href="javascript:;">About  Four Seasons</a></li>
-                                <li><a href="javascript:;">Press Room</a></li>
-                                <li><a href="javascript:;">Gift Cards</a></li>
-                                <li><a href="javascript:;">Residences</a></li>
-                                <li><a href="javascript:;">Careers</a></li>
-                                <li><a href="contact.html">Contact us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 rh-f-100">
-                        <div class="rh-footer-box">
-                            <h5>Photo Gallery</h5>
-                            <ul class="footer-menu gallery">
-                                <li>
-                                    <a href="single-rooms.html"><img src="../../static/app/images/footer-gallery-1.jpg" alt="footer-gallery-1" /></a>
-                                </li>
-                                <li>
-                                    <a href="single-rooms.html"><img src="../../static/app/images/footer-gallery-2.jpg" alt="footer-gallery-2" /></a>
-                                </li>
-                                <li>
-                                    <a href="single-rooms.html"><img src="../../static/app/images/footer-gallery-3.jpg" alt="footer-gallery-3" /></a>
-                                </li>
-                                <li>
-                                    <a href="single-rooms.html"><img src="../../static/app/images/footer-gallery-4.jpg" alt="footer-gallery-4" /></a>
-                                </li>
-                                <li>
-                                    <a href="single-rooms.html"><img src="../../static/app/images/footer-gallery-5.jpg" alt="footer-gallery-5" /></a>
-                                </li>
-                                <li>
-                                    <a href="single-rooms.html"><img src="../../static/app/images/footer-gallery-6.jpg" alt="footer-gallery-6" /></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="rh footer-btm">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h6 class="pull-left">Copyrights &copy; 2017 Royal Luxury Stay</h6>
-                        <span class="pull-right">Powered by <a target="_blank" href="http://www.bsquaresoft.com/">Bsquaresoft.com</a></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+     <!-- Footer Begin -->
+    {% include 'includes/_footer.html' %}
     <!-- Footer Close -->
 
     <!-- Backe To Top Begin -->
@@ -271,5 +183,4 @@
     {% endblock %}
 </body>
 
-<!-- Mirrored from bsquaresoft.com/demo/royalluxurystay/booking.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Nov 2018 14:40:30 GMT -->
 </html>

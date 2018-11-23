@@ -1,16 +1,9 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
-
-<!-- Mirrored from bsquaresoft.com/demo/royalluxurystay/booking.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Nov 2018 14:40:30 GMT -->
 <head>
-    <!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7"> <![endif]-->
-    <!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7"> <![endif]-->
-    <!--[if IE 8]>     <html class="ie ie8 lte9 lte8"> <![endif]-->
-    <!--[if IE 9]>     <html class="ie ie9 lte9"> <![endif]-->
-    <!--[if gt IE 9]>  <html> <![endif]-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Royal Luxury Stay - Online Booking Smart Responsive HTML5 Template</title>
+    <title>Hotel Management System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Royal Luxury Stay - Online Booking Smart Responsive HTML5 Template">
     <meta name="keywords" content="accommodation,apartment,B&B,bed and breakfast,booking,hostel,inn,motel,reservation,reservation form,resort,responsive,spa,travel,bootstrap,cruise,flights,holiday,hotel,html5 template,online booking,real estate,rentals,tour,tourism,uber">
@@ -47,89 +40,25 @@
     <script type="text/javascript" src="../../static/app/js/themefunction.js"></script>
     <script type="text/javascript" src="../../static/app/js/valid-date.js"></script>
 	<script type="text/javascript" language="javascript">  
-    function disableBackButton()
-    {
-        window.history.forward()
-    } 
-    disableBackButton(); 
-    window.onload=disableBackButton(); 
-    window.onpageshow=function(evt) { if(evt.persisted) disableBackButton() } 
-    window.onunload=function() { void(0) } 
+        function disableBackButton()
+        {
+            window.history.forward()
+        } 
+        disableBackButton(); 
+        window.onload=disableBackButton(); 
+        window.onpageshow=function(evt) { if(evt.persisted) disableBackButton() } 
+        window.onunload=function() { void(0) } 
     </script>
-    <script>
-        function logoutFunction() {
-            window.location.reload();
-        }
-    </script>
-     
 </head>
 
 <body onload="noBack();">
     {% block body %}
     <!-- Header Begin -->
-    <header class="rh">
-        <!-- ========== Top Menu ========== -->
-        <div class="rh-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4">
-                        
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
-                        <ul class="pull-right">
-                            <li>
-                                <a href="/logout" onclick="logoutFunction()">Logout</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ========== Nav Menu ========== -->
-        <nav class="rh navbar navbar-default">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index-2.html"><h2>HMS</h2></a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse rh-toggle" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right main-navbar">
-                        <li>
-                            <a href="/home">Home</a>
-                            
-                        </li>
-                        <li>
-                            <a href="available-rooms.html">Available Rooms</a>
-                        </li>
-                        <li>
-                            <a href="single-rooms.html">Single Rooms</a>
-                        </li>
-                        <li>
-                            <a class="active" href="booking.html">Booking</a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">Events</a>
-                            
-                        </li>
-                        
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    {% include 'includes/_navbar.html' %}
     <!-- Header Close -->
-<section class="rh-check-availability">
+    <section class="rh-check-availability">
             <img src="../../static/app/images/event/event-background.jpg" alt="1">
-</section>
+    </section>
     <!-- Main Content Begin -->
     <div class="rh rh-100 section-booking">
         <!-- Booking Page Begin -->
@@ -170,7 +99,7 @@
                         </div>
                         <fieldset>
                         <!--================ ROOMS ==============-->
-                        <section class="rh rh-100 rh-ournews">
+           <section class="rh rh-100 rh-ournews">
             <div class="container">
                 <div class="row">
                     <!-- ournews & Events Title -->
@@ -263,7 +192,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+           </section>
                         <!-- end rooms -->
 
                             <div class="form-wizard-buttons">
@@ -280,7 +209,31 @@
         <!-- Booking Page Close -->
     </div>
     <!-- Main Content Close -->
-
+    <div class="rh section-booking">        
+        <!-- About Royal Hotel Begin -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="rh-detail-right">
+                        <div class="row rh-flex">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <!-- Need Royal Help? Begin -->
+                                <div class="rh-need-help">
+                                    <h5>Need Help?</h5>
+                                    <p>We would be more than happy to help you. Our team advisor are 24/7 at your service to help you.</p>
+                                    <a href="tel:+919173495648">917 349 5648</a>
+                                </div>
+                                <!-- Need Royal Help? Close -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <!-- About Royal Hotel Close -->
+    </div>
     <!-- Footer Begin -->
     {% include 'includes/_footer.html' %}
     <!-- Footer Close -->
@@ -293,5 +246,4 @@
     {% endblock %}
 </body>
 
-<!-- Mirrored from bsquaresoft.com/demo/royalluxurystay/booking.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Nov 2018 14:40:30 GMT -->
 </html>

@@ -140,10 +140,10 @@
 		.rh-about-hotel .submit .submit-star ul li:hover i:before{
 		    color: #EDA100;
 		}
-		.bootstrap-select.btn-group .dropdown-toggle .filter-option,
-		.sort-view-list .sort-by .buttons button i {
-		    color: #ababab;
-		}
+.bootstrap-select.btn-group .dropdown-toggle .filter-option,
+.sort-view-list .sort-by .buttons button i {
+    color: #0E2646;
+}
 		.rh-detail-bg span a,
 		.rh-detail-bg .rh p,
 		.rh-detail-bg .rh i{

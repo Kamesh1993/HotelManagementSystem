@@ -2,11 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <head>
-    <!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7"> <![endif]-->
-    <!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7"> <![endif]-->
-    <!--[if IE 8]>     <html class="ie ie8 lte9 lte8"> <![endif]-->
-    <!--[if IE 9]>     <html class="ie ie9 lte9"> <![endif]-->
-    <!--[if gt IE 9]>  <html> <![endif]-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Hotel Management System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,7 +38,7 @@
     <script type="text/javascript" src="../../static/app/js/themefunction.js"></script>
 </head>
 
-<body>
+<body class="ht">
     <!-- Header Begin -->
     <header class="rh">
         <!-- ========== Top Menu ========== -->
@@ -51,94 +46,49 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4">
-                        <ul class="top">
-                            <li>
-                                <select class="selectpicker">
-                                    <option>English</option>
-                                    <option>Portugal</option>
-                                    <option>French</option>
-                                </select>
-                            </li>
-                        </ul>
+                        
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
                         <ul class="pull-right">
                             <li>
-                                <a href="Javascript:;" data-toggle="modal" data-target=".rh-login">Login</a>
+                               <a href="/login"> <input type="button" id ="login" class="button" value="Login"></a>
                             </li>
                             <li>
-                                <a href="Javascript:;" data-toggle="modal" data-target=".rh-signup">Signup</a>
-                            </li>
-                            <li>
-                                <select class="selectpicker">
-                                    <option>Usd</option>
-                                    <option>Euro</option>
-                                    <option>Doller</option>
-                                </select>
+                                <a href="/login"><input type="button" id ="register" class="button1" value="Register"></a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- ========== Nav Menu ========== -->
+
         <nav class="rh navbar navbar-default">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index-2.html"><img src="../../static/app/images/logo.png" alt="logo"></a>
+                    <a class="navbar-brand" href="index-2.html"><h2>HMS</h2></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse rh-toggle" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right main-navbar">
                         <li>
-                            <a href="index-2.html">Home</a>
-                            <ul class="dropdown-nav rh-drop-menu">
-                                <li>
-                                    <a href="javascript:;">Home2</a>
-                                    <ul class="dropdown-nav-list rh-drop-menu">
-                                        <li><a href="javascript:;">1</a></li>
-                                        <li><a href="javascript:;">2</a></li>
-                                        <li><a href="javascript:;">3</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            <a href="/">Home</a>    
                         </li>
                         <li>
-                            <a href="available-rooms.html">Available Rooms</a>
+                            <a  href="/booking">Booking</a>
                         </li>
                         <li>
-                            <a href="single-rooms.html">Single Rooms</a>
+                            <a  href="/rooms">Rooms</a>
                         </li>
                         <li>
-                            <a href="booking.html">Booking</a>
+                            <a  href="/restaurant">Restaurant</a>
                         </li>
                         <li>
-                            <a href="javascript:;">Events</a>
-                            <ul class="dropdown-nav rh-drop-menu">
-                                <li>
-                                    <a href="events.html">Event</a>
-                                </li>
-                                <li>
-                                    <a href="event-single-page.html">Events Single Page</a>
-                                </li>
-                            </ul>
+                            <a  class="active" href="/about">About</a>
                         </li>
-                        <li><a href="blog.html">Blog</a>
-                            <ul class="dropdown-nav rh-drop-menu">
-                                <li>
-                                    <a href="blog-single-page.html">Blog Single Page</a>
-                                </li>
-                            </ul>
+                        <li>
+                            <a href="/contact">Contact</a>
                         </li>
-                        <li><a class="active" href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>

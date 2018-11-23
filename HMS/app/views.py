@@ -115,6 +115,7 @@ def roombooking(request):
                 hotel_name = request.session['hotel']
                 room = request.POST.get('rooms')
                 room_details = [check_in,check_out,email,hotel_name,room]
+                today_date = datetime.now().strftime("%Y%m%d%H%M%S")
                 return render(request,'app/rooms.html')
         else:
             return render(request,'app/booking.html')
