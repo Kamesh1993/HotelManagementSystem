@@ -17,8 +17,6 @@ from passlib.hash import sha256_crypt
 def home(request):
     """Renders the home page."""
     assert isinstance(request, HttpRequest)
-    if 'email' in request.session:
-        return render(request,'app/logindex.html')
     return render(request,'app/index.html')
 
 def contact(request):

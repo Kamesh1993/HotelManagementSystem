@@ -533,7 +533,6 @@
     <Content Include="app\templates\app\booking.html" />
     <Content Include="app\templates\app\contact.html" />
     <Content Include="app\templates\app\doublerooms.html" />
-    <Content Include="app\templates\app\logindex.html" />
     <Content Include="app\templates\app\index.html" />
     <Content Include="app\templates\app\login.html" />
     <Content Include="app\templates\app\register.html" />
