@@ -39,6 +39,15 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="../../static/app/js/themefunction.js"></script>
     <script type="text/javascript" src="../../static/app/js/valid-date.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("next").hover(function(){
+            $(this).css("background-color", "#32CD32");
+            }, function(){
+        $(this).css("background-color", "#0E2646");
+            });
+    });
+</script>
 	<script>
         window.addEventListener("pageshow", function (event) {
             var historyTraversal = event.persisted ||
@@ -151,7 +160,7 @@
                                         </div>
                                     </section>
                                     <div class="form-wizard-buttons">
-                                <button type="submit" class="btn btn-next">Next</button>
+                                <button type="submit" id="next" class="btn btn-next">Next</button>
                             </div>
                                     <!-- Check Availability Close -->
                                 </div>

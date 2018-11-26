@@ -877,6 +877,7 @@ body {
         .rh-feature-box {
             text-align: left;
             padding: 20px;
+            border-radius:4px;
         }
         .rh-img {
             position: relative;

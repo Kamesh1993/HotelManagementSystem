@@ -45,7 +45,20 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="../../static/app/js/themefunction.js"></script>
     <script type="text/javascript" src="../../static/app/js/valid-date.js"></script>
-
+    <script>
+    $(document).ready(function(){
+        $("#login").hover(function(){
+            $(this).css("background-color", "#32CD32");
+            }, function(){
+        $(this).css("background-color", "#357EC7");
+            });
+         $("#register").hover(function(){
+            $(this).css("background-color", "#32CD32");
+            }, function(){
+        $(this).css("background-color", "#DC143C");
+        });
+    });
+</script>
     <script type="text/javascript">
         $(document).ready(function ()
         {    

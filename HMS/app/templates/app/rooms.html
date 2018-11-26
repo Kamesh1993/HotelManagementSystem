@@ -49,6 +49,16 @@
         window.onpageshow=function(evt) { if(evt.persisted) disableBackButton() } 
         window.onunload=function() { void(0) } 
     </script>
+    <script>
+    $(document).ready(function(){
+        $("booknow").hover(function(){
+            $(this).css("background-color", "#32CD32");
+        },
+            function () {
+            $(this).css("background-color", "#0E2646");
+            });
+    });
+</script>
 </head>
 
 <body onload="noBack();">
@@ -121,7 +131,7 @@
                             <div class="ournews-detail">
                                 <h4><a href="/single">Single Room</a></h4>
                                 <span class="rh"><b>Capacity</b>: 2 people</span>
-                                <a href="/single" class="rh-check-btn">Book Now</a>
+                                <a href="/single" name="booknow" class="rh-check-btn">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -134,7 +144,7 @@
                             <div class="ournews-detail">
                                 <h4><a href="event-single-page.html">Double Room</a></h4>
                                 <span class="rh"><b>Capacity</b>: 4 people</span>
-                                <a href="/double" class="rh-check-btn">Book Now</a>
+                                <a href="/double" name="booknow" class="rh-check-btn">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -147,7 +157,7 @@
                             <div class="ournews-detail">
                                 <h4><a href="event-single-page.html">Deluxe Room</a></h4>
                                 <span class="rh"><b>Capacity</b>: 5 people</span>
-                                <a href="/deluxe" class="rh-check-btn">Book Now</a>
+                                <a href="/deluxe" name="booknow" class="rh-check-btn">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -160,7 +170,7 @@
                             <div class="ournews-detail">
                                 <h4><a href="/luxury">Luxury Room</a></h4>
                                 <span class="rh"><b>Capacity</b>: 5 people</span>
-                                <a href="/luxury" class="rh-check-btn">Book Now</a>
+                                <a href="/luxury" name="booknow" class="rh-check-btn">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -173,7 +183,7 @@
                             <div class="ournews-detail">
                                 <h4><a href="/executive">Executive Suite</a></h4>
                                 <span class="rh"><b>Capacity</b>: 5 people</span>
-                                <a href="/executive" class="rh-check-btn">Book Now</a>
+                                <a href="/executive" name="booknow" class="rh-check-btn">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -186,7 +196,7 @@
                             <div class="ournews-detail">
                                 <h4><a href="/prodeluxe">Pro Deluxe</a></h4>
                                 <span class="rh"><b>Capacity</b>: 5 people</span>
-                                <a href="/prodeluxe" class="rh-check-btn">Book Now</a>
+                                <a href="/prodeluxe" name="booknow" class="rh-check-btn">Book Now</a>
                             </div>
                         </div>
                     </div>

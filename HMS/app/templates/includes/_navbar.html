@@ -4,6 +4,20 @@
             window.location.reload();
         }
  </script>
+<script>
+    $(document).ready(function(){
+        $("#booking").hover(function(){
+            $(this).css("background-color", "#32CD32");
+            }, function(){
+        $(this).css("background-color", "#357EC7");
+            });
+         $("#logout").hover(function(){
+            $(this).css("background-color", "#32CD32");
+            }, function(){
+        $(this).css("background-color", "#DC143C");
+        });
+    });
+</script>
     <!-- Header Begin -->
     <header class="rh">
         <!-- ========== Top Menu ========== -->
@@ -16,7 +30,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
                         <ul class="pull-right">
                             <li>
-                                 <a href="/logout"> <input type="button" id ="logout" class="button" value="Booking History" onclick="logoutFunction()"></a>
+                                 <a href="/logout"> <input type="button" id ="booking" class="button" value="Booking History" onclick="logoutFunction()"></a>
                             </li>
                             <li>
                                  <a href="/logout"> <input type="button" id ="logout" class="button1" value="Logout" onclick="logoutFunction()"></a>
