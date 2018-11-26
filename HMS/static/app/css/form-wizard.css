@@ -61,12 +61,12 @@ background: #0E2646;
 background: #0E2646; 
 }
 
-.form-wizard .btn.btn-previous,
-.form-wizard .btn.btn-previous:focus,
-.form-wizard .btn.btn-previous:active:focus, 
-.form-wizard .btn.btn-previous.active:focus { 
-background: #0E2646;
-}
+    .form-wizard .btn.btn-previous,
+    .form-wizard .btn.btn-previous:focus,
+    .form-wizard .btn.btn-previous:active:focus,
+    .form-wizard .btn.btn-previous.active:focus {
+        background: #357EC7;
+    }
 
 .form-wizard .success h3{
 	color: #4F8A10;
