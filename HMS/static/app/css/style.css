@@ -65,11 +65,16 @@
     ========================================================================== */
 
         @charset "utf-8";
-        body {
-            font-family: 'Arimo', sans-serif;
-            font-size: 14px;
-            line-height: 0px;
-        }
+body {
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
+    line-height: 0px;
+}
+.ht {
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+}
         h1,
         h2,
         h3,
@@ -179,6 +184,33 @@
         .form-control:active {
             box-shadow: none;
         }
+.button {
+    background-color: #357EC7; /* Blue */
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 0px;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: #DC143C; /* Crimson */
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 0px;
+    cursor: pointer;
+}
         .bootstrap-select.btn-group .dropdown-menu li {
             margin: 0;
             width: 100%;
@@ -253,7 +285,7 @@
     Back To Top
     ========================================================================== */
 .rh-detail-bg.list-view-column2.event {
-    background-image:url(../../static/app/images/event/event-background.jpg);
+    background-image:url("../../app/images/event/event-background.jpg");
 }
         .rh-ournews.event .ournews-detail{
             padding: 20px;
@@ -1216,7 +1248,7 @@
 
 .rh-our-services {
     position: relative;
-    background: url('../../static/app/images/our-serivesc-background.jpg');
+    background: url('../../../static/app/images/our-serivesc-background.jpg');
     background-repeat: no-repeat;
 }
         .rh-our-services:before {
@@ -1486,6 +1518,7 @@
             width: 100%;
             display: inline-block;
             vertical-align: top;
+            line-height:17px;
         }
         .rh-footer-box .footer-logo {
             width: 136px;
@@ -1608,7 +1641,7 @@
     Detail-Page
     ========================================================================== */
 .rh-detail-bg {
-    background: url('../../static/app/images/detail_page_bg1.jpg');
+    background: url('../../../static/app/images/detail_page_bg1.jpg');
     background-position: center left;
     background-repeat: no-repeat;
     padding: 276px 0 40px 0;
@@ -2598,7 +2631,7 @@
     Event Page
     ========================================================================== */
 .rh-detail-bg.list-view-column2.event {
-    background: url(../../static/app/images/event/event-background.jpg);
+    background-image: url('../../../static/app/images/event/event-background.jpg');
 }
         .rh-ournews.event .ournews-detail{
             padding: 20px;

@@ -25,6 +25,7 @@ urlpatterns = [
     url(r'^single/$',app.views.single,name='roombooking'),
     url(r'^double/$',app.views.double,name='roombooking'),
     url(r'^luxury/$',app.views.luxury,name='roombooking'),
+
     #Uncomment the admin/doc line below to enable admin documentation:
     #url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 

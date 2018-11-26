@@ -530,13 +530,10 @@
     <Content Include="app\static\rooms\js\owl.carousel.min.js" />
     <Content Include="app\templates\app\about.html" />
     <Content Include="app\templates\app\available-rooms.html" />
-    <Content Include="app\templates\app\blog-single-page.html" />
-    <Content Include="app\templates\app\blog.html" />
     <Content Include="app\templates\app\booking.html" />
     <Content Include="app\templates\app\contact.html" />
-    <Content Include="app\templates\app\double-rooms.html" />
-    <Content Include="app\templates\app\event-single-page.html" />
-    <Content Include="app\templates\app\events.html" />
+    <Content Include="app\templates\app\doublerooms.html" />
+    <Content Include="app\templates\app\logindex.html" />
     <Content Include="app\templates\app\index.html" />
     <Content Include="app\templates\app\login.html" />
     <Content Include="app\templates\app\register.html" />

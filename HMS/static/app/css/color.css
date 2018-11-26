@@ -88,38 +88,38 @@
         .rh-contact-add .icon-box i{
 		    color: #ffffff;
 		}
-		.rh-banner-widgets h1 span,
-		.rh-img i,
-		.rh-img:hover i,
-		.tabs-menu .current a i,
-		.tabs-menu .current a h5,
-		.tab-content .tab-content-detail h2,
-		.rh-testimonial-slider p,
-		.rh-newsletter,
-		.rh-newsletter .rh-news-sign h5,
-		.rh-newsletter .news-social li a:hover i,
-		.footer-about li a,
-		.rh-footer-box h5,
-		.footer-menu li a:hover,
-		.footer-btm span a,
-		.stay-box:hover .overley .stay-detail h5,
-		.rh-feature-box:hover .feature-detail h4 a,
-		.rh-ournews-box:hover .ournews-detail h4 a,
-		.rh-reservation ul li i,
-		.rh-reservation ul li:hover .why-book-list span a,
-		.rh-next-prew .arrow:hover i,
-		.rh-next-prew .arrow:hover a,
-		.rh-comment .rh-user-comment .category span a:hover,
-		.carousel-control:hover,
-        .carousel-control:active,
-        .carousel-control:focus,
-        .event-sigle-btn.social a,
-        .event-ticket h3 i,
-        .form-wizard .rh-reservation-complate p a,
-        .rh-blog-category ul li a:hover,
-        .rh-blog-sidebar ul li a:hover{
-		    color: #D5A677;
-		}
+            .rh-banner-widgets h1 span,
+            .rh-img i,
+            .rh-img:hover i,
+            .tabs-menu .current a i,
+            .tabs-menu .current a h5,
+            .tab-content .tab-content-detail h2,
+            .rh-testimonial-slider p,
+            .rh-newsletter,
+            .rh-newsletter .rh-news-sign h5,
+            .rh-newsletter .news-social li a:hover i,
+            .footer-about li a,
+            .rh-footer-box h5,
+            .footer-menu li a:hover,
+            .footer-btm span a,
+            .stay-box:hover .overley .stay-detail h5,
+            .rh-feature-box:hover .feature-detail h4 a,
+            .rh-ournews-box:hover .ournews-detail h4 a,
+            .rh-reservation ul li i,
+            .rh-reservation ul li:hover .why-book-list span a,
+            .rh-next-prew .arrow:hover i,
+            .rh-next-prew .arrow:hover a,
+            .rh-comment .rh-user-comment .category span a:hover,
+            .carousel-control:hover,
+            .carousel-control:active,
+            .carousel-control:focus,
+            .event-sigle-btn.social a,
+            .event-ticket h3 i,
+            .form-wizard .rh-reservation-complate p a,
+            .rh-blog-category ul li a:hover,
+            .rh-blog-sidebar ul li a:hover {
+                color: #0E2646;
+            }
 		.rh-feature-box .feature-detail span a,
 		.rh-footer-box p,
 		.footer-menu li a {
@@ -140,10 +140,10 @@
 		.rh-about-hotel .submit .submit-star ul li:hover i:before{
 		    color: #EDA100;
 		}
-		.bootstrap-select.btn-group .dropdown-toggle .filter-option,
-		.sort-view-list .sort-by .buttons button i {
-		    color: #ababab;
-		}
+.bootstrap-select.btn-group .dropdown-toggle .filter-option,
+.sort-view-list .sort-by .buttons button i {
+    color: #0E2646;
+}
 		.rh-detail-bg span a,
 		.rh-detail-bg .rh p,
 		.rh-detail-bg .rh i{
@@ -195,7 +195,7 @@
 				color: #333;
 			}
 			.navbar-toggle{
-				border-color: #D5A677 !important;
+				border-color: #0E2646 !important;
 			}
 		}
 
@@ -203,10 +203,10 @@
 			background-color
 	========================================*/
 
-		body,
-		.rh-history-list .panel-default{
-		    background-color: #F7F1EB;
-		}
+body,
+.rh-history-list .panel-default {
+    background-color: #E6E6FA;
+}
 		.rh-header,
 		.rh-header .bootstrap-select.btn-group .dropdown-menu,
 		.rh-ournews-box:hover .ournews-detail a.rh-check-btn,
@@ -226,7 +226,7 @@
 		.availability-right a.rh-check-btn:hover,
 		.modal-header{
 			background-color:rgba(2, 27, 61, 1.0);
-		    /* background-color: #D5A677; */
+		    /* background-color: #0E2646; */
 		}
 		.navbar-default .navbar-nav>li:hover>a,
 		.navbar-default .navbar-nav>li>a:active,
@@ -287,9 +287,9 @@
 		.rh-footer {
 		    background-color: #1C1C1C;
 		}
-		.footer-btm {
-		    background-color: #121212;
-		}
+.footer-btm {
+    background-color: rgba(2, 27, 61, 1.0);
+}
 		.rh-our-services:before {
 		    background: rgba(0, 0, 0, 0.20);
 		}
@@ -318,12 +318,12 @@
         .pagination>li>a:hover, 
         .pagination>li>a:focus,
         .rh-blog-tag ul li a{
-            background-color: #0E2646;
+            background-color: #FFFF;
         }
         .bootstrap-select.btn-group .dropdown-menu li a:active,
         .bootstrap-select.btn-group .dropdown-menu li a:hover,
         .rh-history-list .panel-group .panel-heading{
-            background: #D5A677;
+            background: #FFFF;
         }
         .modal{
         	background-color: rgba(4, 4, 4, 0.8);
@@ -351,7 +351,7 @@
 				color: #666;
 			}
 			.navbar-default .navbar-toggle .icon-bar{
-			    background-color: #D5A677;
+			    background-color: #0E2646;
 			}	
 		}
 		

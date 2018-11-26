@@ -12,32 +12,31 @@
         .rh-blog-sidebar ul li a{
 		    color: #666666;
 		}
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6,
-		
-		.nav>li>a,
-		.navbar-default .navbar-nav>li>a,
-		.navbar-collapse .nav li ul.dropdown-nav li a,
-		.tabs-menu a i,
-		.feature-detail h4 a,
-		.ournews-detail h4 a,
-		.rh-testimonial-slider span a,
-		.navbar-collapse .nav li ul.dropdown-nav li.rh-dropdown-second:after,
-		.rh-detail-left .rh-about-hotel .rh-order-list span,
-		.rh-reservation ul li .why-book-list span a,
-		.rh-review .review-detail span,
-		.rh-comment .rh-user-comment .user-detail span a,
-		.rh-about-hotel .submit p,
-		.rh-comment .rh-user-comment .category span a,
-		.event-ticket .multiple-fees .fees-data .fees-label,
-		.rh-contact-add p,
-        .rh-contact-add p a{
-		    color: #333333;
-		}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.nav > li > a,
+.navbar-default .navbar-nav > li > a,
+.navbar-collapse .nav li ul.dropdown-nav li a,
+.tabs-menu a i,
+.feature-detail h4 a,
+.ournews-detail h4 a,
+.rh-testimonial-slider span a,
+.navbar-collapse .nav li ul.dropdown-nav li.rh-dropdown-second:after,
+.rh-detail-left .rh-about-hotel .rh-order-list span,
+.rh-reservation ul li .why-book-list span a,
+.rh-review .review-detail span,
+.rh-comment .rh-user-comment .user-detail span a,
+.rh-about-hotel .submit p,
+.rh-comment .rh-user-comment .category span a,
+.event-ticket .multiple-fees .fees-data .fees-label,
+.rh-contact-add p,
+.rh-contact-add p a {
+    color: #0E2646;
+}
 		a,
 		a:hover,
 		a:focus,
@@ -95,11 +94,11 @@
             .tabs-menu .current a h5,
             .tab-content .tab-content-detail h2,
             .rh-testimonial-slider p,
-            .rh-newsletter,
+            
             .rh-newsletter .rh-news-sign h5,
             .rh-newsletter .news-social li a:hover i,
             .footer-about li a,
-            .rh-footer-box h5,
+            
             .footer-menu li a:hover,
             .footer-btm span a,
             .stay-box:hover .overley .stay-detail h5,
@@ -123,13 +122,19 @@
 		.rh-feature-box .feature-detail span a,
 		.rh-footer-box p,
 		.footer-menu li a {
-		    color: #999999;
+		    color: #F7F1EB;
 		}
-		.rh-news-email .news-email-form a:hover i ,
-		.rh-detail-left .slick-dots li.slick-active button:before,
-		.rh-blog .pagination>li>a{
-		    color: #0E2646;
-		}
+.rh-newsletter {
+    color: #0E2646;
+}
+.rh-footer-box h5{
+    color:#ffffff;
+}
+.rh-news-email .news-email-form a:hover i,
+.rh-detail-left .slick-dots li.slick-active button:before,
+.rh-blog .pagination > li > a {
+    color: #0E2646;
+}
 		.footer-btm span a:hover {
 		    color: #F7F1EB;
 		}
@@ -210,24 +215,27 @@ body,
 		.rh-header,
 		.rh-header .bootstrap-select.btn-group .dropdown-menu,
 		.rh-ournews-box:hover .ournews-detail a.rh-check-btn,
-		.rh-newsletter,
+		
 		.rh-need-help ,
 		.rh-review .review-button .rh-check-btn,
 		.availability-right a.rh-check-btn,
 		.rh-contact-add .icon-box i:hover{
 		    background-color: #0E2646;
 		}
-		.navbar-default .navbar-nav>li>a.active,
-		.navbar-default .navbar-nav>li>a:active,
-		.navbar-collapse .nav li ul.dropdown-nav li a:hover,
-		.carousel-indicators .active,
-		.rh-need-help a:hover,
-		.rh-review .review-button .rh-check-btn:hover,
-		.availability-right a.rh-check-btn:hover,
-		.modal-header{
-			background-color:rgba(2, 27, 61, 1.0);
-		    /* background-color: #0E2646; */
-		}
+.rh-newsletter {
+    background-color: #E6E6FA;
+}
+            .navbar-default .navbar-nav > li > a.active,
+            .navbar-default .navbar-nav > li > a:active,
+            .navbar-collapse .nav li ul.dropdown-nav li a:hover,
+            .carousel-indicators .active,
+            .rh-need-help a:hover,
+            .rh-review .review-button .rh-check-btn:hover,
+            .availability-right a.rh-check-btn:hover,
+            .modal-header {
+                background-color: rgba(2, 27, 61, 1.0);
+                /* background-color: #0E2646; */
+            }
 		.navbar-default .navbar-nav>li:hover>a,
 		.navbar-default .navbar-nav>li>a:active,
 		.navbar-default .navbar-nav>li>a:focus,
@@ -284,9 +292,9 @@ body,
 		.ournews-img {
 		    background-color: #000000;
 		}
-		.rh-footer {
-		    background-color: #1C1C1C;
-		}
+.rh-footer {
+    background-color: #454545;
+}
 .footer-btm {
     background-color: rgba(2, 27, 61, 1.0);
 }

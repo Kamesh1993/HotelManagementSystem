@@ -50,23 +50,22 @@
             }
         });
     </script>
-     <script>
+    <script>
         function logoutFunction() {
             window.location.reload();
         }
  </script>
+    
 </head>
 
 <body>
     {% block body %}
-
     <!-- Header Begin -->
     {% include 'includes/_navbar.html' %}
     <!-- Header Close -->
-
-    <section class="rh-check-availability">
+<section class="rh-check-availability">
             <img src="../../static/app/images/event/event-background.jpg" alt="1">
-    </section>
+</section>
     <!-- Main Content Begin -->
     <div class="rh rh-100 section-booking">
         <!-- Booking Page Begin -->
@@ -118,7 +117,7 @@
                                 <div class="row">
                                     <div class="col-md-4 col-sm-6 col-xs-6 rh-xs-12">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="First Name /">
+                                            <input type="text" class="form-control" placeholder="First Name " />
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-6 col-xs-6 rh-xs-12">
@@ -128,7 +127,12 @@
                                     </div>
                                     <div class="col-md-4 col-sm-6 col-xs-6 rh-xs-12">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Email" />
+                                            <input type="text" class="form-control" placeholder="Email" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-6 rh-xs-12">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Country" />
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-6 col-xs-6 rh-xs-12">
@@ -141,14 +145,34 @@
                                             <input type="text" class="form-control" placeholder="City" />
                                         </div>
                                     </div>
+                                     <div class="col-md-4 col-sm-6 col-xs-6 rh-xs-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="State" />
+                                        </div>
+                                    </div>
                                     <div class="col-md-4 col-sm-6 col-xs-6 rh-xs-12">
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Address" />
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-4 col-sm-6 col-xs-6 rh-xs-12">
                                         <div class="form-group">
-                                            <textarea cols="12" rows="10" class="form-control" placeholder="Special Requirements"></textarea>
+                                            <input type="text" class="form-control" placeholder="State" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-6 rh-xs-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Zipcode" />
+                                        </div>
+                                    </div>
+                                   <div class="col-md-4 col-sm-6 col-xs-6 rh-xs-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Provide Id proof number of passport/pan/voter id" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-6 rh-xs-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Number of rooms required" />
                                         </div>
                                     </div>
                                 </div>
@@ -158,7 +182,7 @@
                                     
                                 </div>
                                 <button type="button" class="btn btn-previous">Previous</button>
-                                <button type="button" class="btn btn-next">Next</button>
+                                <button type="submit" class="btn btn-next">Next</button>
                             </div>
                         </fieldset>
                             
@@ -170,8 +194,32 @@
         <!-- Booking Page Close -->
     </div>
     <!-- Main Content Close -->
-
-     <!-- Footer Begin -->
+    <div class="rh section-booking">        
+        <!-- About Royal Hotel Begin -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="rh-detail-right">
+                        <div class="row rh-flex">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <!-- Need Royal Help? Begin -->
+                                <div class="rh-need-help">
+                                    <h5>Need Royal Help?</h5>
+                                    <p>We would be more than happy to help you. Our team advisor are 24/7 at your service to help you.</p>
+                                    <a href="tel:+919173495648">917 349 5648</a>
+                                </div>
+                                <!-- Need Royal Help? Close -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <!-- About Royal Hotel Close -->
+    </div>
+    <!-- Footer Begin -->
     {% include 'includes/_footer.html' %}
     <!-- Footer Close -->
 
@@ -181,6 +229,6 @@
     </div>
     <!-- Backe To Top Close -->
     {% endblock %}
-</body>
 
+</body>
 </html>

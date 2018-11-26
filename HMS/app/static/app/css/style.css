@@ -1438,7 +1438,11 @@ body {
             display: block;
             overflow: hidden;
         }
-        .rh-newsletter .rh-news-sign h5 {
+        .rh-newsletter h5 {
+            margin: 0 0 8px 0;
+            line-height: 14px;
+        }
+        .rh-news-sign h5 {
             margin: 0 0 8px 0;
             line-height: 14px;
         }
@@ -1527,6 +1531,7 @@ body {
         .footer-about {
             font-size: 16px;
             font-family: 'PlayfairDisplay-Regular';
+            color:white;
         }
         .footer-about li {
             margin: 10px 0;
@@ -2336,11 +2341,12 @@ body {
             }
         }
         /* ========== Need Royal Help? ========== */
-        .rh-need-help{
-            padding:30px 20px;
-            text-align: center;
-            margin: 0 0 30px 0;
-        }
+.rh-need-help {
+    padding: 30px 20px;
+    text-align: center;
+    margin: 6px -14px 29px -15px;
+    border-radius:4px;
+}
         .rh-need-help p{
             margin: 10px 0 20px 0;
         }

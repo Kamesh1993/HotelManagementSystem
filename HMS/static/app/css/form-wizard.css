@@ -65,7 +65,7 @@ background: #0E2646;
 .form-wizard .btn.btn-previous:focus,
 .form-wizard .btn.btn-previous:active:focus, 
 .form-wizard .btn.btn-previous.active:focus { 
-background: #bbb;
+background: #0E2646;
 }
 
 .form-wizard .success h3{

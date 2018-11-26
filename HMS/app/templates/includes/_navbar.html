@@ -16,6 +16,9 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
                         <ul class="pull-right">
                             <li>
+                                 <a href="/logout"> <input type="button" id ="logout" class="button" value="Booking History" onclick="logoutFunction()"></a>
+                            </li>
+                            <li>
                                  <a href="/logout"> <input type="button" id ="logout" class="button1" value="Logout" onclick="logoutFunction()"></a>
                             </li>
                         </ul>
@@ -28,34 +31,25 @@
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index-2.html"><h2>HMS</h2></a>
+                    <a class="navbar-brand" href="/"><h2>HMS</h2></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse rh-toggle" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right main-navbar">
                         <li>
-                            <a href="index-2.html">Home</a>
+                            <a href="/">Home</a>
                         </li>
                         <li>
-                            <a href="available-rooms.html">Available Rooms</a>
+                            <a href="/rooms">Rooms</a>
                         </li>
                         <li>
-                            <a href="single-rooms.html">Single Rooms</a>
+                            <a class="active" href="/booking">Booking</a>
                         </li>
                         <li>
-                            <a class="active" href="booking.html">Booking</a>
+                            <a  href="/restaurant">Restaurant</a>
                         </li>
                         <li>
-                            <a href="javascript:;">Events</a>
-                        </li>
-                        <li>
-                            <a href="about.html">About</a>
+                            <a href="/about">About</a>
                         </li>
                         <li>
                             <a href="/contact">Contact</a>
