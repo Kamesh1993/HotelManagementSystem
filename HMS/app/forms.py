@@ -34,3 +34,16 @@ class RoomBooking(forms.Form):
     checkin = forms.DateField(widget=forms.widgets.DateInput(format="%m/%d/%Y"),required=True)
     checkout = forms.DateField(widget=forms.widgets.DateInput(format="%m/%d/%Y"),required=False)
     room = forms.CharField()
+
+class Reservation(forms.Form):
+    firstname = forms.CharField()
+    middlename = forms.CharField()
+    lastname = forms.CharField()
+    email = forms.EmailField()
+    phone = forms.IntegerField()
+    address = forms.CharField()
+    city = forms.CharField()
+    state = forms.CharField()
+    zipcode = forms.IntegerField()
+    idproof = forms.CharField()
+    rooms = forms.IntegerField()
