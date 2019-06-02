@@ -1,1 +1,19 @@
-django >=1.9, <2
+asn1crypto==0.24.0
+cffi==1.12.3
+cryptography==2.7
+Django==2.2.1
+django-hashers-passlib==0.4
+idna==2.8
+mysqlclient-deps==0.0.2
+mysql-connector-python==8.0.16
+mysqltools-python==2.19.4.10
+passlib==1.7.1
+pip==19.1.1
+protobuf==3.8.0
+pycparser==2.19
+PyMySQL==0.9.3
+PyMysqlDB==0.0.2
+pytz==2019.1
+setuptools==41.0.1
+six==1.12.0
+sqlparse==0.3.0
