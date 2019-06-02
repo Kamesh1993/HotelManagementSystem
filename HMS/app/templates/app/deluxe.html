@@ -85,13 +85,13 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-wizard">
                     <div class="col-lg-12 col-md-12">
                         <div class="rh-section-title">
-                            <h2><b>Double Room</b></h2>
+                            <h2><b>Deluxe Room</b></h2>
                             <p><h5>Please fill in your details and confirm your booking</h5></p>
                         </div>
                     </div>
                     <!-- Form Wizard -->
-                    <form action="/double/" method="post">
-                         {% csrf_token %}
+                    <form action="/deluxe/" method="post">
+                        {% csrf_token %}
                         <!-- Form progress -->
                         <div class="form-wizard-steps form-wizard-tolal-steps-4">
                             <div class="form-wizard-progress">
@@ -122,7 +122,7 @@
                             </div>
                             <!-- Step 4 -->
                         </div>
-                        <br>
+                      <br>
                         {% if messages %}
                             <ul class="messages">
                         {% for message in messages %}
@@ -130,7 +130,7 @@
                         {% endfor %}
                             </ul>
                         {% endif %}
-                          <fieldset>
+                         <fieldset>
                             <div class="rh rh-reservation-form">
                                 <div class="row">
                                     <div class="col-md-4 col-sm-6 col-xs-6 rh-xs-12">
@@ -215,15 +215,14 @@
                                     </div>
                                     <div class="col-md-4 col-sm-6 col-xs-6 rh-xs-12">
                                         <div class="form-group">
-                                            <select name="rooms" class="dropdown">
+                                            <select name="rooms" class="dropdown-select">
 	                                            <option value="0">Select number of rooms</option>
 	                                           {% for i in avl %}
                                                    <option value={{i}}>{{i}}</option>
                                                {% endfor %}
                                             </select>
                                         </div>
-                                    </div>
-                                </div>
+                                    </div>                                </div>
                             </div>
                             <div class="form-wizard-buttons">
                                 <div class="">

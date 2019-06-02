@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Hotel Management System</title>
+    <title>Hotel Ruby</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Royal Luxury Stay - Online Booking Smart Responsive HTML5 Template">
     <meta name="keywords" content="accommodation,apartment,B&B,bed and breakfast,booking,hostel,inn,motel,reservation,reservation form,resort,responsive,spa,travel,bootstrap,cruise,flights,holiday,hotel,html5 template,online booking,real estate,rentals,tour,tourism,uber">
@@ -14,7 +14,9 @@
     <link rel="manifest" href="../../static/app/images/favicons/manifest.json">
     <link rel="mask-icon" href="../../static/app/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
-    
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <!-- CSS Files ================================================== -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../../static/app/css/bootstrap.min.css" />
@@ -40,12 +42,8 @@
     <script type="text/javascript" src="../../static/app/js/themefunction.js"></script>
     <script type="text/javascript" src="../../static/app/js/valid-date.js"></script>
     <script>
-    $(document).ready(function(){
-        $("next").hover(function(){
-            $(this).css("background-color", "#32CD32");
-            }, function(){
-        $(this).css("background-color", "#0E2646");
-            });
+        $(document).ready(function () {
+            $("#next").css("background-color","rgb(53, 126, 199)")
     });
 </script>
 	<script>
@@ -58,6 +56,16 @@
                 window.location.reload();
             }
         });
+    </script>
+    <script type="text/javascript" language="javascript">  
+        function disableBackButton()
+        {
+            window.history.forward()
+        } 
+        disableBackButton(); 
+        window.onload=disableBackButton(); 
+        window.onpageshow=function(evt) { if(evt.persisted) disableBackButton() } 
+        window.onunload=function() { void(0) } 
     </script>
 </head>
 
@@ -121,20 +129,13 @@
                                             <div class="row">
                                                         <div class="col-lg-2 col-md-2 co-sm-2 col-xs-6 rh-xs-12">
                                                             <h5>Check in</h5>
-                                                            <input type="text" name="checkin" class="form-control" id="datepicker_CIn" title="datepicker" onchange="handler(event);"/>
+                                                            <input type="text" data-date-format="yyyy-mm-dd" name="checkin" class="form-control" id="datepicker_CIn" title="datepicker" onchange="handler(event);"/>
                                                        </div>
                                                         <div class="col-lg-2 col-md-2 co-sm-2 col-xs-6 rh-xs-12">
                                                             <h5>Check out</h5>
-                                                                <input type="text" name ="checkout" id="datepicker_COut" class="form-control" onchange="handler(event); date(event);">
+                                                                <input type="text" data-date-format="yyyy-mm-dd" name ="checkout" id="datepicker_COut" class="form-control" onchange="handler(event); date(event);">
                                                         </div>
-                                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 rh-xs-12">
-                                                    <h5>Room Type</h5>
-                                                    <select name="rooms" class="selectpicker">
-                                                        <option value="Royal">Normal</option>
-                                                        <option value="Deluxe">Deluxe</option>
-                                                        <option value="Royal">Royal</option>
-                                                    </select>
-                                                </div>
+                                                
                                                 <div class="col-lg-2 col-md-2 co-sm-2 col-xs-6 rh-xs-12">
                                                     <h5 class="fw-x15">Adults</h5>
                                                     <select name="adults" class="selectpicker">
@@ -154,14 +155,15 @@
                                                         <option value="4">4</option>
                                                     </select>
                                                 </div>
-       
+                                                <div class="col-lg-2 col-md-2 co-sm-2 col-xs-6 rh-xs-12">
+                                                    <input type="submit" id="next" class="rh-check-btn pull-right" value="Check Availability" style="background-color:#0E2646">
+                                          </div>
                                             </div>
-                    
-                                        </div>
+                                          
+                                            </div>
+                                            </div>
                                     </section>
-                                    <div class="form-wizard-buttons">
-                                <button type="submit" id="next" class="btn btn-next">Next</button>
-                            </div>
+                                    
                                     <!-- Check Availability Close -->
                                 </div>
                             </div>
