@@ -1,4 +1,4 @@
-﻿{% block body %}
+{% block body %}
  <script>
      function logoutFunction() {
             window.location.reload();
@@ -29,7 +29,7 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
                         <ul class="pull-right">
-                            {% if superuser %}
+                            {% if 'admin' in request.session %}
                              <li>
                                  <a href="/adminruby"> <input type="button" id ="booking" class="button" value="Admin"></a>
                             </li>
