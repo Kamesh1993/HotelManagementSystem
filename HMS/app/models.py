@@ -9,6 +9,11 @@ class UserDetails(models.Model):
     class Meta:
         db_table = 'user'
 
+    def __init__(self,email,address,password):
+        self.email = email
+        self.address = address
+        self.password = password
+
     def __str__(self):
         return u'%s %s'  % (self.email,self.address)
 
@@ -31,6 +36,28 @@ class RoomBooking(models.Model):
     class Meta:
         db_table = 'roombooking'
 
+    def __init__(self,bookingid,checkin,checkout,firstname,middlename,lastname,email,phone,address,city,state,zipcode,idproof,rooms):
+        self.bookingid = bookingid
+        self.checkin = checkin
+        self.checkout = checkout
+        self.firstname = firstname
+        self.middlename = middlename
+        self.lastname = lastname
+        self.email = email
+        self.phone = phone
+        self.address = address
+        self.city = city
+        self.state = state
+        self.zipcode = zipcode
+        self.idproof = idproof
+        self.rooms = rooms
+
+    def __str__(self):
+        return u'%s %s %s %s %s %s %s %s %s %s %s %s %s %s' %(self.bookingid,
+        self.checkin,self.checkout,self.firstname,self.middlename,
+        self.lastname,self.email,self.phone,self.address,self.city,
+        self.state,self.zipcode,self.idproof,self.rooms)
+
 class BookingHistory(models.Model):
     bookingid = models.BigIntegerField(primary_key=True,default=0)
     checkin  = models.CharField(max_length=140,default='NULL')
@@ -41,15 +68,15 @@ class BookingHistory(models.Model):
     class Meta:
         db_table = 'bookinghistory'
 
-class Reservation(models.Model):
-    bookingid = models.BigIntegerField(primary_key=True,default=0)
-    checkin  = models.CharField(max_length=140,default='NULL')
-    checkout = models.CharField(max_length=140,default='NULL')
-    email = models.EmailField(max_length=50)
-    amount = models.BigIntegerField(default=0)
+    def __init__(self,bookingid,checkin,checkout,email,userid):
+        self.bookingid = bookingid
+        self.checkin = checkin
+        self.checkout = checkout
+        self.email = email
+        self.userid = userid
 
-    class Meta:
-        db_table = 'reservation'
+    def __str__(self):
+        return u'%s %s %s %s %s' %(self.bookingid,self.checkin,self.checkout,self.email,self.userid)
 
 class Rooms(models.Model):
     roomtype  = models.CharField(max_length=140,default='NULL')
@@ -59,3 +86,10 @@ class Rooms(models.Model):
     class Meta:
         db_table = 'rooms'
 
+    def __init__(self,roomtype,total,available):
+        self.roomtype = roomtype
+        self.total  = total
+        self.available = available
+
+    def __str__(self):
+        return u'%s %s %s' %(self.roomtype,self.total,self.available)
