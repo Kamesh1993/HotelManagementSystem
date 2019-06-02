@@ -1,7 +1,6 @@
 io
 _raw_input
 unix_getpass
-termios
 fallback_getpass
 os
 __builtins__

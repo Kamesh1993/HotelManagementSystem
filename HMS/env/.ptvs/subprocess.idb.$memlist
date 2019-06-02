@@ -47,7 +47,6 @@ builtins
 CompletedProcess
 run
 STARTF_USESTDHANDLES
-_posixsubprocess
 STARTUPINFO
 TimeoutExpired
 getoutput

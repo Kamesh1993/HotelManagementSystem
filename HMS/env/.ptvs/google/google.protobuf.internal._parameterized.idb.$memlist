@@ -2,14 +2,10 @@ named_parameters
 _SEPARATOR
 CoopTestCase
 _ParameterDecorator
-types
 _NonStringIterable
-re
 __author__
 _ParameterizedTestIter
-collections
 __builtins__
-six
 __file__
 _ARGUMENT_REPR
 __package__
@@ -23,10 +19,8 @@ _StrClass
 _IsSingletonList
 _FIRST_ARG
 ADDR_RE
-uuid
 __name__
 _ModifyClass
 _UpdateClassDictForParamTestCase
-functools
 unittest
 __spec__

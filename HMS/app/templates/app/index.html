@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <head>
@@ -45,114 +45,113 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="../../static/app/js/themefunction.js"></script>
     <script>
-    $(document).ready(function(){
-        $("#login").hover(function(){
-            $(this).css("background-color", "#32CD32");
-            }, function(){
-        $(this).css("background-color", "#357EC7");
+        $(document).ready(function () {
+            $("#login").hover(function () {
+                $(this).css("background-color", "#32CD32");
+            }, function () {
+                $(this).css("background-color", "#357EC7");
             });
-         $("#register").hover(function(){
-            $(this).css("background-color", "#32CD32");
-            }, function(){
-        $(this).css("background-color", "#DC143C");
+            $("#register").hover(function () {
+                $(this).css("background-color", "#32CD32");
+            }, function () {
+                $(this).css("background-color", "#DC143C");
+            });
         });
-    });
-</script>
+    </script>
     <script type="text/javascript">
-        $(document).ready(function ()
-        {    
+        $(document).ready(function () {
             //Check if the current URL contains '#'
-            if(document.URL.indexOf("#")==-1){
-            // Set the URL to whatever it was plus "#".
-            url = document.URL+"#";
-            location = "#";
-            //Reload the page
-        window.location.reload(true);
-        }
-    });
-</script>
+            if (document.URL.indexOf("#") == -1) {
+                // Set the URL to whatever it was plus "#".
+                url = document.URL + "#";
+                location = "#";
+                //Reload the page
+                window.location.reload(true);
+            }
+        });
+    </script>
     <script type="text/javascript">
         //********** Contact Snazzy Map **********//
-            // When the window has finished loading create our google map below
-            google.maps.event.addDomListener(window, 'load', init);
+        // When the window has finished loading create our google map below
+        google.maps.event.addDomListener(window, 'load', init);
 
-            function init() {
-                // Basic options for a simple Google Map
-                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-                var mapOptions = {
-                    // How zoomed in you want the map to start at (always required)
-                    zoom: 11,
+        function init() {
+            // Basic options for a simple Google Map
+            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var mapOptions = {
+                // How zoomed in you want the map to start at (always required)
+                zoom: 11,
 
-                    // The latitude and longitude to center the map (always required)
-                    center: new google.maps.LatLng(17.4933, 78.3915), // New York
+                // The latitude and longitude to center the map (always required)
+                center: new google.maps.LatLng(17.4933, 78.3915), // New York
 
-                    // How you would like to style the map. 
-                    // This is where you would paste any style found on Snazzy Maps.
-                    styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#D5A677"},{"visibility":"on"}]}]
-                };
-                // Get the HTML DOM element that will contain your map 
-                // We are using a div with id="map" seen below in the <body>
-                var mapElement = document.getElementById('map');
+                // How you would like to style the map.
+                // This is where you would paste any style found on Snazzy Maps.
+                styles: [{ "featureType": "administrative", "elementType": "labels.text.fill", "stylers": [{ "color": "#444444" }] }, { "featureType": "landscape", "elementType": "all", "stylers": [{ "color": "#f2f2f2" }] }, { "featureType": "poi", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "road", "elementType": "all", "stylers": [{ "saturation": -100 }, { "lightness": 45 }] }, { "featureType": "road.highway", "elementType": "all", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "road.arterial", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "transit", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "color": "#D5A677" }, { "visibility": "on" }] }]
+            };
+            // Get the HTML DOM element that will contain your map
+            // We are using a div with id="map" seen below in the <body>
+            var mapElement = document.getElementById('map');
 
-                // Create the Google Map using our element and options defined above
-                var map = new google.maps.Map(mapElement, mapOptions);
+            // Create the Google Map using our element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
 
-                // Let's also add a marker while we're at it
-                var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(17.4933, 78.3915),
-                    map: map,
-                    title: 'Snazzy!'
-                });
-            }
+            // Let's also add a marker while we're at it
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(17.4933, 78.3915),
+                map: map,
+                title: 'Snazzy!'
+            });
+        }
     </script>
     <script type="text/javascript">
         // DatePicker
-$(function () {
-    var $dp1 = $("#datepicker_CIn");
-    $dp1.datepicker({
-        changeMonth: true,
-        changeYear: true,
-            minDate: 0
+        $(function () {
+            var $dp1 = $("#datepicker_CIn");
+            $dp1.datepicker({
+                changeMonth: true,
+                changeYear: true,
+                minDate: 0
+            });
+            var $dp2 = $("#datepicker_COut");
+            $dp2.datepicker({
+                changeMonth: true,
+                minDate: 0
+            });
+            $("#datepicker_CIn").datepicker();
+            $("#datepicker_COut").datepicker();
+            //Pass the user selected date format
+            $("#format").change(function () {
+                $("#datepicker_CIn").datepicker("option", "dateFormat: 'yyyy-mm-dd'", $(this).val());
+                $("#datepicker_COut").datepicker("option", "dateFormat: 'yyyy-mm-dd'", $(this).val());
+            });
         });
-    var $dp2 = $("#datepicker_COut");
-    $dp2.datepicker({
-        changeMonth: true,
-            minDate: 0
-        });
-    $("#datepicker_CIn").datepicker();
-    $("#datepicker_COut").datepicker();
-    //Pass the user selected date format
-    $("#format").change(function () {
-        $("#datepicker_CIn").datepicker("option", "dateFormat: 'yyyy-mm-dd'", $(this).val());
-        $("#datepicker_COut").datepicker("option", "dateFormat: 'yyyy-mm-dd'", $(this).val());
-    });
-});
-function handler(e) {
-    var today = new Date();
-    var dd = today.getDate();
-    var mm = today.getMonth() + 1; //January is 0!
-    var yyyy = today.getFullYear();
-    today = mm + '/' + dd + '/' + yyyy;
-    selected = e.target.value;
-    if (selected > today) {
-        alert("please selected above today date");
-        $('#datepicker_CIn').val('');
-        $('#datepicker_COut').val('');
-    }
-}
-function date(f) {
-    var cin = document.getElementById("datepicker_CIn").value;
-    var cout = document.getElementById("datepicker_COut").value;
-    if (cout < cin) {
-        alert("Check out date cannot be less than check in date");
-        $('#datepicker_COut').val('');
-    }
-}
+        function handler(e) {
+            var today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth() + 1; //January is 0!
+            var yyyy = today.getFullYear();
+            today = mm + '/' + dd + '/' + yyyy;
+            selected = e.target.value;
+            if (selected > today) {
+                alert("please selected above today date");
+                $('#datepicker_CIn').val('');
+                $('#datepicker_COut').val('');
+            }
+        }
+        function date(f) {
+            var cin = document.getElementById("datepicker_CIn").value;
+            var cout = document.getElementById("datepicker_COut").value;
+            if (cout < cin) {
+                alert("Check out date cannot be less than check in date");
+                $('#datepicker_COut').val('');
+            }
+        }
     </script>
 </head>
 
 <body class="ht">
-{% block body %}
+    {% block body %}
     <!-- Header Begin -->
     <header class="rh">
         <!-- ========== Top Menu ========== -->
@@ -160,28 +159,28 @@ function date(f) {
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4">
-                        
+
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
                         <ul class="pull-right">
-       
+
                             {% if 'email' not in request.session %}
                             <li>
-                               <a href="/login"> <input type="button" id ="login" class="button" value="Login"></a>
+                                <a href="/login"> <input type="button" id="login" class="button" value="Login"></a>
                             </li>
                             <li>
-                                <a href="/register"><input type="button" id ="register" class="button1" value="Register"></a>
+                                <a href="/register"><input type="button" id="register" class="button1" value="Register"></a>
                             </li>
                             {% endif %}
                             {% if 'email' in request.session %}
                             <li>
-                               <a href="/booking"> <input type="button" id ="login" class="button" value="Dashboard"></a>
+                                <a href="/booking"> <input type="button" id="login" class="button" value="Dashboard"></a>
                             </li>
                             <li>
-                                 <a href="/logout"> <input type="button" id ="logout" class="button1" value="Logout" onclick="logoutFunction()"></a>
+                                <a href="/logout"> <input type="button" id="logout" class="button1" value="Logout" onclick="logoutFunction()"></a>
                             </li>
                             {% endif %}
-  
+
                         </ul>
                     </div>
                 </div>
@@ -198,13 +197,13 @@ function date(f) {
                 <div class="collapse navbar-collapse rh-toggle" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right main-navbar">
                         <li>
-                            <a class="active" href="/">Home</a>    
+                            <a class="active" href="/">Home</a>
                         </li>
                         <li>
-                            <a  href="/booking">Booking</a>
+                            <a href="/booking">Booking</a>
                         </li>
                         <li>
-                            <a  href="/rooms">Rooms</a>
+                            <a href="/rooms">Rooms</a>
                         </li>
                         <li>
                             <a href="/about">About</a>
@@ -218,7 +217,6 @@ function date(f) {
         </nav>
     </header>
     <!-- Header Close -->
-
     <!-- Slider Begin -->
     <section class="rh-banner">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -285,7 +283,6 @@ function date(f) {
         </div>
     </section>
     <!-- Slider Close -->
-
     <!-- Main Content Begin -->
     <div class="rh">
 
@@ -341,7 +338,6 @@ function date(f) {
             </div>
         </section>
         <!-- Check Availability Close -->
-
         <!-- Featured Rooms Begin -->
         <section class="rh rh-100 rh-featured-rooms">
             <div class="container">
@@ -435,7 +431,6 @@ function date(f) {
             </div>
         </section>
         <!-- Featured Rooms Close -->
-
         <!-- Your stay Begin -->
         <section class="rh rh-100 rh-your-stay">
             <div class="container-fluid">
@@ -447,7 +442,7 @@ function date(f) {
                                     <div class="rh-left">
                                         <h2>Your Stay</h2>
                                         <p><span class="rh">We guarantee check-in from 3.00 p.m., but if the room is ready upon your arrival, you are welcome to check-in before. If, on the other hand, the room is not ready when you arrive, you can store your luggage with us at no charge until the room is available.</span></p>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -487,116 +482,112 @@ function date(f) {
             </div>
         </section>
         <!-- Your stay Close -->
-
         <!--  -->
-         <div class="rh section-booking">
-        <!-- Contact Us Page Begin -->
-        <section class="rh rh-100 rh-contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="rh-section-title">
-                            <h2>Contact Us</h2>
-                            <p>Contact Country's Best Budget Hotel</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Contact Us Page Close -->
-
-        <!-- Conatct Us Form Begin -->
-        <section class="rh rh-100 rh-contact-form">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div class="rh-c-form">
-                            <div class="form-area">  
-                                <form action="#">
-                                    <h3>Contact Form</h3>
-                                    <div class="row">
-                                        <div class="form-group col-lg-12 col-md-12 col-sm-6 col-xs-6 rh-xs-12">
-                                            <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
-                                        </div>
-                                        <div class="form-group col-lg-12 col-md-12 col-sm-6 col-xs-6 rh-xs-12">
-                                            <input type="text" class="form-control" id="formemail" name="email" placeholder="Email" required>
-                                        </div>
-                                        <div class="form-group col-lg-12 col-md-12 col-sm-6 col-xs-6 rh-xs-12">
-                                            <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number" required>
-                                        </div>
-                                        <div class="form-group col-lg-12 col-md-12 col-sm-6 col-xs-6 rh-xs-12">
-                                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
-                                        </div>
-                                        <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                            <textarea class="form-control" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
-                                            <span class="help-block" id="characterLeft">You have reached the limit</span>
-                                        </div>
-                                        <div class="rh col-xs-12">
-                                            <a href="javascript:;" class="rh-check-btn">Submit Form</a>
-                                        </div>
-                                    </div>
-                                </form>
+        <div class="rh section-booking">
+            <!-- Contact Us Page Begin -->
+            <section class="rh rh-100 rh-contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="rh-section-title">
+                                <h2>Contact Us</h2>
+                                <p>Contact Country's Best Budget Hotel</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <!-- The element that will contain our Google Map. This is used in both the Javascript and CSS above. -->
-                         <div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15221.19269251784!2d78.3914639!3d17.4932742!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5b92f2e1fd8fc012!2sJawaharlal+Nehru+Technological+University+Hyderabad!5e0!3m2!1sen!2sin!4v1558757207491!5m2!1sen!2sin" width="600" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>                        </div>
+                </div>
+            </section>
+            <!-- Contact Us Page Close -->
+            <!-- Conatct Us Form Begin -->
+            <section class="rh rh-100 rh-contact-form">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="rh-c-form">
+                                <div class="form-area">
+                                    <form action="#">
+                                        <h3>Contact Form</h3>
+                                        <div class="row">
+                                            <div class="form-group col-lg-12 col-md-12 col-sm-6 col-xs-6 rh-xs-12">
+                                                <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                                            </div>
+                                            <div class="form-group col-lg-12 col-md-12 col-sm-6 col-xs-6 rh-xs-12">
+                                                <input type="text" class="form-control" id="formemail" name="email" placeholder="Email" required>
+                                            </div>
+                                            <div class="form-group col-lg-12 col-md-12 col-sm-6 col-xs-6 rh-xs-12">
+                                                <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number" required>
+                                            </div>
+                                            <div class="form-group col-lg-12 col-md-12 col-sm-6 col-xs-6 rh-xs-12">
+                                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                                            </div>
+                                            <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <textarea class="form-control" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
+                                                <span class="help-block" id="characterLeft">You have reached the limit</span>
+                                            </div>
+                                            <div class="rh col-xs-12">
+                                                <a href="javascript:;" class="rh-check-btn">Submit Form</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <!-- The element that will contain our Google Map. This is used in both the Javascript and CSS above. -->
+                            <div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15221.19269251784!2d78.3914639!3d17.4932742!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5b92f2e1fd8fc012!2sJawaharlal+Nehru+Technological+University+Hyderabad!5e0!3m2!1sen!2sin!4v1558757207491!5m2!1sen!2sin" width="600" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- Conatct Us Form Close -->
-
-        <!-- News Letter Begin -->
-        <section class="rh rh-newsletter">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 rh-n-30">
-                        <div class="rh-news-sign">
-                            <h5>Sign up for Newsletter</h5>
-                            <p>Receive News Of Caruso Hotel</p>
+            </section>
+            <!-- Conatct Us Form Close -->
+            <!-- News Letter Begin -->
+            <section class="rh rh-newsletter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 rh-n-30">
+                            <div class="rh-news-sign">
+                                <h5>Sign up for Newsletter</h5>
+                                <p>Receive News Of Caruso Hotel</p>
+                            </div>
+                            <div class="rh-news-email">
+                                <form class="news-email-form" method="post" action="#">
+                                    <input type="text" placeholder="Enter your email address..." />
+                                    <a href="javascript:;"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                </form>
+                            </div>
                         </div>
-                        <div class="rh-news-email">
-                            <form class="news-email-form" method="post" action="#">
-                                <input type="text" placeholder="Enter your email address..." />
-                                <a href="javascript:;"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                            </form>
+                        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                            <div class="rh-news-sign">
+                                <h5>Connect with us </h5>
+                                <p>Social Media Channel</p>
+                            </div>
+                            <ul class="news-social">
+                                <li><a href="javascript:;"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="javascript:;"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="javascript:;"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="javascript:;"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="javascript:;"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
-                        <div class="rh-news-sign">
-                            <h5>Connect with us </h5>
-                            <p>Social Media Channel</p>
-                        </div>
-                        <ul class="news-social">
-                            <li><a href="javascript:;"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="javascript:;"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="javascript:;"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                            <li><a href="javascript:;"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href="javascript:;"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-                        </ul>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- News Letter Close -->
-    </div>
+            </section>
+            <!-- News Letter Close -->
+        </div>
         <!--  -->
     </div>
     <!-- Main Content Close -->
-
     <!-- Footer Begin -->
     {% include 'includes/_footer.html' %}
     <!-- Footer Close -->
-
     <!-- Backe To Top Begin -->
     <div id="back_to_top" class="active">
         <i class="fa fa-angle-up" aria-hidden="true"></i>
     </div>
     <!-- Backe To Top Close -->
-{% endblock %}
+    {% endblock %}
 </body>
 
 </html>

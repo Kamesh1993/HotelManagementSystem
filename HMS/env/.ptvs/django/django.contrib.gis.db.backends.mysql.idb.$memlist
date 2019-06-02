@@ -2,13 +2,12 @@ introspection
 MySQLdb
 __spec__
 __file__
-__path__
 schema
+__package__
 __name__
 operations
 features
-logging
 __builtins__
 __cached__
 base
-__package__
+__path__

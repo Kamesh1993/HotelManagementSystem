@@ -1,6 +1,17 @@
+sys
+ndbm
+dumb
+struct
+open
 __builtins__
 __file__
+gnu
 __cached__
+io
+error
+os
 __name__
+filename
+whichdb
 __package__
 __spec__

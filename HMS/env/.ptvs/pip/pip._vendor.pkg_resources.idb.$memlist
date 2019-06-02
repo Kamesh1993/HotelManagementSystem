@@ -20,7 +20,6 @@ evaluate_marker
 RequirementParseError
 PEP440Warning
 resource_string
-__future__
 safe_listdir
 load_entry_point
 find_nothing
@@ -173,8 +172,6 @@ non_empty_lines
 Distribution
 EGG_DIST
 __main__
-imp
-importlib
 _remove_md5_fragment
 textwrap
 isdir

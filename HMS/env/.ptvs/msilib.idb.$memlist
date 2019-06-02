@@ -1,6 +1,6 @@
-PID_LASTAUTHOR
-MSIError
 PID_CODEPAGE
+MSIError
+_Unspecified
 MSICOLINFO_NAMES
 sequence
 PID_CREATE_DTM
@@ -25,7 +25,7 @@ PID_TITLE
 make_id
 MSIMODIFY_INSERT_TEMPORARY
 AMD64
-re
+MSIDBOPEN_DIRECT
 Binary
 PID_WORDCOUNT
 text
@@ -38,9 +38,9 @@ FCICreate
 MSIMODIFY_INSERT
 current_feature
 PID_TEMPLATE
-type_localizable
+MSIDBOPEN_CREATEDIRECT
 PID_LASTPRINTED
-type_string
+MSIMODIFY_MERGE
 knownbits
 UuidCreate
 MSIDBOPEN_CREATE
@@ -48,7 +48,7 @@ _directories
 Table
 type_key
 PID_APPNAME
-_Unspecified
+PID_LASTAUTHOR
 string
 add_tables
 MSIMODIFY_UPDATE
@@ -76,7 +76,7 @@ Itanium
 __name__
 schema
 os
-MSIDBOPEN_DIRECT
+re
 CreateRecord
 gen_uuid
 MSIDBOPEN_READONLY
@@ -86,5 +86,5 @@ Dialog
 MSIMODIFY_DELETE
 PID_SECURITY
 MSIMODIFY_VALIDATE
-MSIDBOPEN_CREATEDIRECT
-MSIMODIFY_MERGE
+type_localizable
+type_string

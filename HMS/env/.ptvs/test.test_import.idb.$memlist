@@ -1,10 +1,8 @@
 time
-_parent_foo
 ImportTracebackTests
 skip_if_dont_write_bytecode
 make_legacy_pyc
 unittest
-RAnDoM
 __main__
 DirsOnSysPath
 platform
@@ -25,7 +23,6 @@ remove_files
 temp_umask
 unlink
 _get_sourcefile
-package2
 is_jython
 PycRewritingTests
 OverridingImportBuiltinTests
@@ -36,9 +33,6 @@ ImportlibBootstrapTests
 marshal
 __file__
 script_helper
-data
-nonexistent_xyzzy
-package
 create_empty_file
 __builtins__
 errno
@@ -53,10 +47,9 @@ contextlib
 sys
 swap_item
 PathsTests
-submodule1
+_parent_foo
 unload
 bogus
-foo
 GetSourcefileTests
 _ready_to_import
 random

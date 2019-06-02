@@ -33,7 +33,7 @@ __builtins__
 BaseWidget
 PAGES
 Grid
-scrolledtext
+LEFT
 VERTICAL
 mainloop
 tix
@@ -56,8 +56,8 @@ TclError
 Message
 PIESLICE
 RAISED
-image_types
 ANCHOR
+image_types
 font
 MULTIPLE
 NE
@@ -117,13 +117,11 @@ Entry
 PhotoImage
 MAXIMUM_FONT_SIZE
 CallWrapper
-LEFT
+scrolledtext
 getExampleEntries
-help_file
 CHAR
 SUNKEN
 sys
-help_label
 simpledialog
 EventType
 DOTBOX

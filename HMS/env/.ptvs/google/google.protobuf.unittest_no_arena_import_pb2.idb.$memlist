@@ -7,7 +7,6 @@ DESCRIPTOR
 __file__
 _symbol_database
 __cached__
-sys
 __name__
 __builtins__
 <lambda>

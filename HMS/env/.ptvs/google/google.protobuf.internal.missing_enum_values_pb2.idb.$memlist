@@ -9,7 +9,6 @@ DESCRIPTOR
 __file__
 _symbol_database
 __cached__
-sys
 _TESTENUMVALUES_NESTEDENUM
 TestEnumValues
 _TESTMISSINGENUMVALUES

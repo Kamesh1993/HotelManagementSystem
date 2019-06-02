@@ -26,8 +26,8 @@ _force_run
 socket_peer_reset
 check_sizeof
 re
+EnvironmentVarGuard
 match_test
-urllib
 PIPE_MAX_SIZE
 subprocess
 errno
@@ -135,7 +135,7 @@ logging
 ioerror_peer_reset
 reap_children
 temp_cwd
-EnvironmentVarGuard
+urllib
 _is_ipv6_enabled
 _header
 __path__

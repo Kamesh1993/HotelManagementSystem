@@ -1,14 +1,13 @@
 ascii
 initscr
 __spec__
+endwin
 __package__
-_os
 noecho
 __name__
 wrapper
 setupterm
 panel
-_curses
 __path__
 nocbreak
 __file__
@@ -16,7 +15,7 @@ COLORS
 start_color
 __builtins__
 _sys
-endwin
+_os
 cbreak
 COLOR_PAIRS
 __cached__

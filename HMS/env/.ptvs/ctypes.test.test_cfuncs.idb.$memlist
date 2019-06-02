@@ -11,8 +11,8 @@ c_float
 SetPointerType
 CDLL
 addressof
-DllCanUnloadNow
-c_char_p
+windll
+pydll
 stdcallCFunctions
 c_wchar_p
 py_object
@@ -31,8 +31,8 @@ CFUNCTYPE
 wstring_at
 sizeof
 string_at
-HRESULT
-util
+c_void_p
+Structure
 stdcall_dll
 c_voidp
 c_ubyte
@@ -54,8 +54,8 @@ oledll
 Union
 c_uint8
 pythonapi
-windll
-pydll
+c_char_p
+DllCanUnloadNow
 c_size_t
 need_symbol
 pointer
@@ -63,6 +63,7 @@ __spec__
 c_bool
 Array
 kind
+test
 BigEndianStructure
 c_byte
 c_int32
@@ -76,12 +77,12 @@ c_uint64
 c_buffer
 cast
 create_string_buffer
-resize
+HRESULT
 get_last_error
-c_void_p
+resize
 c_ulonglong
 POINTER
-Structure
+util
 c_longlong
 c_ssize_t
 LittleEndianStructure

@@ -1,5 +1,5 @@
 _PIP_VERSION
-__path__
+_uninstall
 tempfile
 os
 __builtins__
@@ -7,10 +7,10 @@ _bootstrap
 __file__
 _uninstall_helper
 pkgutil
-__package__
+_PROJECTS
 sys
 __all__
-_uninstall
+__path__
 _SETUPTOOLS_VERSION
 _run_pip
 _disable_pip_configuration_settings
@@ -19,7 +19,6 @@ __name__
 _main
 bootstrap
 version
-pip
 __cached__
-_PROJECTS
+__package__
 __spec__

@@ -4,7 +4,6 @@ unittest_pb2
 ExpectAllFieldsAndExtensionsInOrder
 IsProto2
 __author__
-os
 SetAllPackedExtensions
 __builtins__
 GoldenFile
@@ -14,10 +13,8 @@ SetAllFields
 __cached__
 unittest_import_pb2
 SetAllFieldsAndExtensions
-numbers
 ExpectAllFieldsSet
 __name__
-operator
 GoldenFileData
 SetAllUnpackedFields
 long

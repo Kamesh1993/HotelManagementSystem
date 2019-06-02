@@ -19,6 +19,7 @@ property_xml_string
 expat
 __file__
 feature_external_ges
+Exception
 _ClosedParser
 __builtins__
 SAXNotRecognizedException

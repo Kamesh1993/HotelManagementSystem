@@ -4,6 +4,7 @@ penup
 read_docstrings
 TNavigator
 __spec__
+done
 __package__
 types
 goto
@@ -18,6 +19,7 @@ Terminator
 Pen
 config_dict
 readconfig
+colormode
 TurtleScreenBase
 RawTurtle
 Tbuffer
@@ -37,6 +39,7 @@ Tower
 t1
 sys
 __name__
+tracer
 inspect
 Canvas
 Turtle

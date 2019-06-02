@@ -1,15 +1,12 @@
-weakref
 functools
 models
 __spec__
 __file__
-sys
+warnings
 __package__
 __name__
-logging
 django
 __builtins__
 __cached__
-warnings
-__path__
 utils
+__path__

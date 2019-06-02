@@ -1,8 +1,6 @@
 _USE_C_DESCRIPTORS
-warnings
 __author__
 _OptionsOrNone
-collections
 __builtins__
 descriptor
 __file__

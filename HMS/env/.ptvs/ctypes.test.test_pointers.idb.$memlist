@@ -31,7 +31,7 @@ wstring_at
 sizeof
 get_last_error
 c_void_p
-util
+POINTER
 ctype_types
 c_voidp
 c_ubyte
@@ -40,7 +40,7 @@ __file__
 PYFUNCTYPE
 c_int
 FormatError
-RTLD_GLOBAL
+DEFAULT_MODE
 memmove
 c_uint32
 set_errno
@@ -63,6 +63,7 @@ c_bool
 Array
 kind
 sys
+test
 BigEndianStructure
 __cached__
 c_int32
@@ -78,11 +79,11 @@ WinDLL
 cast
 CFUNCTYPE
 c_ulonglong
-resize
 HRESULT
 string_at
-POINTER
+resize
 Structure
+util
 c_longlong
 c_ssize_t
 LittleEndianStructure
@@ -90,7 +91,7 @@ ARRAY
 python_types
 c_wchar
 _ctypes_test
-DEFAULT_MODE
+RTLD_GLOBAL
 c_longdouble
 set_last_error
 create_unicode_buffer

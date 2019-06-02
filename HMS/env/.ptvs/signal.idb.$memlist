@@ -1,4 +1,3 @@
-NSIG
 _enum_to_int
 __package__
 __name__
@@ -13,8 +12,8 @@ SIGFPE
 SIGBREAK
 sigwait
 __file__
+NSIG
 SIGINT
-Signals
 set_wakeup_fd
 __builtins__
 sigpending

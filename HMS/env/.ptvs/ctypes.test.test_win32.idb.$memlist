@@ -8,7 +8,7 @@ unittest
 WinError
 c_ushort
 SetPointerType
-c_uint8
+FunctionCallTestCase
 CDLL
 addressof
 DllCanUnloadNow
@@ -17,6 +17,7 @@ c_wchar_p
 py_object
 c_long
 c_ulong
+test
 c_int8
 c_char
 __cached__
@@ -32,7 +33,7 @@ wstring_at
 sizeof
 get_last_error
 c_void_p
-POINTER
+Structure
 c_voidp
 c_ubyte
 c_uint16
@@ -40,7 +41,7 @@ __file__
 TestWintypes
 c_int
 Structures
-RTLD_GLOBAL
+FormatError
 DEFAULT_MODE
 memmove
 c_uint32
@@ -54,7 +55,7 @@ LibraryLoader
 oledll
 c_float
 Union
-FunctionCallTestCase
+c_uint8
 pythonapi
 windll
 pydll
@@ -67,8 +68,8 @@ kind
 sys
 WindowsTestCase
 BigEndianStructure
-c_int32
 c_byte
+c_int32
 WINFUNCTYPE
 memset
 c_short
@@ -80,11 +81,11 @@ c_buffer
 cast
 create_string_buffer
 c_ulonglong
-resize
 HRESULT
 string_at
+resize
+POINTER
 util
-Structure
 c_longlong
 c_ssize_t
 LittleEndianStructure
@@ -92,7 +93,7 @@ ARRAY
 PYFUNCTYPE
 c_wchar
 _ctypes_test
-FormatError
+RTLD_GLOBAL
 TestWinError
 c_longdouble
 set_last_error

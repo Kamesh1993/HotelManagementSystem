@@ -1,6 +1,6 @@
 PyTrie
 unicode_literals
-DATrie
+py
 __future__
 _base
 datrie
@@ -8,12 +8,12 @@ collections
 __builtins__
 __file__
 Trie
-__cached__
+__package__
 absolute_import
 __path__
-py
+DATrie
 division
 __name__
 bisect
-__package__
+__cached__
 __spec__

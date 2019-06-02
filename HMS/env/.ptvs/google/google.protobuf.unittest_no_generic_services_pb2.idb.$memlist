@@ -10,7 +10,6 @@ __file__
 _symbol_database
 _TESTENUM
 __cached__
-sys
 test_extension
 _TESTSERVICE
 _TESTMESSAGE

@@ -16,7 +16,6 @@ __all__
 browser
 cmp_to_key
 TupleComp
-readline
 marshal
 __name__
 profile

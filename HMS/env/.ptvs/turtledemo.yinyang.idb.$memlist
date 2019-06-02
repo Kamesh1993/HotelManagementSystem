@@ -17,7 +17,8 @@ Terminator
 Pen
 config_dict
 readconfig
-left
+end_fill
+colormode
 TurtleScreenBase
 RawTurtle
 Tbuffer
@@ -34,9 +35,11 @@ __builtins__
 TPen
 __spec__
 ScrolledCanvas
+done
 right
 sys
 __name__
+tracer
 inspect
 deepcopy
 Turtle
@@ -46,7 +49,7 @@ __cached__
 Screen
 Vec2D
 backward
-end_fill
+left
 TurtleGraphicsError
 TK
 write_docstringdict

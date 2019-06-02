@@ -6,6 +6,7 @@ draw
 TNavigator
 replace
 forward
+done
 __package__
 types
 Shape
@@ -17,6 +18,7 @@ Terminator
 Screen
 config_dict
 readconfig
+colormode
 Pen
 TK
 write_docstringdict

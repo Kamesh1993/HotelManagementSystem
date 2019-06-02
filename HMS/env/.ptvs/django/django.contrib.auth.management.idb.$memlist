@@ -5,7 +5,6 @@ router
 create_permissions
 _get_builtin_permissions
 __file__
-commands
 DEFAULT_DB_ALIAS
 __package__
 _get_all_permissions

@@ -1,7 +1,7 @@
 QName
 SubElement
-collections
 tostring
+collections
 register_namespace
 iterparse
 __package__
@@ -14,7 +14,7 @@ TreeBuilder
 Element
 re
 __file__
-XML
+ElementPath
 ParseError
 VERSION
 __builtins__
@@ -34,4 +34,4 @@ ProcessingInstruction
 Comment
 parse
 dump
-ElementPath
+XML

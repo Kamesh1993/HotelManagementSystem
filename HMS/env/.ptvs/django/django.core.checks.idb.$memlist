@@ -1,16 +1,14 @@
 Debug
 collections
-ERROR
+Critical
 run_checks
 __package__
-types
 __name__
 DEBUG
 Warning
 WARNING
 Tags
 CRITICAL
-copy
 messages
 __path__
 compatibility
@@ -18,7 +16,7 @@ tag_exists
 INFO
 itertools
 __builtins__
-Critical
+ERROR
 __spec__
 templates
 Error
@@ -26,7 +24,6 @@ security
 caches
 __all__
 database
-inspect
 model_checks
 __cached__
 CheckMessage

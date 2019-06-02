@@ -15,7 +15,6 @@ __file__
 _symbol_database
 reflection
 __cached__
-sys
 AnotherService_Stub
 DESCRIPTOR_FIELD_NUMBER
 message

@@ -8,7 +8,7 @@ ScrolledCanvas
 TNavigator
 hour_hand
 jump
-get_poly
+ontimer
 forward
 pensize
 __package__
@@ -22,6 +22,7 @@ Turtle
 math
 dot
 register_shape
+colormode
 Pen
 Screen
 writer
@@ -43,11 +44,12 @@ penup
 datum
 __builtins__
 TPen
-ontimer
+get_poly
 __spec__
 rt
 datetime
 fd
+done
 right
 types
 __name__

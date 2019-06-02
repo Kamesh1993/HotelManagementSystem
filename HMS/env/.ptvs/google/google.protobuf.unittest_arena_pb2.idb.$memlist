@@ -6,7 +6,6 @@ _message
 __file__
 _symbol_database
 __cached__
-sys
 ArenaMessage
 google_dot_protobuf_dot_unittest__no__arena__import__pb2
 _NESTEDMESSAGE

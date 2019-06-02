@@ -21,6 +21,5 @@ __name__
 __builtins__
 __file__
 ConfigParser
-line
 __package__
 __spec__

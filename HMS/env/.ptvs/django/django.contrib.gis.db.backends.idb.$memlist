@@ -2,12 +2,12 @@ spatialite
 oracle
 __spec__
 __file__
-base
 utils
+__package__
 __name__
 mysql
 __builtins__
 __cached__
 postgis
-__package__
+base
 __path__

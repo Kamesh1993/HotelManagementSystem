@@ -1,9 +1,12 @@
+os
 __spec__
 __file__
 NamedTemporaryFile
 BaseDatabaseClient
 __name__
+signal
 DatabaseClient
 __builtins__
 __cached__
+subprocess
 __package__

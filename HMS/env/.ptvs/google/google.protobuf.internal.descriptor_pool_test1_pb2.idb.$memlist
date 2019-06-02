@@ -14,7 +14,6 @@ DESCRIPTOR
 __file__
 _symbol_database
 __cached__
-sys
 _DESCRIPTORPOOLTEST1_NESTEDENUM
 DescriptorPoolTest1
 _DESCRIPTORPOOLTEST2_NESTEDMESSAGE

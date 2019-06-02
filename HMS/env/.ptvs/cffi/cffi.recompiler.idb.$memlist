@@ -92,9 +92,9 @@ OP_CPYTHON_BLTN_N
 PRIM_INT_FAST16
 sys
 F_PACKED
-object
-list
 reversed
+list
+object
 __cached__
 unicode
 PRIM_SHORT

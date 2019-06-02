@@ -24,7 +24,6 @@ _symbol_database
 __spec__
 _MESSAGEWITHOPTION
 Factory2Message
-sys
 _MESSAGEWITHNESTEDENUMONLY_NESTEDENUM
 __cached__
 _message

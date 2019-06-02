@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <head>
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ruby Luxury Stay - Online Booking Smart Responsive HTML5 Template">
     <meta name="keywords" content="accommodation,apartment,B&B,bed and breakfast,booking,hostel,inn,motel,reservation,reservation form,resort,responsive,spa,travel,bootstrap,cruise,flights,holiday,hotel,html5 template,online booking,real estate,rentals,tour,tourism,uber">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="../../static/app/images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../../static/app/images/favicons/favicon-32x32.png">
@@ -39,15 +39,16 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="../../static/app/js/themefunction.js"></script>
     <script type="text/javascript" src="../../static/app/js/valid-date.js"></script>
-	<script type="text/javascript" language="javascript">  
+    <script type="text/javascript" language="javascript">
+
         function disableBackButton()
         {
             window.history.forward()
-        } 
-        disableBackButton(); 
-        window.onload=disableBackButton(); 
-        window.onpageshow=function(evt) { if(evt.persisted) disableBackButton() } 
-        window.onunload=function() { void(0) } 
+        }
+        disableBackButton();
+        window.onload=disableBackButton();
+        window.onpageshow=function(evt) { if(evt.persisted) disableBackButton() }
+        window.onunload=function() { void(0) }
     </script>
     <script>
     $(document).ready(function(){
@@ -58,34 +59,34 @@
             $(this).css("background-color", "#0E2646");
             });
     });
-</script>
+    </script>
     <style>
-.height {
-    min-height: 200px;
-}
+        .height {
+            min-height: 200px;
+        }
 
-.icon {
-    font-size: 47px;
-    color: #5CB85C;
-}
+        .icon {
+            font-size: 47px;
+            color: #5CB85C;
+        }
 
-.iconbig {
-    font-size: 77px;
-    color: #5CB85C;
-}
+        .iconbig {
+            font-size: 77px;
+            color: #5CB85C;
+        }
 
-.table > tbody > tr > .emptyrow {
-    border-top: none;
-}
+        .table > tbody > tr > .emptyrow {
+            border-top: none;
+        }
 
-.table > thead > tr > .emptyrow {
-    border-bottom: none;
-}
+        .table > thead > tr > .emptyrow {
+            border-bottom: none;
+        }
 
-.table > tbody > tr > .highrow {
-    border-top: 3px solid;
-}
-</style>
+        .table > tbody > tr > .highrow {
+            border-top: 3px solid;
+        }
+    </style>
 </head>
 
 <body onload="noBack();">
@@ -94,7 +95,7 @@
     {% include 'includes/_navbar.html' %}
     <!-- Header Close -->
     <section class="rh-check-availability">
-            <img src="../../static/app/images/event/event-background.jpg" alt="1">
+        <img src="../../static/app/images/event/event-background.jpg" alt="1">
     </section>
     <!-- Main Content Begin -->
     <div class="rh rh-100 section-booking">
@@ -102,126 +103,128 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-wizard">
-                        <div class="form-wizard-steps form-wizard-tolal-steps-4">
-                            <div class="form-wizard-progress">
-                                <div class="form-wizard-progress-line" data-now-value="49" data-number-of-steps="4" style="width: 98%;"></div>
-                            </div>
-                            <!-- Step 1 -->
-                            <div class="form-wizard-step active">
-                                <div class="form-wizard-step-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                                <p>Choose Your Date</p>
-                            </div>
-                            <!-- Step 1 -->
-                            <!-- Step 2 -->
-                            <div class="form-wizard-step active">
-                                <div class="form-wizard-step-icon"><i class="fa fa-building-o" aria-hidden="true"></i></div>
-                                <p>Choose Your Room</p>
-                            </div>
-                            <!-- Step 2 -->
-                            <!-- Step 3 -->
-                            <div class="form-wizard-step active">
-                                <div class="form-wizard-step-icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
-                                <p>Reservation</p>
-                            </div>
-                            <!-- Step 3 -->
-                            <!-- Step 4 -->
-                            <div class="form-wizard-step active">
-                                <div class="form-wizard-step-icon"><i class="fa fa-check" aria-hidden="true"></i></div>
-                                <p>Confirmation</p>
-                            </div>
-                            <!-- Step 4 -->
+                    <div class="form-wizard-steps form-wizard-tolal-steps-4">
+                        <div class="form-wizard-progress">
+                            <div class="form-wizard-progress-line" data-now-value="49" data-number-of-steps="4" style="width: 98%;"></div>
                         </div>
-                        <fieldset>
-                        <!--================ ROOMS ==============-->
-           <section class="rh rh-100 rh-ournews">
-            <div class="container">
-                <div class="container">
-    <div class="row">
-        <div class="col-xs-12">
-            <div class="text-center">
-                <h2>Thank you for choosing us</h2>
-            </div>
-            <hr />
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="text-center"><strong>Order summary</strong></h3>
-                </div>
-                <div class="panel-body">
-                    <div class="table-responsive">
-                        <table class="table table-condensed">
-                            <thead>
-                                <tr>
-                                    <td><h4>Booking Id</h4></td>
-                                    <td><h4>Customer Name</h4></td>
-                                    <td><h4>Number of Rooms</h4></td>
-                                    <td><h4>Check In</h4></td>
-                                    <td><h4>Check Out</h4></td>
-                                    <td><h4>Room</h4></td>
-                                    <td><h4>Total</h4></td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>{{bid}}</strong></td>
-                                    <td><strong>{{name}}</strong></td>
-                                    <td><strong>{{room}}</strong></td>
-                                    <td><strong>{{cin}}</strong></td>
-                                    <td><strong>{{cout}}</strong></td>
-                                    <td><strong>{{roomtype}}</strong></td>
-                                    <td><strong>Rs.{{price}}</strong></td>
-                                </tr>
-                            </tbody>
-                            
-                        </table>
-                        <center><h3><b>Terms and Conditions</b></h3></center>
-                        <ul><li>The hotel may refuse to conclude an accommodation agreement if any of the following cases:</li>
-
-                        <li><b>1.</b> The request for accommodation is not based on the terms of agreement.</li>
-
-                        <li><b>2.</b> The hotel is fully occupied and so cannot comply with the request for accommodation.</li>
-
-                        <li><b>3.</b> The person requiring accommodation is clearly recognized to be infected with an infectious disease.</li>
-
-                        <li><b>4.</b> The hotel has sufficient reason to suspect that the person requesting accommodation may use accommodation for gambling or other illegal purpose, or otherwise to violate public morals.</li>
-
-                        <li><b>5.</b> The person requesting accommodation is extremely intoxicated or is otherwise to likely to disturb other guests.</li>
-
-                        <li><b>6.</b> The person requesting accommodation is clearly recognized to be unable to pay for the accommodation.</li>
-
-                        <li><b>7.</b> The person requesting accommodation is behaving suspiciously.</li>
-
-                        <li><b>8.</b> The person requesting accommodation belongs to an antisocial force, such as an organized crime group or an organization affiliated with an organized crime group.</li>
-
-                        <li><b>9.</b> The person requesting accommodation belongs to a corporation managed or supported by an organized crime group or its member(s).</li>
-
-                        <li><b>10.</b> The person requesting accommodation belongs to a corporation of which directors is a member of an organized crime group.</li>
-
-                        <li><b>11.</b> The person requesting accommodation has caused significant disturbance, in speech or conduct, to other guests.</li>
-
-                        <li><b>12.</b> The person requesting accommodation has used violence to make a demand on the hotel or its employee(s), or has otherwise made a demand beyond the scope of reasonably acceptable burden on the hotel or its employee(s).</li>
-
-                        <li><b>13.</b> The hotel is unable to accommodate the person requesting accommodation due to disaster, failure of facilities or other unavoidable reason.</li></ul>
+                        <!-- Step 1 -->
+                        <div class="form-wizard-step active">
+                            <div class="form-wizard-step-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                            <p>Choose Your Date</p>
+                        </div>
+                        <!-- Step 1 -->
+                        <!-- Step 2 -->
+                        <div class="form-wizard-step active">
+                            <div class="form-wizard-step-icon"><i class="fa fa-building-o" aria-hidden="true"></i></div>
+                            <p>Choose Your Room</p>
+                        </div>
+                        <!-- Step 2 -->
+                        <!-- Step 3 -->
+                        <div class="form-wizard-step active">
+                            <div class="form-wizard-step-icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+                            <p>Reservation</p>
+                        </div>
+                        <!-- Step 3 -->
+                        <!-- Step 4 -->
+                        <div class="form-wizard-step active">
+                            <div class="form-wizard-step-icon"><i class="fa fa-check" aria-hidden="true"></i></div>
+                            <p>Confirmation</p>
+                        </div>
+                        <!-- Step 4 -->
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>     
-</div>
-           </section>
-                        <!-- end rooms -->                            
-                        </fieldset>
+                    <fieldset>
+                        <!--================ ROOMS ==============-->
+                        <section class="rh rh-100 rh-ournews">
+                            <div class="container">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="text-center">
+                                                <h2>Thank you for choosing us</h2>
+                                            </div>
+                                            <hr />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h3 class="text-center"><strong>Order summary</strong></h3>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-condensed">
+                                                            <thead>
+                                                                <tr>
+                                                                    <td><h4>Booking Id</h4></td>
+                                                                    <td><h4>Customer Name</h4></td>
+                                                                    <td><h4>Number of Rooms</h4></td>
+                                                                    <td><h4>Check In</h4></td>
+                                                                    <td><h4>Check Out</h4></td>
+                                                                    <td><h4>Room</h4></td>
+                                                                    <td><h4>Total</h4></td>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td><strong>{{bid}}</strong></td>
+                                                                    <td><strong>{{name}}</strong></td>
+                                                                    <td><strong>{{room}}</strong></td>
+                                                                    <td><strong>{{cin}}</strong></td>
+                                                                    <td><strong>{{cout}}</strong></td>
+                                                                    <td><strong>{{roomtype}}</strong></td>
+                                                                    <td><strong>Rs.{{price}}</strong></td>
+                                                                </tr>
+                                                            </tbody>
+
+                                                        </table>
+                                                        <center><h3><b>Terms and Conditions</b></h3></center>
+                                                        <ul>
+                                                            <li>The hotel may refuse to conclude an accommodation agreement if any of the following cases:</li>
+
+                                                            <li><b>1.</b> The request for accommodation is not based on the terms of agreement.</li>
+
+                                                            <li><b>2.</b> The hotel is fully occupied and so cannot comply with the request for accommodation.</li>
+
+                                                            <li><b>3.</b> The person requiring accommodation is clearly recognized to be infected with an infectious disease.</li>
+
+                                                            <li><b>4.</b> The hotel has sufficient reason to suspect that the person requesting accommodation may use accommodation for gambling or other illegal purpose, or otherwise to violate public morals.</li>
+
+                                                            <li><b>5.</b> The person requesting accommodation is extremely intoxicated or is otherwise to likely to disturb other guests.</li>
+
+                                                            <li><b>6.</b> The person requesting accommodation is clearly recognized to be unable to pay for the accommodation.</li>
+
+                                                            <li><b>7.</b> The person requesting accommodation is behaving suspiciously.</li>
+
+                                                            <li><b>8.</b> The person requesting accommodation belongs to an antisocial force, such as an organized crime group or an organization affiliated with an organized crime group.</li>
+
+                                                            <li><b>9.</b> The person requesting accommodation belongs to a corporation managed or supported by an organized crime group or its member(s).</li>
+
+                                                            <li><b>10.</b> The person requesting accommodation belongs to a corporation of which directors is a member of an organized crime group.</li>
+
+                                                            <li><b>11.</b> The person requesting accommodation has caused significant disturbance, in speech or conduct, to other guests.</li>
+
+                                                            <li><b>12.</b> The person requesting accommodation has used violence to make a demand on the hotel or its employee(s), or has otherwise made a demand beyond the scope of reasonably acceptable burden on the hotel or its employee(s).</li>
+
+                                                            <li><b>13.</b> The hotel is unable to accommodate the person requesting accommodation due to disaster, failure of facilities or other unavoidable reason.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end rooms -->
+                    </fieldset>
                 </div>
             </div>
         </div>
         <!-- Booking Page Close -->
     </div>
     <!-- Main Content Close -->
-    <div class="rh section-booking">        
+    <div class="rh section-booking">
         <!-- About Ruby Hotel Begin -->
         <div class="container">
             <div class="row">
@@ -240,8 +243,8 @@
                         </div>
                     </div>
                 </div>
-                
-                
+
+
             </div>
         </div>
         <!-- About Ruby Hotel Close -->
@@ -250,7 +253,6 @@
     <!-- Footer Begin -->
     {% include 'includes/_footer.html' %}
     <!-- Footer Close -->
-
     <!-- Backe To Top Begin -->
     <div id="back_to_top" class="active">
         <i class="fa fa-angle-up" aria-hidden="true"></i>

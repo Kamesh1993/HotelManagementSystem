@@ -35,9 +35,11 @@ TPen
 __spec__
 ScrolledCanvas
 resizemode
+done
 sys
 __name__
 Canvas
+tracer
 inspect
 math
 deepcopy
@@ -48,6 +50,7 @@ __cached__
 Pen
 Vec2D
 onscreenclick
+colormode
 TurtleGraphicsError
 TK
 Tbuffer

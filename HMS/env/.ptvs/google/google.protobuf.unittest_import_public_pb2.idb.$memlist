@@ -5,7 +5,6 @@ DESCRIPTOR
 __file__
 PublicImportMessage
 __cached__
-sys
 _PUBLICIMPORTMESSAGE
 __name__
 __builtins__

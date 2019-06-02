@@ -4,7 +4,6 @@ MutualRecursionEqualityTest
 FullProtosEqualityTest
 __package__
 __name__
-struct
 unittest_mset_pb2
 message
 api_implementation
@@ -13,7 +12,6 @@ more_extensions_pb2
 OptionsTest
 wire_format
 test_util
-six
 ClassAPITest
 __file__
 BaseTestCase
@@ -23,7 +21,6 @@ __builtins__
 descriptor
 __spec__
 decoder
-operator
 reflection
 _MiniDecoder
 SerializationTest
@@ -33,7 +30,5 @@ __cached__
 more_messages_pb2
 unittest_pb2
 ByteSizeTest
-copy
 TestAllTypesEqualityTest
 testing_refleaks
-gc

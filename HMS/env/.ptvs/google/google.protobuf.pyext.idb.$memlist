@@ -1,10 +1,10 @@
 python_pb2
+cpp_message
 __spec__
 __file__
-cpp_message
-__path__
+__package__
 __name__
 __builtins__
 __cached__
+__path__
 _message
-__package__

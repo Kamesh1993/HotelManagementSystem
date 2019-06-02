@@ -27,7 +27,6 @@ SInt32Sizer
 UInt64Encoder
 wire_format
 SInt64Encoder
-six
 StringEncoder
 _EncodeVarint
 SInt64Sizer
@@ -48,7 +47,6 @@ BytesSizer
 __name__
 _VarintSize
 _NEG_INF
-struct
 MapEncoder
 DoubleEncoder
 Int32Encoder

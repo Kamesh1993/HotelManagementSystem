@@ -1,9 +1,7 @@
 _readline_available
-readline
 __all__
 __spec__
 __file__
-__main__
 atexit
 __name__
 <lambda>

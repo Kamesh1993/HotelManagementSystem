@@ -2,7 +2,6 @@ DESCRIPTOR
 ForeignEnum
 _FOREIGNENUM
 _TESTALLTYPES
-sys
 __package__
 _sym_db
 _TESTUNPACKEDTYPES

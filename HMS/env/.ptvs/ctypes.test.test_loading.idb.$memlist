@@ -67,8 +67,8 @@ kind
 sys
 BigEndianStructure
 test
-c_int32
 LoaderTest
+c_int32
 WINFUNCTYPE
 memset
 c_short
@@ -80,11 +80,11 @@ WinDLL
 cast
 create_string_buffer
 c_ulonglong
-resize
 HRESULT
 string_at
-util
+resize
 Structure
+util
 c_longlong
 c_ssize_t
 LittleEndianStructure

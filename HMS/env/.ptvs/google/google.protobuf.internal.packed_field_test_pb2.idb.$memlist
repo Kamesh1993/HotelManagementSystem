@@ -7,7 +7,6 @@ DESCRIPTOR
 __file__
 _symbol_database
 __cached__
-sys
 _TESTPACKEDTYPES_NESTEDENUM
 TestPackedTypes
 __name__

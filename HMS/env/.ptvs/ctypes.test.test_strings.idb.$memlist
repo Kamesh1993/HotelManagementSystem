@@ -3,7 +3,7 @@ c_double
 PyDLL
 __builtins__
 c_int16
-LibraryLoader
+wintypes
 unittest
 WinError
 c_ushort
@@ -14,10 +14,11 @@ addressof
 windll
 c_char_p
 c_wchar_p
-c_string
 py_object
+c_string
 c_long
 c_ulong
+test
 c_int8
 c_char
 c_byte
@@ -33,7 +34,7 @@ CFUNCTYPE
 wstring_at
 sizeof
 get_last_error
-HRESULT
+c_void_p
 POINTER
 c_voidp
 c_ubyte
@@ -50,7 +51,7 @@ cdll
 c_uint
 macholib
 OleDLL
-wintypes
+LibraryLoader
 oledll
 check_perf
 c_float
@@ -83,11 +84,11 @@ c_buffer
 cast
 create_string_buffer
 c_ulonglong
-resize
-c_void_p
+HRESULT
 string_at
-util
+resize
 Structure
+util
 c_longlong
 c_ssize_t
 LittleEndianStructure

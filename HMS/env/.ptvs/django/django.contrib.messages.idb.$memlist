@@ -10,7 +10,7 @@ __package__
 SUCCESS
 __name__
 DEBUG
-DEFAULT_LEVELS
+middleware
 WARNING
 get_level
 api
@@ -21,12 +21,12 @@ INFO
 info
 __builtins__
 default_app_config
-default_storage
 __spec__
+default_storage
 error
 success
 views
-middleware
+DEFAULT_LEVELS
 __cached__
 debug
 context_processors

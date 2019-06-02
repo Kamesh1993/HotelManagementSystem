@@ -9,6 +9,4 @@ SkipReferenceLeakChecker
 BaseTestCase
 copyreg
 __builtins__
-gc
-sys
 __package__

@@ -1,7 +1,6 @@
 __path__
 time
 importlib
-pathlib
 locale
 ENVIRONMENT_VARIABLE
 os
@@ -9,7 +8,7 @@ Settings
 __builtins__
 __file__
 empty
-__cached__
+__package__
 global_settings
 settings
 ImproperlyConfigured
@@ -20,6 +19,6 @@ warnings
 urls
 __name__
 LazySettings
-__package__
+__cached__
 Path
 __spec__

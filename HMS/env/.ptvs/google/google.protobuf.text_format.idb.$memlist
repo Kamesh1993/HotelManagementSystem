@@ -23,7 +23,6 @@ _FLOAT_TYPES
 PrintField
 _ConsumeInt32
 type_checkers
-six
 _ConsumeInt64
 __file__
 PrintFieldValue
@@ -33,7 +32,6 @@ ParseInteger
 MergeLines
 _ConsumeUint32
 __builtins__
-io
 descriptor
 __spec__
 _SkipFieldContents
@@ -52,4 +50,3 @@ _IsMapEntry
 Merge
 text_encoding
 MessageToString
-re

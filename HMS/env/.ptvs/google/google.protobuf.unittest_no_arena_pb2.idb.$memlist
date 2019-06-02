@@ -25,7 +25,6 @@ _FOREIGNENUM
 __spec__
 google_dot_protobuf_dot_unittest__import__pb2
 TestAllTypes
-sys
 FOREIGN_BAZ
 __cached__
 <lambda>

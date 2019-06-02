@@ -1,8 +1,7 @@
-set_start_method
-sharedctypes
+TimeoutError
+dummy
 heap
 forkserver
-__builtins__
 get_context
 __package__
 __name__
@@ -10,7 +9,6 @@ semaphore_tracker
 __cached__
 AuthenticationError
 pool
-_posixsubprocess
 BufferTooShort
 __path__
 reduction
@@ -18,8 +16,9 @@ SUBWARNING
 get_start_method
 queues
 popen_spawn_posix
-TimeoutError
-dummy
+set_start_method
+sharedctypes
+__builtins__
 resource_sharer
 __spec__
 sys

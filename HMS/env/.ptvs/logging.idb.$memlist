@@ -27,12 +27,11 @@ _acquireLock
 __package__
 getLevelName
 atexit
-win32evtlogutil
 warnings
-_loggerClass
+Filter
 makeLogRecord
 StringTemplateStyle
-RootLogger
+_checkLevel
 collections
 __status__
 io
@@ -47,7 +46,7 @@ __file__
 shutdown
 _STYLES
 handlers
-PlaceHolder
+root
 _srcfile
 Template
 lastResort
@@ -64,7 +63,6 @@ currentframe
 BufferingFormatter
 error
 Manager
-win32evtlog
 BASIC_FORMAT
 Handler
 _releaseLock
@@ -83,10 +81,10 @@ CRITICAL
 __cached__
 debug
 info
-Filter
+_loggerClass
 _levelToName
 __name__
-_checkLevel
+RootLogger
 WARN
 _StderrHandler
 getLoggerClass
@@ -97,6 +95,6 @@ config
 threading
 getLogger
 exception
-root
+PlaceHolder
 _logRecordFactory
 FATAL

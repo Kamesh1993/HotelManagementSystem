@@ -11,7 +11,6 @@ __file__
 _symbol_database
 _TESTALLTYPES
 __cached__
-sys
 REPEATED_NESTED_MESSAGE_EXTENSION_FIELD_NUMBER
 ForeignMessage
 TestAllExtensions

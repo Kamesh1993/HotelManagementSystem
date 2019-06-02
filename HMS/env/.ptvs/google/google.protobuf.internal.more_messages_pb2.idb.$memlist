@@ -8,7 +8,6 @@ __file__
 _symbol_database
 optional_int64
 __cached__
-sys
 _OUTOFORDERFIELDS
 OutOfOrderFields
 OPTIONAL_INT64_FIELD_NUMBER

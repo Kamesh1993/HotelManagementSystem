@@ -7,7 +7,7 @@ __builtins__
 CancelledError
 __file__
 ThreadPoolExecutor
-__cached__
+__package__
 TimeoutError
 __path__
 Executor
@@ -18,5 +18,5 @@ __name__
 wait
 ALL_COMPLETED
 FIRST_COMPLETED
-__package__
+__cached__
 __spec__

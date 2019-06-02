@@ -1,4 +1,5 @@
 AsyncGeneratorType
+MethodDescriptorType
 DistutilsTemplateError
 FileList
 DistutilsError
@@ -19,11 +20,13 @@ FrameType
 warn
 DistutilsGetoptError
 <lambda>
+WrapperDescriptorType
 TextFile
 dir_util
 DistutilsByteCompileError
 SimpleNamespace
 DistutilsOptionError
+MethodWrapperType
 DynamicClassAttribute
 CoroutineType
 __file__

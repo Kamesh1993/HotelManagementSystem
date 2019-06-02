@@ -3,7 +3,6 @@ join_bytes
 method_function_attr
 uascii_to_str
 str_to_uascii
-types
 num_types
 __package__
 __name__
@@ -16,7 +15,7 @@ get_method_function
 irange
 str_to_bascii
 PY26
-builtins
+join_byte_elems
 PY2
 suppress_cause
 dummy_thread
@@ -32,7 +31,6 @@ PYPY
 NativeStringIO
 PYSTON
 OrderedDict
-itertools
 nextgetter
 __builtins__
 PY3
@@ -51,8 +49,8 @@ native_string_types
 u
 __cached__
 print_
-join_byte_elems
 _ordered_dict
+builtins
 unicode_or_bytes_types
 lmap
 _LazyOverlayModule

@@ -1,3 +1,4 @@
+pip
 constants
 division
 collections
@@ -5,9 +6,8 @@ codecs
 unicode_literals
 xml
 __package__
-__name__
 types
-__cached__
+__all__
 treebuilders
 parseFragment
 serializer
@@ -16,18 +16,16 @@ __path__
 treeadapters
 __future__
 __file__
-re
-io
 __builtins__
-warnings
+io
 __spec__
 HTMLParser
 html5parser
 getTreeWalker
 treewalkers
-__all__
+__name__
 _utils
-string
+__cached__
 _tokenizer
 serialize
 getTreeBuilder

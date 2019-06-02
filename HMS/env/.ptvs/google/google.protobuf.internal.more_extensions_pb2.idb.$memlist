@@ -12,7 +12,6 @@ __file__
 _symbol_database
 OPTIONAL_MESSAGE_EXTENSION_FIELD_NUMBER
 __cached__
-sys
 repeated_int_extension
 REPEATED_INT_EXTENSION_FIELD_NUMBER
 ForeignMessage

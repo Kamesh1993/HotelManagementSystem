@@ -1,4 +1,6 @@
 BaseDatabaseIntrospection
+FieldInfo
+TableInfo
 __spec__
 __file__
 Index

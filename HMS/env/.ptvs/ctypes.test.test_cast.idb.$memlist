@@ -63,6 +63,7 @@ c_bool
 Array
 kind
 sys
+test
 BigEndianStructure
 c_byte
 c_int32
@@ -77,11 +78,11 @@ WinDLL
 GetLastError
 CFUNCTYPE
 c_ulonglong
-resize
 HRESULT
+resize
 string_at
-util
 Structure
+util
 c_longlong
 Test
 LittleEndianStructure

@@ -1,6 +1,6 @@
 migrations
 DataError
-pkgutil
+threading
 utils
 ProgrammingError
 close_old_connections
@@ -20,7 +20,6 @@ __file__
 InternalError
 OperationalError
 __builtins__
-threading
 transaction
 __spec__
 DEFAULT_DB_ALIAS

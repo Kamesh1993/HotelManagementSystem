@@ -9,7 +9,6 @@ __all__
 basename
 dirname
 isfile
-s
 commonpath
 _varprogb
 join
@@ -37,6 +36,7 @@ __name__
 commonprefix
 isabs
 altsep
+s
 getatime
 _get_sep
 expandvars

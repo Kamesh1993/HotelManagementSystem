@@ -32,7 +32,7 @@ root
 SEPARATOR
 BEVEL
 __builtins__
-socket
+OptionMenu
 tokenize
 BaseWidget
 Entry
@@ -67,12 +67,12 @@ PORT
 ModifiedUndoDelegator
 PyShell
 RAISED
-EXCEPTION
-image_types
+MULTIPLE
+S
 ANCHOR
 font
 flist
-MULTIPLE
+debugger
 fix_scaling
 NE
 DoubleVar
@@ -127,8 +127,8 @@ idleConf
 __file__
 EditorWindow
 Scale
-OptionMenu
 _warnings_showwarning
+socket
 READABLE
 PyShellFileList
 PhotoImage
@@ -167,9 +167,9 @@ HIDDEN
 Frame
 W
 image_names
-debugger
+image_types
 filedialog
-S
+EXCEPTION
 RIDGE
 XView
 OUTSIDE

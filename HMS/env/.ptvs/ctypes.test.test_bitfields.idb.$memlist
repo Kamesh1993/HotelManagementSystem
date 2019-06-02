@@ -4,7 +4,7 @@ c_double
 PyDLL
 __builtins__
 c_int16
-LibraryLoader
+wintypes
 unittest
 WinError
 c_ushort
@@ -21,8 +21,8 @@ BITS
 c_long
 C_Test
 c_int8
-c_char
-c_byte
+c_int32
+__cached__
 __package__
 DllGetClassObject
 ArgumentError
@@ -35,8 +35,8 @@ wstring_at
 sizeof
 string_at
 c_void_p
-util
 POINTER
+Structure
 c_voidp
 c_ubyte
 c_uint16
@@ -52,7 +52,7 @@ cdll
 c_uint
 macholib
 OleDLL
-wintypes
+LibraryLoader
 oledll
 Union
 CDLL
@@ -68,9 +68,10 @@ Array
 c_ulong
 kind
 BitFieldTest
+test
 BigEndianStructure
-__cached__
-c_int32
+c_char
+c_byte
 WINFUNCTYPE
 memset
 c_short
@@ -82,12 +83,12 @@ c_uint64
 c_buffer
 cast
 create_string_buffer
-resize
-get_last_error
 HRESULT
+get_last_error
+resize
 c_ulonglong
 func
-Structure
+util
 c_longlong
 c_ssize_t
 LittleEndianStructure

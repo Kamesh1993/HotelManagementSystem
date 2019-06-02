@@ -5,9 +5,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Hotel Ruby</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Royal Luxury Stay - Online Booking Smart Responsive HTML5 Template">
+    <meta name="description" content="Ruby Luxury Stay - Online Booking Smart Responsive HTML5 Template">
     <meta name="keywords" content="accommodation,apartment,B&B,bed and breakfast,booking,hostel,inn,motel,reservation,reservation form,resort,responsive,spa,travel,bootstrap,cruise,flights,holiday,hotel,html5 template,online booking,real estate,rentals,tour,tourism,uber">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="../../static/app/images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../../static/app/images/favicons/favicon-32x32.png">
@@ -39,15 +39,16 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="../../static/app/js/themefunction.js"></script>
     <script type="text/javascript" src="../../static/app/js/valid-date.js"></script>
-	<script type="text/javascript" language="javascript">  
+    <script type="text/javascript" language="javascript">
+
         function disableBackButton()
         {
             window.history.forward()
-        } 
-        disableBackButton(); 
-        window.onload=disableBackButton(); 
-        window.onpageshow=function(evt) { if(evt.persisted) disableBackButton() } 
-        window.onunload=function() { void(0) } 
+        }
+        disableBackButton();
+        window.onload=disableBackButton();
+        window.onpageshow=function(evt) { if(evt.persisted) disableBackButton() }
+        window.onunload=function() { void(0) }
     </script>
     <script>
     $(document).ready(function(){
@@ -58,7 +59,7 @@
             $(this).css("background-color", "#0E2646");
             });
     });
-</script>
+    </script>
 </head>
 
 <body onload="noBack();">
@@ -67,7 +68,7 @@
     {% include 'includes/_navbar.html' %}
     <!-- Header Close -->
     <section class="rh-check-availability">
-            <img src="../../static/app/images/event/event-background.jpg" alt="1">
+        <img src="../../static/app/images/event/event-background.jpg" alt="1">
     </section>
     <!-- Main Content Begin -->
     <div class="rh rh-100 section-booking">
@@ -77,37 +78,37 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-wizard">
                     <!-- Form Wizard -->
                     <div class="row">
-        <div class="col-md-12">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="text-center"><strong>Booking History</strong></h3>
-                </div>
-                <div class="panel-body">
-                    <div class="table-responsive">
-                        <table class="table table-condensed">
-                            <thead>
-                                <tr>
-                                    <td><h4>Booking Id</h4></td>
-                                    <td><h4>Check In</h4></td>
-                                    <td><h4>Check Out</h4></td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {% for d in details %}
-                                <tr>
-                                    <td><strong>{{d.0}}</strong></td>
-                                    <td><strong>{{d.1}}</strong></td>
-                                    <td><strong>{{d.2}}</strong></td>
-                                </tr>
-                                {% endfor %}
-                            </tbody>
-                            
-                        </table>
+                        <div class="col-md-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="text-center"><strong>Booking History</strong></h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-condensed">
+                                            <thead>
+                                                <tr>
+                                                    <td><h4>Booking Id</h4></td>
+                                                    <td><h4>Check In</h4></td>
+                                                    <td><h4>Check Out</h4></td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {% for d in details %}
+                                                <tr>
+                                                    <td><strong>{{d.0}}</strong></td>
+                                                    <td><strong>{{d.1}}</strong></td>
+                                                    <td><strong>{{d.2}}</strong></td>
+                                                </tr>
+                                                {% endfor %}
+                                            </tbody>
+
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
                     <!-- Form Wizard -->
                 </div>
             </div>
@@ -115,36 +116,35 @@
         <!-- Booking Page Close -->
     </div>
     <!-- Main Content Close -->
-    <div class="rh section-booking">        
-        <!-- About Royal Hotel Begin -->
+    <div class="rh section-booking">
+        <!-- About Ruby Hotel Begin -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="rh-detail-right">
                         <div class="row rh-flex">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <!-- Need Royal Help? Begin -->
+                                <!-- Need Ruby Help? Begin -->
                                 <div class="rh-need-help">
                                     <h5>Need Help?</h5>
                                     <p>We would be more than happy to help you. Our team advisor are 24/7 at your service to help you.</p>
                                     <a href="tel:+919173495648">917 349 5648</a>
                                 </div>
-                                <!-- Need Royal Help? Close -->
+                                <!-- Need Ruby Help? Close -->
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                
+
+
             </div>
         </div>
-        <!-- About Royal Hotel Close -->
+        <!-- About Ruby Hotel Close -->
     </div>
 
     <!-- Footer Begin -->
     {% include 'includes/_footer.html' %}
     <!-- Footer Close -->
-
     <!-- Backe To Top Begin -->
     <div id="back_to_top" class="active">
         <i class="fa fa-angle-up" aria-hidden="true"></i>

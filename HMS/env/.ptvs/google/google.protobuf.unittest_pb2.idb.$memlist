@@ -312,7 +312,6 @@ MoreString
 _reflection
 repeated_fixed32_extension
 FOREIGN_BAZ
-sys
 TestForeignNested
 _TESTEMPTYMESSAGE
 optional_string_extension

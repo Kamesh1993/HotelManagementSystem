@@ -1,6 +1,6 @@
 apps
 forms
-indexes
+search
 lookups
 functions
 __builtins__
@@ -13,10 +13,9 @@ __path__
 validators
 utils
 signals
-search
+indexes
 __name__
 operations
-functools
 fields
 __cached__
 __spec__

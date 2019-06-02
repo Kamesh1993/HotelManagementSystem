@@ -1,4 +1,4 @@
-<!--
+﻿<!--
     Author: W3layouts
     Author URL: http://w3layouts.com
     License: Creative Commons Attribution 3.0 Unported
@@ -8,7 +8,7 @@
 <html lang="zxx">
 
 <head>
-    <title>Admin Login</title>
+    <title>Switch Login Form Flat Responsive Widget Template :: w3layouts</title>
     <!-- Meta-Tags -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
@@ -58,18 +58,18 @@
     <div class="content-w3ls">
         <div class="content-top-agile">
             <h2>Admin Login</h2>
-           
+
         </div>
         <div class="content-bottom">
-                {% if messages %}
-                    <ul class="messages">
-                        {% for message in messages %}
-                        <li class="{{ message.tags }}">{{ message }}</li>
-                        {% endfor %}
-                    </ul>
-                {% endif %}
-               <form action="/adminlogin/" method="post">
-                   {% csrf_token %}
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li class="{{ message.tags }}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            <form action="/adminlogin/" method="post">
+                {% csrf_token %}
                 <div class="field-group">
                     <span class="fa fa-user" aria-hidden="true"></span>
                     <div class="wthree-field">
@@ -82,19 +82,19 @@
                         <input name="password" id="password" type="Password" placeholder="password" required>
                     </div>
                 </div>
-               
+
                 <div class="wthree-field">
                     <input id="saveForm" name="saveForm" type="submit" value="Log In" />
                 </div>
-                    
+
             </form>
             <br>
-                    
-                    <center>
-                        <a href="/forgotpassword" class="text-center">Forgot password?</a> &nbsp;
-                        <br>
-                    </center>
-               
+
+            <center>
+                <a href="/forgotpassword" class="text-center">Forgot password?</a> &nbsp;
+                <br>
+            </center>
+
         </div>
     </div>
     <div class="copyright text-center">

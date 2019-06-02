@@ -7,7 +7,6 @@ __name__
 print_function
 __builtins__
 __cached__
-__future__
 division
 __path__
 _openssl

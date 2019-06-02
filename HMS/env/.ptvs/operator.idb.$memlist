@@ -36,6 +36,7 @@ ne
 le
 __name__
 __add__
+BuiltinImporter
 isub
 concat
 delitem

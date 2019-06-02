@@ -13,6 +13,7 @@ repeat
 groupby
 __cached__
 dyld_override_search
+BuiltinImporter
 combinations_with_replacement
 dylib_info
 dyld_env

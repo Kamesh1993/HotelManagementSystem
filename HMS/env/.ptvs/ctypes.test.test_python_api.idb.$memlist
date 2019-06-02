@@ -17,6 +17,7 @@ c_wchar_p
 py_object
 c_long
 c_ulong
+test
 c_int8
 c_byte
 grc
@@ -80,11 +81,11 @@ WinDLL
 GetLastError
 create_string_buffer
 c_ulonglong
-resize
 HRESULT
 string_at
-util
+resize
 Structure
+util
 c_longlong
 c_ssize_t
 LittleEndianStructure

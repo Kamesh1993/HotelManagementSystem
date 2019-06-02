@@ -6,14 +6,13 @@ setup
 save_env
 runtest
 __file__
+_parse_args
 __package__
-__cached__
 __path__
 ALL_RESOURCES
-resource
 RESOURCE_NAMES
 __name__
 __builtins__
 main
-_parse_args
+__cached__
 __spec__

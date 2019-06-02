@@ -25,8 +25,8 @@ held__threading_local
 BrokenBarrierError
 __spec__
 holding_threading
-active_count
 TIMEOUT_MAX
+active_count
 held_threading
 __name__
 Timer

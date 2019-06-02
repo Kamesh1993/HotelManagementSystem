@@ -1,11 +1,11 @@
-dylib
-__cached__
+framework
+__spec__
 __file__
-__path__
+__package__
 __name__
 dyld
-__spec__
+dylib
 __builtins__
-framework
+__cached__
 __version__
-__package__
+__path__

@@ -1,15 +1,13 @@
-sys
 pbkdf2
 x963kdf
 enum
 __future__
-struct
 __builtins__
 six
 __file__
-KeyDerivationFunction
 scrypt
-__cached__
+KeyDerivationFunction
+__package__
 absolute_import
 concatkdf
 __path__
@@ -18,6 +16,6 @@ print_function
 division
 __name__
 kbkdf
-__package__
-__spec__
 hkdf
+__cached__
+__spec__

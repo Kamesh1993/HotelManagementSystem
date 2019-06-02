@@ -7,7 +7,6 @@ __author__
 __package__
 Fixed32ByteSize
 __name__
-struct
 FloatByteSize
 FORMAT_FLOAT_LITTLE_ENDIAN
 ZigZagEncode

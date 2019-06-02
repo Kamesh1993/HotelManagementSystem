@@ -9,13 +9,12 @@ __package__
 __name__
 x_user_defined
 _detect_bom
-_iter_encode_generator
+IncrementalDecoder
 encode
 Encoding
 tests
 UTF8
 __path__
-urllib
 __future__
 __file__
 mklabels
@@ -30,7 +29,7 @@ __cached__
 _iter_decode_generator
 labels
 iter_encode
+_iter_encode_generator
 ascii_lower
-IncrementalDecoder
 lookup
-json
+urllib

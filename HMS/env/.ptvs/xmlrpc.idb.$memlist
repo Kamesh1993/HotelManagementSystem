@@ -1,10 +1,9 @@
-server
+client
 __spec__
 __file__
-__path__
+__package__
 __name__
-client
+server
 __builtins__
 __cached__
-fcntl
-__package__
+__path__

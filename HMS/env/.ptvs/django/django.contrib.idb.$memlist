@@ -1,14 +1,14 @@
 staticfiles
-sessions
+sites
 humanize
 contenttypes
 postgres
 admindocs
 __file__
-sitemaps
+messages
 syndication
 __package__
-sites
+sessions
 __path__
 auth
 gis
@@ -17,6 +17,6 @@ redirects
 __name__
 __builtins__
 admin
-messages
 __cached__
+sitemaps
 __spec__

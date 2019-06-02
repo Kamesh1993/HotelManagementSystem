@@ -123,7 +123,6 @@ __spec__
 message_opt1
 _NESTEDOPTIONTYPE_NESTEDMESSAGE
 ComplexOptionType3
-sys
 OldOptionType
 AggregateMessageSetElement
 ENUM_OPT_FIELD_NUMBER

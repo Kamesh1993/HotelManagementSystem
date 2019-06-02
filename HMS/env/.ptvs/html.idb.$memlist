@@ -1,12 +1,12 @@
-__all__
+_re
 _charref
 _invalid_charrefs
 __builtins__
 __file__
-__package__
+__cached__
 __spec__
 _invalid_codepoints
-_re
+__all__
 __path__
 parser
 _replace_charref
@@ -14,5 +14,5 @@ escape
 __name__
 entities
 unescape
-__cached__
+__package__
 _html5

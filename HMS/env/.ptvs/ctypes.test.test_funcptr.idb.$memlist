@@ -17,6 +17,7 @@ c_wchar_p
 py_object
 c_long
 c_ulong
+test
 c_int8
 __cached__
 c_char
@@ -32,14 +33,14 @@ wstring_at
 sizeof
 get_last_error
 c_void_p
-POINTER
+Structure
 c_voidp
 c_ubyte
 c_uint16
 __file__
 c_int
 FormatError
-DEFAULT_MODE
+RTLD_GLOBAL
 memmove
 c_uint32
 set_errno
@@ -76,11 +77,11 @@ WinDLL
 cast
 CFUNCTYPE
 c_ulonglong
-resize
 HRESULT
+resize
 string_at
+POINTER
 util
-Structure
 c_longlong
 c_ssize_t
 LittleEndianStructure
@@ -88,7 +89,7 @@ ARRAY
 PYFUNCTYPE
 c_wchar
 _ctypes_test
-RTLD_GLOBAL
+DEFAULT_MODE
 c_longdouble
 set_last_error
 create_unicode_buffer

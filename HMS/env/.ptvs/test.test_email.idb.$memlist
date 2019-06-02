@@ -2,9 +2,9 @@ test__encoded_words
 test_contentmanager
 unittest
 collections
-__spec__
 test_parser
-test_inversion
+test_message
+parameterize
 __package__
 compat32
 __name__
@@ -12,14 +12,14 @@ load_package_tests
 test_policy
 Message
 openfile
-TestEmailBase
+test_email
 test_generator
 __file__
 torture_test
 landmark
 __builtins__
-test_message
-parameterize
+__spec__
+test_inversion
 test_headerregistry
 __main__
 test_defect_handling
@@ -32,4 +32,4 @@ test_pickleable
 __path__
 test_asian_codecs
 test__header_value_parser
-test_email
+TestEmailBase

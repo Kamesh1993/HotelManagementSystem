@@ -16,7 +16,6 @@ json_script
 quote
 html_safe
 _json_script_escapes
-parser
 simple_url_2_re
 RFC3986_SUBDELIMS
 json

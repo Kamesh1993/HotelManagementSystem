@@ -4,7 +4,7 @@ ctypes
 client
 __builtins__
 __file__
-__cached__
+__package__
 __path__
 base
 adapter
@@ -12,5 +12,5 @@ features
 __name__
 introspection
 operations
-__package__
+__cached__
 __spec__

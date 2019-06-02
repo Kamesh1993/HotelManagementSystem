@@ -1,6 +1,6 @@
 mysqlx_expect_pb2
-mysqlx_connection_pb2
-mysqlx_resultset_pb2
+mysqlx_pb2
+_mysqlxpb
 mysqlxpb_enum
 descriptor_pb2
 _MESSAGES
@@ -20,10 +20,10 @@ mysqlx_datatypes_pb2
 HAVE_PROTOBUF
 __file__
 RepeatedCompositeFieldContainer
-mysqlx_pb2
+encode_to_bytes
 _DESCRIPTOR_POOL
 val
-_mysqlxpb
+mysqlx_resultset_pb2
 descriptor_pool
 __builtins__
 PY3
@@ -31,7 +31,6 @@ PROTOBUF_REPEATED_TYPES
 __spec__
 SERVER_MESSAGES
 _DESCRIPTOR_DB
-sys
 google
 BYTE_TYPES
 mysqlx_expr_pb2
@@ -42,4 +41,4 @@ STRING_TYPES
 descriptor_database
 _mysqlxpb_pure
 message_factory
-encode_to_bytes
+mysqlx_connection_pb2

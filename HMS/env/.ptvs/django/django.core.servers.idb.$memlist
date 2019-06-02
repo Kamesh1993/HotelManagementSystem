@@ -1,13 +1,9 @@
-wsgiref
-logging
 __spec__
 __file__
 basehttp
-__path__
+__package__
 __name__
-socket
 __builtins__
 __cached__
-socketserver
-sys
-__package__
+wsgiref
+__path__

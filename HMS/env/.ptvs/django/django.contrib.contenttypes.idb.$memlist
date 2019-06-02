@@ -1,4 +1,4 @@
-checks
+__path__
 models
 apps
 forms
@@ -7,14 +7,14 @@ collections
 __builtins__
 itertools
 __file__
-migrations
 default_app_config
-__package__
+migrations
+__spec__
 fields
-__path__
+checks
 __name__
 functools
 admin
 __cached__
+__package__
 management
-__spec__

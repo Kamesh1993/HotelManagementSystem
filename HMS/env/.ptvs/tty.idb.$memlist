@@ -10,7 +10,6 @@ ISPEED
 __all__
 CS8
 OFLAG
-ICANON
 setcbreak
 ISTRIP
 ECHO
@@ -23,6 +22,7 @@ __spec__
 __name__
 __cached__
 ICRNL
+ICANON
 CC
 IXON
 CFLAG

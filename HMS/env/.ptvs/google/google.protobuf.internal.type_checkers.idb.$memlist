@@ -9,7 +9,6 @@ __author__
 Uint64ValueChecker
 UnicodeValueChecker
 __builtins__
-six
 __file__
 IntValueChecker
 __package__
@@ -21,7 +20,6 @@ api_implementation
 FIELD_TYPE_TO_WIRE_TYPE
 TypeChecker
 GetTypeChecker
-numbers
 TYPE_TO_DECODER
 __name__
 Int32ValueChecker

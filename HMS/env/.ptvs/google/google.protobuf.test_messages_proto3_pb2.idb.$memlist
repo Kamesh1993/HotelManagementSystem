@@ -36,7 +36,6 @@ FOREIGN_FOO
 __spec__
 _TESTALLTYPESPROTO3_MAPSFIXED64SFIXED64ENTRY
 _FOREIGNMESSAGE
-sys
 FOREIGN_BAZ
 google_dot_protobuf_dot_struct__pb2
 enum_type_wrapper

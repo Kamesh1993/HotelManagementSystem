@@ -39,6 +39,7 @@ BitOr
 Bytes
 ExceptHandler
 ImportFrom
+BuiltinImporter
 Lambda
 Lt
 dump

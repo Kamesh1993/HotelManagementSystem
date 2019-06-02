@@ -2,12 +2,11 @@ index
 __spec__
 __file__
 candidate
-__path__
+__package__
 __name__
-posixpath
 format_control
 __builtins__
 __cached__
-re
+pip
 link
-__package__
+__path__

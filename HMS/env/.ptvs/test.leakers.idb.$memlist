@@ -1,9 +1,9 @@
 test_selftype
 __spec__
-__cached__
-__path__
+__file__
+__package__
 __name__
 test_ctypes
 __builtins__
-__file__
-__package__
+__cached__
+__path__

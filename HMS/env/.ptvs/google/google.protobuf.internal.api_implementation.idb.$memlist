@@ -1,8 +1,6 @@
-sys
 Version
 _python_proto3_preserve_unknowns_default
 _implementation_type
-os
 SetPythonProto3PreserveUnknownsDefault
 __builtins__
 _implementation_version
@@ -15,7 +13,6 @@ _default_implementation_type
 _implementation_version_str
 _proto_extension_modules_exist_in_build
 _api_version
-warnings
 __name__
 use_pure_python
 GetPythonProto3PreserveUnknownsDefault

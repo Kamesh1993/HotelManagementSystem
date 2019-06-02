@@ -11,7 +11,6 @@ __file__
 _symbol_database
 dynamic_int32_extension
 __cached__
-sys
 REPEATED_DYNAMIC_MESSAGE_EXTENSION_FIELD_NUMBER
 <lambda>
 __name__

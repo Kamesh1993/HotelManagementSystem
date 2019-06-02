@@ -5,6 +5,7 @@ read_docstrings
 __builtins__
 hideturtle
 TNavigator
+done
 pendown
 __package__
 plot
@@ -18,6 +19,7 @@ join
 Terminator
 Screen
 readconfig
+colormode
 Pen
 TK
 write_docstringdict
@@ -39,6 +41,7 @@ speed
 pencolor
 sys
 __name__
+tracer
 inspect
 h
 Canvas

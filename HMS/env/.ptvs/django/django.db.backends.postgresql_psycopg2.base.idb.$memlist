@@ -3,6 +3,7 @@ psycopg2_version
 DatabaseWrapper
 DatabaseIntrospection
 utc_tzinfo_factory
+warnings
 SafeText
 __name__
 cached_property
@@ -10,13 +11,19 @@ __builtins__
 DatabaseFeatures
 __file__
 INETARRAY_OID
+psycopg2
 __cached__
 settings
 ImproperlyConfigured
+Database
 WrappedDatabaseError
 DatabaseClient
+e
 DatabaseOperations
 DatabaseCreation
+INETARRAY
+PSYCOPG2_VERSION
+threading
 get_version_tuple
 BaseDatabaseWrapper
 DatabaseSchemaEditor

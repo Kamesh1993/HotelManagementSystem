@@ -29,7 +29,6 @@ REX_six
 TestFailed
 no_tracing
 run_with_locale
-Nested
 E
 collections
 io
@@ -81,7 +80,6 @@ _4G
 python2_exceptions_without_args
 MyTuple
 SlotList
-PyMethodsTest
 support
 x
 C
@@ -94,14 +92,12 @@ MyStr
 pickletools
 DATA_UEERR
 AbstractPickleTests
-Subclass
 REX_seven
 DATA3
 REDUCE_A
 bytes_types
 BadGetattr
 __file__
-Recursive
 REX_one
 __main__
 BigmemPickleTests

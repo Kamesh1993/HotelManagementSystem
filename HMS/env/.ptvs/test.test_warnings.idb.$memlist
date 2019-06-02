@@ -28,7 +28,6 @@ __builtins__
 linecache
 BootstrapTest
 _WarningsTests
-data
 FinalizationTest
 __warningregistry__
 sys

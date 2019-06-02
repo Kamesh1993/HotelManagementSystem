@@ -1,9 +1,7 @@
 _GetMessageFromFactory
 message_factory
-os
 __spec__
 __file__
-hashlib
 __name__
 descriptor_pb2
 MakeSimpleProtoClass

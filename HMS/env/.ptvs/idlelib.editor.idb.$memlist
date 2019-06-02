@@ -32,7 +32,7 @@ PhotoImage
 PAGES
 tkMessageBox
 Grid
-scrolledtext
+LEFT
 VERTICAL
 tix
 NoDefaultRoot
@@ -57,8 +57,8 @@ TclError
 Message
 PIESLICE
 RAISED
-ANCHOR
-S
+filedialog
+image_types
 font
 MULTIPLE
 get_accelerator
@@ -68,8 +68,8 @@ CHECKBUTTON
 SE
 EW
 Toplevel
+ARC
 DISABLED
-webbrowser
 Text
 importlib
 fixwordbreaks
@@ -124,7 +124,7 @@ grep
 BaseWidget
 Entry
 CallWrapper
-LEFT
+scrolledtext
 mainloop
 CHAR
 SUNKEN
@@ -156,8 +156,8 @@ Frame
 W
 image_names
 EXCEPTION
-filedialog
-image_types
+S
+ANCHOR
 RIDGE
 XView
 OUTSIDE
@@ -173,11 +173,11 @@ Image
 CASCADE
 Listbox
 SCROLL
-ARC
-__spec__
+webbrowser
+YView
 NW
 TkVersion
-YView
+__spec__
 ttk
 TRUE
 messagebox

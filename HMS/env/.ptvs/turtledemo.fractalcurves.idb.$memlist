@@ -12,6 +12,7 @@ join
 Terminator
 Screen
 readconfig
+colormode
 clock
 TK
 write_docstringdict
@@ -26,8 +27,10 @@ __builtins__
 TNavigator
 __spec__
 ScrolledCanvas
+done
 sys
 __name__
+tracer
 inspect
 deepcopy
 math

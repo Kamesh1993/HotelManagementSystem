@@ -1,11 +1,12 @@
-ItemsView
+compile_java
+os
 __spec__
 __file__
-ValuesView
+execute_java
+subprocess
 __name__
-KeysView
+STDOUT
 __builtins__
 __cached__
-OrderedDict
-_get_ident
+PIPE
 __package__

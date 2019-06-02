@@ -14,7 +14,6 @@ __package__
 algorithms_available
 __all__
 logging
-sha1
 __hash_new
 algorithms_guaranteed
 __get_openssl_constructor

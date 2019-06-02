@@ -32,9 +32,9 @@ dbapi2
 dump
 Binary
 OperationalError
-adapt
+__file__
 DateFromTicks
-SQLITE_DROP_TABLE
+SQLITE_CREATE_VIEW
 SQLITE_CREATE_TRIGGER
 SQLITE_DROP_TEMP_INDEX
 TimeFromTicks
@@ -72,8 +72,8 @@ PrepareProtocol
 SQLITE_CREATE_TEMP_TABLE
 SQLITE_INSERT
 Row
-SQLITE_CREATE_VIEW
-__file__
+adapt
+SQLITE_DROP_TABLE
 SQLITE_REINDEX
 ProgrammingError
 Error

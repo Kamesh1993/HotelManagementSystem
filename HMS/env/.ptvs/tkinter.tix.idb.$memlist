@@ -2,10 +2,10 @@ _dummyPanedWindow
 Misc
 YES
 IntVar
-Tcl
+_dummyScrolledHList
 EXTENDED
 ACROSSTOP
-Variable
+WINDOW
 FileTypeList
 __name__
 SOLID
@@ -21,7 +21,7 @@ FileEntry
 colorchooser
 InputOnly
 Label
-INSERT
+RIGHT
 dialog
 re
 LabelEntry
@@ -53,12 +53,12 @@ MAX
 NoDefaultRoot
 Select
 MAIN
-DirList
+sys
 Button
 _dummyDirSelectBox
 Scrollbar
-StdButtonBox
-WRITABLE
+X_REGION
+EventType
 BROWSE
 FileSelectDialog
 _dummyStdButtonBox
@@ -78,7 +78,7 @@ Message
 Tree
 IMAGETEXT
 RAISED
-ANCHOR
+image_types
 S
 font
 MULTIPLE
@@ -100,7 +100,7 @@ Toplevel
 ComboBox
 DISABLED
 _dummyLabel
-TkVersion
+NW
 INCREASING
 YView
 TclVersion
@@ -118,7 +118,7 @@ BooleanVar
 _dummyFileComboBox
 TCL_FILE_EVENTS
 NONE
-_dummyScrolledHList
+Tcl
 DirSelectDialog
 _dummyButton
 INSIDE
@@ -126,7 +126,7 @@ ResizeHandle
 Radiobutton
 GROOVE
 SEL_FIRST
-WINDOW
+Variable
 TixWidget
 __package__
 INTEGER
@@ -144,7 +144,7 @@ Menu
 NS
 ScrolledText
 Pack
-RIGHT
+INSERT
 getint
 _dummyDirList
 ACTIVE
@@ -175,12 +175,12 @@ CHAR
 CELL
 SUNKEN
 REAL
-sys
+DirList
 _dummyText
-EventType
+StdButtonBox
 Shell
 simpledialog
-X_REGION
+WRITABLE
 DOTBOX
 BUTT
 StringVar
@@ -211,7 +211,7 @@ W
 image_names
 EXCEPTION
 filedialog
-image_types
+ANCHOR
 RIDGE
 XView
 HORIZONTAL
@@ -235,7 +235,7 @@ SCROLL
 _dummyFrame
 Y_REGION
 Text
-NW
+TkVersion
 __spec__
 ttk
 DirTree

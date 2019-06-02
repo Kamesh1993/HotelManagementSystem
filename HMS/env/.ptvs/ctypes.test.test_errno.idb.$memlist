@@ -64,6 +64,7 @@ __spec__
 c_bool
 Array
 kind
+test
 BigEndianStructure
 c_byte
 c_int32
@@ -78,11 +79,11 @@ WinDLL
 cast
 create_string_buffer
 c_ulonglong
-resize
 HRESULT
 string_at
-util
+resize
 Structure
+util
 c_longlong
 c_ssize_t
 Test

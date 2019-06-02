@@ -17,6 +17,7 @@ Terminator
 config_dict
 Screen
 readconfig
+colormode
 TurtleScreenBase
 RawTurtle
 Tbuffer
@@ -31,9 +32,11 @@ __builtins__
 TPen
 __spec__
 ScrolledCanvas
+done
 right
 sys
 __name__
+tracer
 inspect
 Canvas
 Turtle

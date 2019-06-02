@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Hotel Ruby</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Royal Luxury Stay - Online Booking Smart Responsive HTML5 Template">
+    <meta name="description" content="Ruby Luxury Stay - Online Booking Smart Responsive HTML5 Template">
     <meta name="keywords" content="accommodation,apartment,B&B,bed and breakfast,booking,hostel,inn,motel,reservation,reservation form,resort,responsive,spa,travel,bootstrap,cruise,flights,holiday,hotel,html5 template,online booking,real estate,rentals,tour,tourism,uber">
 
     <link rel="apple-touch-icon" sizes="180x180" href="../../static/app/images/favicons/apple-touch-icon.png">
@@ -14,7 +14,7 @@
     <link rel="manifest" href="../../static/app/images/favicons/manifest.json">
     <link rel="mask-icon" href="../../static/app/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- CSS Files ================================================== -->
     <link rel="stylesheet" type="text/css" href="../../static/app/css/bootstrap.min.css" />
@@ -39,17 +39,18 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="../../static/app/js/themefunction.js"></script>
     <script type="text/javascript" src="../../static/app/js/valid-date.js"></script>
-    <script type="text/javascript" language="javascript">  
+    <script type="text/javascript" language="javascript">
+
         function disableBackButton()
         {
             window.history.forward()
-        } 
-        disableBackButton(); 
-        window.onload=disableBackButton(); 
-        window.onpageshow=function(evt) { if(evt.persisted) disableBackButton() } 
-        window.onunload=function() { void(0) } 
+        }
+        disableBackButton();
+        window.onload=disableBackButton();
+        window.onpageshow=function(evt) { if(evt.persisted) disableBackButton() }
+        window.onunload=function() { void(0) }
     </script>
-	<script>
+    <script>
         window.addEventListener("pageshow", function (event) {
             var historyTraversal = event.persisted ||
                 (typeof window.performance != "undefined" &&
@@ -64,8 +65,8 @@
         function logoutFunction() {
             window.location.reload();
         }
- </script>
-    
+    </script>
+
 </head>
 
 <body>
@@ -73,15 +74,15 @@
     <!-- Header Begin -->
     {% include 'includes/_navbar.html' %}
     <!-- Header Close -->
-<section class="rh-check-availability">
-            <img src="../../static/app/images/event/event-background.jpg" alt="1">
-</section>
+    <section class="rh-check-availability">
+        <img src="../../static/app/images/event/event-background.jpg" alt="1">
+    </section>
     <!-- Main Content Begin -->
     <div class="rh rh-100 section-booking">
         <!-- Booking Page Begin -->
         <div class="container">
             <div class="row">
-                
+
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-wizard">
                     <div class="col-lg-12 col-md-12">
                         <div class="rh-section-title">
@@ -91,7 +92,7 @@
                     </div>
                     <!-- Form Wizard -->
                     <form action="/double/" method="post">
-                         {% csrf_token %}
+                        {% csrf_token %}
                         <!-- Form progress -->
                         <div class="form-wizard-steps form-wizard-tolal-steps-4">
                             <div class="form-wizard-progress">
@@ -124,13 +125,14 @@
                         </div>
                         <br>
                         {% if messages %}
-                            <ul class="messages">
-                        {% for message in messages %}
-                        <h2><li class="{{ message.tags }}">{{ message }}</li><h2>
-                        {% endfor %}
-                            </ul>
+                        <ul class="messages">
+                            {% for message in messages %}
+                            <h2>
+                                <li class="{{ message.tags }}">{{ message }}</li><h2>
+                                    {% endfor %}
+                        </ul>
                         {% endif %}
-                          <fieldset>
+                        <fieldset>
                             <div class="rh rh-reservation-form">
                                 <div class="row">
                                     <div class="col-md-4 col-sm-6 col-xs-6 rh-xs-12">
@@ -171,36 +173,36 @@
                                     <div class="col-md-4 col-sm-6 col-xs-6 rh-xs-12">
                                         <div class="form-group">
                                             <select name="state" class="dropdown-select">
-	                                            <option value="AP">Andhra Pradesh</option>
-	                                            <option value="AK">Arunachal Pradesh</option>
-	                                            <option value="AZ">Assam</option>
-	                                            <option value="AR">Bihar</option>
-	                                            <option value="CA">Chhattisgarh</option>
-	                                            <option value="CO">Goa</option>
-	                                            <option value="CT">Gujarat</option>
-	                                            <option value="DE">Haryana</option>
-	                                            <option value="DC">Himachal Pradesh</option>
-	                                            <option value="FL">Jammu and Kashmir</option>
-	                                            <option value="GA">Jharkhand</option>
-	                                            <option value="HI">Karnataka</option>
-	                                            <option value="ID">Kerala</option>
-	                                            <option value="IL">Madhya Pradesh</option>
-	                                            <option value="IN">Maharashtra</option>
-	                                            <option value="IA">Manipur</option>
-	                                            <option value="KS">Meghalaya</option>
-	                                            <option value="KY">Mizoram</option>
-	                                            <option value="LA">Nagaland</option>
-	                                            <option value="ME">Odisha</option>
-	                                            <option value="MD">Punjab</option>
-	                                            <option value="MA">Rajasthan</option>
-	                                            <option value="MI">Sikkim</option>
-	                                            <option value="MN">Tamil Nadu</option>
-	                                            <option value="MS">Telangana</option>
-	                                            <option value="MO">Tripura</option>
-	                                            <option value="MT">Uttar Pradesh</option>
-	                                            <option value="NE">Uttarakhand</option>
-	                                            <option value="NV">West Bengal</option>
-                                            </select>		
+                                                <option value="AP">Andhra Pradesh</option>
+                                                <option value="AK">Arunachal Pradesh</option>
+                                                <option value="AZ">Assam</option>
+                                                <option value="AR">Bihar</option>
+                                                <option value="CA">Chhattisgarh</option>
+                                                <option value="CO">Goa</option>
+                                                <option value="CT">Gujarat</option>
+                                                <option value="DE">Haryana</option>
+                                                <option value="DC">Himachal Pradesh</option>
+                                                <option value="FL">Jammu and Kashmir</option>
+                                                <option value="GA">Jharkhand</option>
+                                                <option value="HI">Karnataka</option>
+                                                <option value="ID">Kerala</option>
+                                                <option value="IL">Madhya Pradesh</option>
+                                                <option value="IN">Maharashtra</option>
+                                                <option value="IA">Manipur</option>
+                                                <option value="KS">Meghalaya</option>
+                                                <option value="KY">Mizoram</option>
+                                                <option value="LA">Nagaland</option>
+                                                <option value="ME">Odisha</option>
+                                                <option value="MD">Punjab</option>
+                                                <option value="MA">Rajasthan</option>
+                                                <option value="MI">Sikkim</option>
+                                                <option value="MN">Tamil Nadu</option>
+                                                <option value="MS">Telangana</option>
+                                                <option value="MO">Tripura</option>
+                                                <option value="MT">Uttar Pradesh</option>
+                                                <option value="NE">Uttarakhand</option>
+                                                <option value="NV">West Bengal</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-6 col-xs-6 rh-xs-12">
@@ -208,7 +210,7 @@
                                             <input type="text" name="zipcode" class="form-control" placeholder="Zipcode" />
                                         </div>
                                     </div>
-                                   <div class="col-md-4 col-sm-6 col-xs-6 rh-xs-12">
+                                    <div class="col-md-4 col-sm-6 col-xs-6 rh-xs-12">
                                         <div class="form-group">
                                             <input type="text" name="idproof" class="form-control" placeholder="Provide Id proof number of passport/pan/voter id" />
                                         </div>
@@ -216,10 +218,10 @@
                                     <div class="col-md-4 col-sm-6 col-xs-6 rh-xs-12">
                                         <div class="form-group">
                                             <select name="rooms" class="dropdown">
-	                                            <option value="0">Select number of rooms</option>
-	                                           {% for i in avl %}
-                                                   <option value={{i}}>{{i}}</option>
-                                               {% endfor %}
+                                                <option value="0">Select number of rooms</option>
+                                                {% for i in avl %}
+                                                <option value={{i}}>{{i}}</option>
+                                                {% endfor %}
                                             </select>
                                         </div>
                                     </div>
@@ -227,13 +229,13 @@
                             </div>
                             <div class="form-wizard-buttons">
                                 <div class="">
-                                    
+
                                 </div>
                                 <button type="button" class="btn btn-previous">Previous</button>
                                 <button type="submit" class="btn btn-next">Next</button>
                             </div>
                         </fieldset>
-                            
+
                     </form>
                     <!-- Form Wizard -->
                 </div>
@@ -242,35 +244,34 @@
         <!-- Booking Page Close -->
     </div>
     <!-- Main Content Close -->
-    <div class="rh section-booking">        
-        <!-- About Royal Hotel Begin -->
+    <div class="rh section-booking">
+        <!-- About Ruby Hotel Begin -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="rh-detail-right">
                         <div class="row rh-flex">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <!-- Need Royal Help? Begin -->
+                                <!-- Need Ruby Help? Begin -->
                                 <div class="rh-need-help">
-                                    <h5>Need Royal Help?</h5>
+                                    <h5>Need Ruby Help?</h5>
                                     <p>We would be more than happy to help you. Our team advisor are 24/7 at your service to help you.</p>
                                     <a href="tel:+919173495648">917 349 5648</a>
                                 </div>
-                                <!-- Need Royal Help? Close -->
+                                <!-- Need Ruby Help? Close -->
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                
+
+
             </div>
         </div>
-        <!-- About Royal Hotel Close -->
+        <!-- About Ruby Hotel Close -->
     </div>
     <!-- Footer Begin -->
     {% include 'includes/_footer.html' %}
     <!-- Footer Close -->
-
     <!-- Backe To Top Begin -->
     <div id="back_to_top" class="active">
         <i class="fa fa-angle-up" aria-hidden="true"></i>

@@ -21,7 +21,6 @@ __spec__
 SYNTAX_PROTO3
 SYNTAX_PROTO2
 __package__
-sys
 Option
 _FIELD
 _ENUMVALUE

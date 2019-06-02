@@ -3,7 +3,6 @@ METHOD_MD5
 METHOD_SHA256
 _method
 __name__
-_crypt
 _namedtuple
 __file__
 _SystemRandom

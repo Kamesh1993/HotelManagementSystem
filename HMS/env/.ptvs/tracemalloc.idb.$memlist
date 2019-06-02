@@ -1,9 +1,9 @@
-__spec__
+get_tracemalloc_memory
 _format_size
 get_traceback_limit
 Traceback
 _normalize_filename
-linecache
+__spec__
 __package__
 get_object_traceback
 DomainFilter
@@ -19,7 +19,7 @@ _Traces
 __builtins__
 Snapshot
 fnmatch
-get_tracemalloc_memory
+linecache
 total_ordering
 _get_traces
 __name__

@@ -6,7 +6,6 @@ __builtins__
 __file__
 __cached__
 Element
-parser
 HTMLParseError
 HTMLParser
 WHITESPACE

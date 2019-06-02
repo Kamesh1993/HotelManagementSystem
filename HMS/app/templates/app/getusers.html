@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <head>
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ruby Luxury Stay - Online Booking Smart Responsive HTML5 Template">
     <meta name="keywords" content="accommodation,apartment,B&B,bed and breakfast,booking,hostel,inn,motel,reservation,reservation form,resort,responsive,spa,travel,bootstrap,cruise,flights,holiday,hotel,html5 template,online booking,real estate,rentals,tour,tourism,uber">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="../../static/app/images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../../static/app/images/favicons/favicon-32x32.png">
@@ -39,29 +39,28 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="../../static/app/js/themefunction.js"></script>
     <script type="text/javascript" src="../../static/app/js/valid-date.js"></script>
-     <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
 
-	<script type="text/javascript" language="javascript">  
-        function disableBackButton()
-        {
+    <script type="text/javascript" language="javascript">
+        function disableBackButton() {
             window.history.forward()
-        } 
-        disableBackButton(); 
-        window.onload=disableBackButton(); 
-        window.onpageshow=function(evt) { if(evt.persisted) disableBackButton() } 
-        window.onunload=function() { void(0) } 
+        }
+        disableBackButton();
+        window.onload = disableBackButton();
+        window.onpageshow = function (evt) { if (evt.persisted) disableBackButton() }
+        window.onunload = function () { void (0) }
     </script>
     <script>
-    $(document).ready(function(){
-        $("booknow").hover(function(){
-            $(this).css("background-color", "#32CD32");
-        },
-            function () {
-            $(this).css("background-color", "#0E2646");
-            });
-    });
-</script>
+        $(document).ready(function () {
+            $("booknow").hover(function () {
+                $(this).css("background-color", "#32CD32");
+            },
+                function () {
+                    $(this).css("background-color", "#0E2646");
+                });
+        });
+    </script>
 </head>
 
 <body onload="noBack();">
@@ -73,15 +72,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4">
-                        
+
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
                         <ul class="pull-right">
                             <li>
-                                 <a href="/"> <input type="button" id ="booking" class="button" value="Go To Home"></a>
+                                <a href="/"> <input type="button" id="booking" class="button" value="Go To Home"></a>
                             </li>
                             <li>
-                                 <a href="/logout"> <input type="button" id ="logout" class="button1" value="Logout" onclick="logoutFunction()"></a>
+                                <a href="/logout"> <input type="button" id="logout" class="button1" value="Logout" onclick="logoutFunction()"></a>
                             </li>
                         </ul>
                     </div>
@@ -116,7 +115,6 @@
         </nav>
     </header>
     <!-- Header Close -->
-    
     <!-- Main Content Begin -->
     <div class="rh rh-100 section-booking">
         <!-- Booking Page Begin -->
@@ -125,61 +123,61 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-wizard">
                     <!-- Form Wizard -->
                     <div class="row">
-        <div class="col-md-12">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="text-center"><strong>List of Registered Users</strong></h3>
-                </div>
-                <div class="panel-body">
-                    <div class="table-responsive">
-                        <table class="table table-condensed">
-                            <thead>
-                                <tr>
-                                    <td><h4>Id</h4></td>
-                                    <td><h4>First Name</h4></td>
-                                    <td><h4>Last Name</h4></td>
-                                    <td><h4>Email</h4></td>
-                                    <td><h4>Registered Date</h4></td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {% for d in list %}
-                                <tr>
-                                    <td><strong>{{d.0}}</strong></td>
-                                    <td><strong>{{d.1}}</strong></td>
-                                    <td><strong>{{d.2}}</strong></td>
-                                    <td><strong>{{d.3}}</strong></td>
-                                    <td><strong>{{d.4}}</strong></td>
-                                </tr>
-                                {% endfor %}
-                            </tbody>
-                            
-                        </table>
-  <ul class="pagination">
-    {% if list.has_previous %}
-      <li><a href="?page={{ list.previous_page_number }}">&laquo;</a></li>
-    {% else %}
-      <li class=""><span>&laquo;</span></li>
-    {% endif %}
-    {% for i in list.paginator.page_range %}
-      {% if list.number == i %}
-        <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
-      {% else %}
-        <li><a href="?page={{ i }}">{{ i }}</a></li>
-      {% endif %}
-    {% endfor %}
-    {% if list.has_next %}
-      <li><a href="?page={{ list.next_page_number }}">&raquo;</a></li>
-    {% else %}
-      <li class=""><span>&raquo;</span></li>
-    {% endif %}
-  </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        <div class="col-md-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="text-center"><strong>List of Registered Users</strong></h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-condensed">
+                                            <thead>
+                                                <tr>
+                                                    <td><h4>Id</h4></td>
+                                                    <td><h4>First Name</h4></td>
+                                                    <td><h4>Last Name</h4></td>
+                                                    <td><h4>Email</h4></td>
+                                                    <td><h4>Registered Date</h4></td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {% for d in list %}
+                                                <tr>
+                                                    <td><strong>{{d.0}}</strong></td>
+                                                    <td><strong>{{d.1}}</strong></td>
+                                                    <td><strong>{{d.2}}</strong></td>
+                                                    <td><strong>{{d.3}}</strong></td>
+                                                    <td><strong>{{d.4}}</strong></td>
+                                                </tr>
+                                                {% endfor %}
+                                            </tbody>
 
-    </div>
+                                        </table>
+                                        <ul class="pagination">
+                                            {% if list.has_previous %}
+                                            <li><a href="?page={{ list.previous_page_number }}">&laquo;</a></li>
+                                            {% else %}
+                                            <li class=""><span>&laquo;</span></li>
+                                            {% endif %}
+                                            {% for i in list.paginator.page_range %}
+                                            {% if list.number == i %}
+                                            <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+                                            {% else %}
+                                            <li><a href="?page={{ i }}">{{ i }}</a></li>
+                                            {% endif %}
+                                            {% endfor %}
+                                            {% if list.has_next %}
+                                            <li><a href="?page={{ list.next_page_number }}">&raquo;</a></li>
+                                            {% else %}
+                                            <li class=""><span>&raquo;</span></li>
+                                            {% endif %}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                     <!-- Form Wizard -->
                 </div>
             </div>
@@ -187,7 +185,7 @@
         <!-- Booking Page Close -->
     </div>
     <!-- Main Content Close -->
-    <div class="rh section-booking">        
+    <div class="rh section-booking">
         <!-- About Ruby Hotel Begin -->
         <div class="container">
             <div class="row">
@@ -206,8 +204,8 @@
                         </div>
                     </div>
                 </div>
-                
-                
+
+
             </div>
         </div>
         <!-- About Ruby Hotel Close -->
@@ -216,7 +214,6 @@
     <!-- Footer Begin -->
     {% include 'includes/_footer.html' %}
     <!-- Footer Close -->
-
     <!-- Backe To Top Begin -->
     <div id="back_to_top" class="active">
         <i class="fa fa-angle-up" aria-hidden="true"></i>

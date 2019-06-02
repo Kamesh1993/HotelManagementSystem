@@ -1,7 +1,6 @@
 _descriptor
 _sym_db
 BAR
-<lambda>
 ImportMessage
 FOO
 IMPORT_BAR
@@ -13,11 +12,9 @@ __file__
 _symbol_database
 __package__
 google_dot_protobuf_dot_unittest__import__public__pb2
-sys
 UNKNOWN
-dict
-PublicImportMessage
 _IMPORTENUM
+<lambda>
 _IMPORTMESSAGE
 IMPORT_BAZ
 IMPORT_FOO

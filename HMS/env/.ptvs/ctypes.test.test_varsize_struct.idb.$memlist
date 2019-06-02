@@ -31,7 +31,7 @@ wstring_at
 resize
 get_last_error
 c_void_p
-POINTER
+Structure
 c_voidp
 c_ubyte
 c_uint16
@@ -61,6 +61,7 @@ __spec__
 c_bool
 Array
 kind
+test
 BigEndianStructure
 c_byte
 c_int32
@@ -78,8 +79,8 @@ sizeof
 string_at
 HRESULT
 c_ulonglong
+POINTER
 util
-Structure
 c_longlong
 c_ssize_t
 LittleEndianStructure

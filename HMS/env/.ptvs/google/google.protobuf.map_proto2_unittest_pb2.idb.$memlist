@@ -35,7 +35,6 @@ __spec__
 E_PROTO2_MAP_ENUM_EXTRA
 PROTO2_MAP_ENUM_BAZ
 google_dot_protobuf_dot_unittest__import__pb2
-sys
 _TESTENUMMAPPLUSEXTRA_UNKNOWNMAPFIELDENTRY
 _TESTENUMMAP
 TestImportEnumMap

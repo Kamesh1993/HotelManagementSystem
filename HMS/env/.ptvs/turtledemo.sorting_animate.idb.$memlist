@@ -5,6 +5,7 @@ start_isort
 read_docstrings
 enable_keys
 TNavigator
+tracer
 sys
 __package__
 __name__
@@ -24,6 +25,7 @@ TurtleGraphicsError
 config_dict
 Shelf
 readconfig
+colormode
 TurtleScreenBase
 RawTurtle
 demo2
@@ -40,6 +42,7 @@ __builtins__
 TPen
 __spec__
 ScrolledCanvas
+done
 instructions1
 types
 randomize

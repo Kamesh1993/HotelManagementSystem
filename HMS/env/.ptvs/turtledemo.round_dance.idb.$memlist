@@ -20,6 +20,7 @@ Pen
 running
 TurtleGraphicsError
 readconfig
+colormode
 bgcolor
 TK
 write_docstringdict
@@ -38,6 +39,7 @@ __spec__
 clone
 ScrolledCanvas
 fd
+done
 right
 sys
 __name__
