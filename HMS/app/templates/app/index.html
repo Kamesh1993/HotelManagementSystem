@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Hotel Management System</title>
+    <title>Hotel Ruby</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Royal Luxury Stay - Online Booking Smart Responsive HTML5 Template">
     <meta name="keywords" content="accommodation,apartment,B&B,bed and breakfast,booking,hostel,inn,motel,reservation,reservation form,resort,responsive,spa,travel,bootstrap,cruise,flights,holiday,hotel,html5 template,online booking,real estate,rentals,tour,tourism,uber">
@@ -44,7 +44,6 @@
     <script type="text/javascript" src="../../static/app/js/form-wizard.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="../../static/app/js/themefunction.js"></script>
-    <script type="text/javascript" src="../../static/app/js/valid-date.js"></script>
     <script>
     $(document).ready(function(){
         $("#login").hover(function(){
@@ -85,7 +84,7 @@
                     zoom: 11,
 
                     // The latitude and longitude to center the map (always required)
-                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
+                    center: new google.maps.LatLng(17.4933, 78.3915), // New York
 
                     // How you would like to style the map. 
                     // This is where you would paste any style found on Snazzy Maps.
@@ -100,11 +99,55 @@
 
                 // Let's also add a marker while we're at it
                 var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(40.6700, -73.9400),
+                    position: new google.maps.LatLng(17.4933, 78.3915),
                     map: map,
                     title: 'Snazzy!'
                 });
             }
+    </script>
+    <script type="text/javascript">
+        // DatePicker
+$(function () {
+    var $dp1 = $("#datepicker_CIn");
+    $dp1.datepicker({
+        changeMonth: true,
+        changeYear: true,
+            minDate: 0
+        });
+    var $dp2 = $("#datepicker_COut");
+    $dp2.datepicker({
+        changeMonth: true,
+            minDate: 0
+        });
+    $("#datepicker_CIn").datepicker();
+    $("#datepicker_COut").datepicker();
+    //Pass the user selected date format
+    $("#format").change(function () {
+        $("#datepicker_CIn").datepicker("option", "dateFormat: 'yyyy-mm-dd'", $(this).val());
+        $("#datepicker_COut").datepicker("option", "dateFormat: 'yyyy-mm-dd'", $(this).val());
+    });
+});
+function handler(e) {
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1; //January is 0!
+    var yyyy = today.getFullYear();
+    today = mm + '/' + dd + '/' + yyyy;
+    selected = e.target.value;
+    if (selected > today) {
+        alert("please selected above today date");
+        $('#datepicker_CIn').val('');
+        $('#datepicker_COut').val('');
+    }
+}
+function date(f) {
+    var cin = document.getElementById("datepicker_CIn").value;
+    var cout = document.getElementById("datepicker_COut").value;
+    if (cout < cin) {
+        alert("Check out date cannot be less than check in date");
+        $('#datepicker_COut').val('');
+    }
+}
     </script>
 </head>
 
@@ -121,12 +164,24 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
                         <ul class="pull-right">
+       
+                            {% if 'email' not in request.session %}
                             <li>
                                <a href="/login"> <input type="button" id ="login" class="button" value="Login"></a>
                             </li>
                             <li>
-                                <a href="/login"><input type="button" id ="register" class="button1" value="Register"></a>
+                                <a href="/register"><input type="button" id ="register" class="button1" value="Register"></a>
                             </li>
+                            {% endif %}
+                            {% if 'email' in request.session %}
+                            <li>
+                               <a href="/booking"> <input type="button" id ="login" class="button" value="Dashboard"></a>
+                            </li>
+                            <li>
+                                 <a href="/logout"> <input type="button" id ="logout" class="button1" value="Logout" onclick="logoutFunction()"></a>
+                            </li>
+                            {% endif %}
+  
                         </ul>
                     </div>
                 </div>
@@ -137,7 +192,7 @@
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index-2.html"><h2>HMS</h2></a>
+                    <a class="navbar-brand" href="index-2.html"><h2>Hotel Ruby</h2></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse rh-toggle" id="bs-example-navbar-collapse-1">
@@ -150,9 +205,6 @@
                         </li>
                         <li>
                             <a  href="/rooms">Rooms</a>
-                        </li>
-                        <li>
-                            <a  href="/restaurant">Restaurant</a>
                         </li>
                         <li>
                             <a href="/about">About</a>
@@ -187,7 +239,7 @@
                                 <div class="rh-banner flex">
                                     <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
                                         <h1>Live The Wonderous Life</h1>
-                                        <span class="rh-price">From $195 / day</span>
+                                        <span class="rh-price">From Rs.1500/ day</span>
                                     </div>
                                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                                         <a class="book-now" href="available-rooms.html">BOOK NOW</a>
@@ -204,7 +256,7 @@
                             <div class="row flex">
                                 <div class="col-lg-9 col-md-9">
                                     <h1>Live The Wonderous Life</h1>
-                                    <span class="rh-price">From $195 / day</span>
+                                    <span class="rh-price">From Rs.1500 / day</span>
                                 </div>
                                 <div class="col-lg-3 col-md-3">
                                     <a class="book-now" href="available-rooms.html">BOOK NOW</a>
@@ -220,7 +272,7 @@
                             <div class="row flex">
                                 <div class="col-lg-9 col-md-9">
                                     <h1>Live The Wonderous Life</h1>
-                                    <span class="rh-price">From $195 / day</span>
+                                    <span class="rh-price">From Rs.1500 / day</span>
                                 </div>
                                 <div class="col-lg-3 col-md-3">
                                     <a class="book-now" href="available-rooms.html">BOOK NOW</a>
@@ -276,11 +328,11 @@
                                 <div class="col-md-4 col-sm-6 col-xs-4 rh-xs-3">
                                     <h5>Budget</h5>
                                     <div class="form-group">
-                                        <input type="text" name="arrive" value="" class="form-control" placeholder="$ 5000">
+                                        <input type="text" name="arrive" value="" class="form-control" placeholder="Rs.5000">
                                     </div>
                                 </div>
                                 <div class="col-md-8 col-sm-6 col-xs-8 rh-xs-9">
-                                    <a class="rh-check-btn pull-right" href="available-rooms.html">Check Availability</a>
+                                    <a class="rh-check-btn pull-right" href="/booking">Check Availability</a>
                                 </div>
                             </div>
                         </div>
@@ -311,7 +363,7 @@
                                 <a href="single-rooms.html"></a>
                             </div>
                             <div class="feature-detail">
-                                <h4><a href="single-rooms.html">Single and double Rooms</a></h4>
+                                <h4><a href="single-rooms.html">Single and Double Rooms</a></h4>
                                 <div class="rating-star">
                                     <ul>
                                         <li><i class="fa fa-star" aria-hidden="true"></i></li>
@@ -336,7 +388,7 @@
                                 <a href="single-rooms.html"></a>
                             </div>
                             <div class="feature-detail">
-                                <h4><a href="single-rooms.html">Triple and Executive Rooms</a></h4>
+                                <h4><a href="single-rooms.html">Deluxe and Executive Rooms</a></h4>
                                 <div class="rating-star">
                                     <ul>
                                         <li><i class="fa fa-star" aria-hidden="true"></i></li>
@@ -361,7 +413,7 @@
                                 <a href="single-rooms.html"></a>
                             </div>
                             <div class="feature-detail">
-                                <h4><a href="single-rooms.html">Deluxe and Royal Rooms</a></h4>
+                                <h4><a href="single-rooms.html">Luxury and Presidential Suites</a></h4>
                                 <div class="rating-star">
                                     <ul>
                                         <li><i class="fa fa-star" aria-hidden="true"></i></li>
@@ -411,7 +463,7 @@
                                         <div class="overley">
                                             <div class="stay-detail">
                                                 <h5>Luxury Room</h5>
-                                                <span>$99 / day</span>
+                                                <span>Rs.5000 / day</span>
                                             </div>
                                         </div>
                                     </div>
@@ -423,7 +475,7 @@
                                         <div class="overley">
                                             <div class="stay-detail">
                                                 <h5>Royal Room</h5>
-                                                <span>$149 / day</span>
+                                                <span>Rs.8000 / day</span>
                                             </div>
                                         </div>
                                     </div>
@@ -490,8 +542,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <!-- The element that will contain our Google Map. This is used in both the Javascript and CSS above. -->
                          <div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15218.685652524251!2d78.4390471!3d17.5231921!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd06d76af06e0a595!2sFlextrio+Solutions!5e0!3m2!1sen!2sin!4v1543226590166" width="600" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        </div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15221.19269251784!2d78.3914639!3d17.4932742!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5b92f2e1fd8fc012!2sJawaharlal+Nehru+Technological+University+Hyderabad!5e0!3m2!1sen!2sin!4v1558757207491!5m2!1sen!2sin" width="600" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>                        </div>
                     </div>
                 </div>
             </div>

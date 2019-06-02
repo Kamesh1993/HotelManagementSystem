@@ -52,12 +52,9 @@
         <div class="content-bottom">
                 {% if messages %}
                     <ul class="messages">
-                    {% for message in messages %}
-                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
-                    {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Important: {% endif %}
-                    {{ message }}
-                    </li>
-                    {% endfor %}
+                        {% for message in messages %}
+                        <li class="{{ message.tags }}">{{ message }}</li>
+                        {% endfor %}
                     </ul>
                 {% endif %}
                <form action="/login/" method="post">
@@ -74,23 +71,20 @@
                         <input name="password" id="password" type="Password" placeholder="password" required>
                     </div>
                 </div>
-                <ul class="list-login">
-                    <li class="switch-agileits">
-                        <label class="switch">
-                            <input type="checkbox" name="remember_me">
-                            <span class="slider round"></span>
-                            keep me signed in
-                        </label>
-                    </li>
-                    <li>
-                        <a href="/ForgotPassword" class="text-right">Forgot password?</a>
-                    </li>
-                    <li class="clearfix"></li>
-                </ul>
+               
                 <div class="wthree-field">
                     <input id="saveForm" name="saveForm" type="submit" value="Log In" />
                 </div>
+                    
             </form>
+            <br>
+                    
+                    <center>
+                        <a href="/forgotpassword" class="text-center">Forgot password?</a> &nbsp;
+                        <a href="/register" class="text-center">Create account</a>
+                        <br>
+                    </center>
+               
         </div>
     </div>
     <div class="copyright text-center">
