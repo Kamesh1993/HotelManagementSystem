@@ -9,7 +9,7 @@ from django.contrib.auth.models import User
 from django.contrib import messages,auth
 from app.forms import RegisterForm, LoginForm, RoomBooking, Reservations
 from datetime import datetime
-from app.models import UserDetails, RoomBooking, BookingHistory, Rooms, Reservation
+from app.models import UserDetails, RoomBooking, BookingHistory, Rooms
 import mysql.connector
 from mysql.connector import Error
 from mysql.connector import errorcode
@@ -155,7 +155,7 @@ def roombooking(request):
         return render(request,'app/index.html')
 
 def single(request):
-    #try:
+    try:
         if 'email' in request.session:
             if request.method=='POST':
                 form = Reservations(request.POST)
@@ -166,17 +166,16 @@ def single(request):
                 reservation('single',details,price)
                 avl=get_rooms('single')
                 avl = len(avl)
-                rooms_details = Rooms.objects.get(roomtype='single').values()
+                rooms_details = Rooms.objects.filter(roomtype='single').values()
                 det=[]
                 for i in rooms_details:
                     for k,v in i.items():
                         det.append(v)
-                rs = det[2]-det[3]
+                rs = det[2]-details[10]
                 if(rs<0):
                     rs = 0
-                rooms_details.available = rs
-                rooms_details.save()
-                return render(request,'app/reservation.html',{'name':name,'room':rooms,'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Single'})
+                Rooms.objects.filter(roomtype='single').update(available = rs)
+                return render(request,'app/reservation.html',{'name':name,'room':avl,'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Single'})
             else:
                 avl=get_rooms('single')
                 if len(avl)!=0:
@@ -186,7 +185,7 @@ def single(request):
                     return render(request,'app/singlerooms.html',{'avl':avl})
         else:
             return render(request,'app/login.html')
-    #except:
+    except:
         return render(request,'app/booking.html')
 
 def double(request):
@@ -199,9 +198,17 @@ def double(request):
                 price = rem*1500
                 price = price*no_of_rooms
                 reservation('double',details,price)
-                avl=get_rooms('single')
+                avl=get_rooms('double')
                 avl = len(avl)
-                update_rooms(request,'double',avl,no_of_rooms)
+                rooms_details = Rooms.objects.filter(roomtype='double').values()
+                det=[]
+                for i in rooms_details:
+                    for k,v in i.items():
+                        det.append(v)
+                rs = det[2]-details[10]
+                if(rs<0):
+                    rs = 0
+                Rooms.objects.filter(roomtype='double').update(available = rs)
                 return render(request,'app/reservation.html',{'name':name,'room':rooms,'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Double','avl':available})
             else:
                 avl=get_rooms('double')
@@ -227,10 +234,18 @@ def deluxe(request):
                 reservation('deluxe',details,price)
                 avl=get_rooms('deluxe')
                 avl = len(avl)
-                update_rooms('deluxe',avl,no_of_rooms)
+                rooms_details = Rooms.objects.filter(roomtype='deluxe').values()
+                det=[]
+                for i in rooms_details:
+                    for k,v in i.items():
+                        det.append(v)
+                rs = det[2]-details[10]
+                if(rs<0):
+                    rs = 0
+                Rooms.objects.filter(roomtype='deluxe').update(available = rs)
                 return render(request,'app/reservation.html',{'name':name,'room':rooms,'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Deluxe'})
             else:
-                avl=get_rooms('double')
+                avl=get_rooms('deluxe')
                 if len(avl)!=0:
                     return render(request,'app/deluxe.html',{'avl':avl})
                 else:
@@ -253,7 +268,15 @@ def luxury(request):
                 reservation('luxury',details,price)
                 avl=get_rooms('luxury')
                 avl = len(avl)
-                update_rooms('luxury',avl,no_of_rooms)
+                rooms_details = Rooms.objects.filter(roomtype='luxury').values()
+                det=[]
+                for i in rooms_details:
+                    for k,v in i.items():
+                        det.append(v)
+                rs = det[2]-details[10]
+                if(rs<0):
+                    rs = 0
+                Rooms.objects.filter(roomtype='luxury').update(available = rs)
                 return render(request,'app/reservation.html',{'name':name,'room':rooms,'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Deluxe'})
             else:
                 avl=get_rooms('luxury')
@@ -279,10 +302,18 @@ def executive(request):
                 reservation('executive',details,price)
                 avl=get_rooms('executive')
                 avl = len(avl)
-                update_rooms('executive',avl,no_of_rooms)
+                rooms_details = Rooms.objects.filter(roomtype='executive').values()
+                det=[]
+                for i in rooms_details:
+                    for k,v in i.items():
+                        det.append(v)
+                rs = det[2]-details[10]
+                if(rs<0):
+                    rs = 0
+                Rooms.objects.filter(roomtype='executive').update(available = rs)
                 return render(request,'app/reservation.html',{'name':name,'room':rooms,'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Deluxe'})
             else:
-                avl=get_rooms('double')
+                avl=get_rooms('executive')
                 if len(avl)!=0:
                     return render(request,'app/executive.html',{'avl':avl})
                 else:
@@ -305,7 +336,15 @@ def presidential(request):
                 reservation('presidential',details,price)
                 avl=get_rooms('presidential')
                 avl = len(avl)
-                update_rooms('presidential',avl,no_of_rooms)
+                rooms_details = Rooms.objects.filter(roomtype='presidential').values()
+                det=[]
+                for i in rooms_details:
+                    for k,v in i.items():
+                        det.append(v)
+                rs = det[2]-details[10]
+                if(rs<0):
+                    rs = 0
+                Rooms.objects.filter(roomtype='presidential').update(available = rs)
                 return render(request,'app/reservation.html',{'name':name,'room':rooms,'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Deluxe'})
             else:
                 avl=get_rooms('presidential')
@@ -334,8 +373,8 @@ def reservation(room,details,price):
 
 
 def update_rooms(roomtype,available,no_of_rooms):
-    #try:
-        rooms_details = Rooms.objects.get(roomtype=roomtype).values()
+    try:
+        rooms_details = Rooms.objects.filter(roomtype=roomtype).values()
         det=[]
         for i in rooms_details:
             for k,v in i.items():
@@ -345,7 +384,7 @@ def update_rooms(roomtype,available,no_of_rooms):
             rs = 0
         room_details.available = rs
         room_details.save()
-    #except:
+    except:
         return render(request,'app/booking.html')
 
 def changeDateFormat(date):
@@ -374,29 +413,6 @@ def booking_hist(request,email):
     except:
         return render(request,'app/booking.html')
 
-def database_insert(table_name,args):
-    try:
-        connection = mysql.connector.connect(host= "localhost",user="root",passwd="superstar007",db="hotelflexproject")
-        cur = connection.cursor()
-        arguments = []
-        length=len(args)
-        for i in range(length):
-            arguments.append('%s')
-        arg = ''.join(arguments)
-        st = str(arguments)
-        st = st.replace("'","")
-        st = st.replace("[","")
-        st = st.replace("]","")
-        ar = tuple(st)
-        query = "insert into "+table_name+" values "+"("+st+")"
-        cur.execute(query,args)
-        connection.commit()
-    except:
-        connection.rollback()
-    finally:
-        if(connection.is_connected()):
-            connection.close()
-
 def forgotpassword(request):
     try:
         if request.method=='POST':
@@ -418,20 +434,6 @@ def forgotpassword(request):
     except:
         messages.warning(request,'Invalid email please enter valid email')
         return render(request,'app/forgotpassword.html')
-
-def get_available(roomtype):
-    try:
-        connection = mysql.connector.connect(host= "localhost",user="root",passwd="superstar007",db="hotelflexproject")
-        cur = connection.cursor()
-        query = "select available from rooms where roomtype="+"'"+roomtype+"'"
-        cur.execute(query)
-        r = cur.fetchall()
-        res = r[0][0]
-        connection.close()
-        return res
-    except:
-        return HttpResponseRedirect('/booking')
-    
 
 def rooms(request):
     assert isinstance(request, HttpRequest)
@@ -469,12 +471,18 @@ def adminruby(request):
 
     # The `chartData` dict contains key-value pairs data
     chartData = OrderedDict()
-    avl1 = get_available('single')
-    avl2 = get_available('double')
-    avl3 = get_available('luxury')
-    avl4 = get_available('deluxe')
-    avl5 = get_available('executive')
-    avl6 = get_available('presidential')
+    avl1 = get_rooms('single')
+    avl1 = len(avl1)
+    avl2 = get_rooms('double')
+    avl2 = len(avl2)
+    avl3 = get_rooms('luxury')
+    avl3 = len(avl3)
+    avl4 = get_rooms('deluxe')
+    avl4 = len(avl4)
+    avl5 = get_rooms('executive')
+    avl5 = len(avl5)
+    avl6 = get_rooms('presidential')
+    avl6 = len(avl6)
 
     chartData["Single"] = avl1
     chartData["Double"] = avl2
@@ -506,7 +514,6 @@ def adminruby(request):
 
 def getusers(request):
     usr = User.objects.all()
-    
     users=[]
     list2=[]
     for i in usr:
