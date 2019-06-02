@@ -31,19 +31,19 @@ class LoginForm(forms.Form):
     password = forms.CharField(label = 'Enter Password', widget=forms.PasswordInput)
 
 class RoomBooking(forms.Form):
-    checkin = forms.DateField(widget=forms.widgets.DateInput(format="%m/%d/%Y"),required=True)
-    checkout = forms.DateField(widget=forms.widgets.DateInput(format="%m/%d/%Y"),required=False)
+    checkin = forms.DateField(widget=forms.widgets.DateInput(format="%YYYY/%mm/%dd"),required=True)
+    checkout = forms.DateField(widget=forms.widgets.DateInput(format="%YYYY/%mm/%dd"),required=True)
     room = forms.CharField()
 
-class Reservation(forms.Form):
-    firstname = forms.CharField()
-    middlename = forms.CharField()
-    lastname = forms.CharField()
-    email = forms.EmailField()
+class Reservations(forms.Form):
+    firstname = forms.CharField(max_length=20)
+    middlename = forms.CharField(max_length=20)
+    lastname = forms.CharField(max_length=20)
+    email = forms.EmailField(max_length=50)
     phone = forms.IntegerField()
-    address = forms.CharField()
-    city = forms.CharField()
-    state = forms.CharField()
+    address = forms.CharField(max_length=550)
+    city = forms.CharField(max_length=50)
+    state = forms.CharField(max_length=50)
     zipcode = forms.IntegerField()
-    idproof = forms.CharField()
+    idproof = forms.CharField(max_length=50)
     rooms = forms.IntegerField()
