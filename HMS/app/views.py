@@ -85,8 +85,6 @@ def login(request):
                         request.session['hotel']='Hotel Ruby'
                         if superuser:
                             request.session['admin'] = True
-                        else:
-                            request.session['admin'] = False
                     rex = booking_hist(request,email)
                     return render(request,'app/booking.html',{'superuser':superuser})
                 else:
@@ -176,7 +174,7 @@ def single(request):
                 if(rs<0):
                     rs = 0
                 Rooms.objects.filter(roomtype='single').update(available = rs)
-                return render(request,'app/reservation.html',{'name':name,'room':avl,'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Single'})
+                return render(request,'app/reservation.html',{'name':name,'room':details[10],'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Single'})
             else:
                 avl=get_rooms('single')
                 if len(avl)!=0:
@@ -210,7 +208,7 @@ def double(request):
                 if(rs<0):
                     rs = 0
                 Rooms.objects.filter(roomtype='double').update(available = rs)
-                return render(request,'app/reservation.html',{'name':name,'room':rooms,'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Double','avl':available})
+                return render(request,'app/reservation.html',{'name':name,'room':details[10],'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Double','avl':available})
             else:
                 avl=get_rooms('double')
                 if len(avl)!=0:
@@ -244,7 +242,7 @@ def deluxe(request):
                 if(rs<0):
                     rs = 0
                 Rooms.objects.filter(roomtype='deluxe').update(available = rs)
-                return render(request,'app/reservation.html',{'name':name,'room':rooms,'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Deluxe'})
+                return render(request,'app/reservation.html',{'name':name,'room':details[10],'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Deluxe'})
             else:
                 avl=get_rooms('deluxe')
                 if len(avl)!=0:
@@ -278,7 +276,7 @@ def luxury(request):
                 if(rs<0):
                     rs = 0
                 Rooms.objects.filter(roomtype='luxury').update(available = rs)
-                return render(request,'app/reservation.html',{'name':name,'room':rooms,'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Deluxe'})
+                return render(request,'app/reservation.html',{'name':name,'room':details[10],'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Deluxe'})
             else:
                 avl=get_rooms('luxury')
                 if len(avl)!=0:
@@ -312,7 +310,7 @@ def executive(request):
                 if(rs<0):
                     rs = 0
                 Rooms.objects.filter(roomtype='executive').update(available = rs)
-                return render(request,'app/reservation.html',{'name':name,'room':rooms,'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Deluxe'})
+                return render(request,'app/reservation.html',{'name':name,'room':details[10],'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Deluxe'})
             else:
                 avl=get_rooms('executive')
                 if len(avl)!=0:
@@ -346,7 +344,7 @@ def presidential(request):
                 if(rs<0):
                     rs = 0
                 Rooms.objects.filter(roomtype='presidential').update(available = rs)
-                return render(request,'app/reservation.html',{'name':name,'room':rooms,'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Deluxe'})
+                return render(request,'app/reservation.html',{'name':name,'room':details[10],'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Deluxe'})
             else:
                 avl=get_rooms('presidential')
                 if len(avl)!=0:
