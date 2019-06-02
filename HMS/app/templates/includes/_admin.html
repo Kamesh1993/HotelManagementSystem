@@ -1,0 +1,24 @@
+﻿{% block body %}
+ <script>
+     function logoutFunction() {
+            window.location.reload();
+        }
+ </script>
+<script>
+    $(document).ready(function(){
+        $("#booking").hover(function(){
+            $(this).css("background-color", "#32CD32");
+            }, function(){
+        $(this).css("background-color", "#357EC7");
+            });
+         $("#logout").hover(function(){
+            $(this).css("background-color", "#32CD32");
+            }, function(){
+        $(this).css("background-color", "#DC143C");
+        });
+    });
+</script>
+    <!-- Header Begin -->
+    
+    <!-- Header Close -->
+{% endblock %}

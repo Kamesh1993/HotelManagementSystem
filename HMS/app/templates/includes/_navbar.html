@@ -29,8 +29,13 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
                         <ul class="pull-right">
+                            {% if superuser %}
+                             <li>
+                                 <a href="/adminruby"> <input type="button" id ="booking" class="button" value="Admin"></a>
+                            </li>
+                            {% endif %}
                             <li>
-                                 <a href="/logout"> <input type="button" id ="booking" class="button" value="Booking History" onclick="logoutFunction()"></a>
+                                 <a href="/bookinghistory"> <input type="button" id ="booking" class="button" value="Booking History"></a>
                             </li>
                             <li>
                                  <a href="/logout"> <input type="button" id ="logout" class="button1" value="Logout" onclick="logoutFunction()"></a>
@@ -45,11 +50,11 @@
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="/"><h2>HMS</h2></a>
+                    <a class="navbar-brand" href="/"><h2>Hotel Ruby</h2></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse rh-toggle" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right main-navbar">
+                    <ul class="nav navbar-nav navbar-right main-navbar">  
                         <li>
                             <a href="/">Home</a>
                         </li>
@@ -57,10 +62,7 @@
                             <a href="/rooms">Rooms</a>
                         </li>
                         <li>
-                            <a class="active" href="/booking">Booking</a>
-                        </li>
-                        <li>
-                            <a  href="/restaurant">Restaurant</a>
+                            <a href="/booking">Booking</a>
                         </li>
                         <li>
                             <a href="/about">About</a>
