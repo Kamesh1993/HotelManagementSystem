@@ -538,6 +538,7 @@
     <Content Include="app\templates\app\register.html" />
     <Content Include="app\templates\app\reservation.html" />
     <Content Include="app\templates\app\rooms.html" />
+    <Content Include="app\templates\app\salesanalysis.html" />
     <Content Include="app\templates\app\singlerooms.html" />
     <Content Include="app\templates\includes\_footer.html" />
     <Content Include="app\templates\includes\_formhelpers.html" />

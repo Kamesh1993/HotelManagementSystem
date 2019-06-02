@@ -43,6 +43,7 @@ class BookingHistory(models.Model):
     checkout = models.CharField(max_length=140,default='NULL')
     email = models.EmailField(max_length=50)
     userid = models.BigIntegerField(default=0)
+    amount = models.BigIntegerField(default=0)
 
     class Meta:
         db_table = 'bookinghistory'

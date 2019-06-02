@@ -123,14 +123,19 @@
                             <!-- Step 4 -->
                         </div>
                         <br>
-                        {% if messages %}
-                        <ul class="messages">
-                            {% for message in messages %}
-                            <h2>
-                                <li class="{{ message.tags }}">{{ message }}</li><h2>
-                                    {% endfor %}
-                        </ul>
-                        {% endif %}
+                        <center>
+                                    <div class="form-group">
+                                    {% if messages %}
+                                        <ul class="messages">
+                                        {% for message in messages %}
+                                            <li>
+                                                <div class="alert alert-danger dismissable"><h4>{{message}}</h4></div>
+                                            </li>
+                                        {% endfor %}
+                                        </ul>
+                                    {% endif %}
+                                    </div>
+                                    </center>
                         <fieldset>
                             <div class="rh rh-reservation-form">
                                 <div class="row">

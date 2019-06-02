@@ -80,6 +80,7 @@ def login(request):
                 details = login_cred[0]
                 superuser = dets[3]
                 if email==details['email'] and sha256_crypt.verify(password,details['password']):
+                    User.objects.filter(email=email).update(is_active = True)
                     if 'email' not in request.session:
                         request.session['email']=email
                         request.session['hotel']='Hotel Ruby'
@@ -103,7 +104,8 @@ def logout(request):
         users.is_active=False
         users.save()
         del(request.session['email'])
-        del(request.session['admin'])
+        if 'admin' in request.session:
+            del(request.session['admin'])
         return HttpResponseRedirect('/')
     except:
         return HttpResponseRedirect('/login')
@@ -123,8 +125,8 @@ def booking(request):
 def roombooking(request):
     try:
         global room_details, cin, cout, rem
-        monthDays={'01':31,'02':28,'03':31,'04':30,'05':31,'06':30,'07':31,'08':31,'09':30,'10':31,'11':30,'12':31} 
-        leapDays={'01':31,'02':29,'03':31,'04':30,'05':31,'06':30,'07':31,'08':31,'09':30,'10':31,'11':30,'12':31}         
+        monthDays={'01':31,'02':28,'03':31,'04':30,'05':31,'06':30,'07':31,'08':31,'09':30,'10':31,'11':30,'12':31}
+        leapDays={'01':31,'02':29,'03':31,'04':30,'05':31,'06':30,'07':31,'08':31,'09':30,'10':31,'11':30,'12':31}
         room_details = []
         if 'email' in request.session:
             if request.method=='POST':
@@ -132,6 +134,9 @@ def roombooking(request):
                 check_in = request.POST.get('checkin')
                 cin = changeDateFormat(check_in)
                 check_out = request.POST.get('checkout')
+                if check_out=='':
+                    messages.warning(request,"Checkout date cannot be empty")
+                    return render(request,'app/booking.html')
                 cout = changeDateFormat(check_out)
                 dt1 = check_in.split('/')
                 dt2 = check_out.split('/')
@@ -192,10 +197,10 @@ def double(request):
         if 'email' in request.session:
             if request.method=='POST':
                 form = Reservations(request.POST)
-                details = get_form(form)
+                details = get_form(request,form)
                 name = details[0]+" "+details[1]+" "+details[2]
                 price = rem*1500
-                price = price*no_of_rooms
+                price = price*details[10]
                 reservation('double',details,price)
                 avl=get_rooms('double')
                 avl = len(avl)
@@ -208,7 +213,7 @@ def double(request):
                 if(rs<0):
                     rs = 0
                 Rooms.objects.filter(roomtype='double').update(available = rs)
-                return render(request,'app/reservation.html',{'name':name,'room':details[10],'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Double','avl':available})
+                return render(request,'app/reservation.html',{'name':name,'room':details[10],'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Double'})
             else:
                 avl=get_rooms('double')
                 if len(avl)!=0:
@@ -226,10 +231,10 @@ def deluxe(request):
         if 'email' in request.session:
             if request.method=='POST':
                 form = Reservations(request.POST)
-                details = get_form(form)
+                details = get_form(request,form)
                 name = details[0]+" "+details[1]+" "+details[2]
                 price = rem*3500
-                price = price*request.session['rooms']
+                price = price*details[10]
                 reservation('deluxe',details,price)
                 avl=get_rooms('deluxe')
                 avl = len(avl)
@@ -260,10 +265,10 @@ def luxury(request):
         if 'email' in request.session:
             if request.method=='POST':
                 form = Reservations(request.POST)
-                details = get_form(form)
+                details = get_form(request,form)
                 name = details[0]+" "+details[1]+" "+details[2]
                 price = rem*5000
-                price = price*no_of_rooms
+                price = price*details[10]
                 reservation('luxury',details,price)
                 avl=get_rooms('luxury')
                 avl = len(avl)
@@ -276,7 +281,7 @@ def luxury(request):
                 if(rs<0):
                     rs = 0
                 Rooms.objects.filter(roomtype='luxury').update(available = rs)
-                return render(request,'app/reservation.html',{'name':name,'room':details[10],'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Deluxe'})
+                return render(request,'app/reservation.html',{'name':name,'room':details[10],'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Luxury'})
             else:
                 avl=get_rooms('luxury')
                 if len(avl)!=0:
@@ -294,10 +299,10 @@ def executive(request):
         if 'email' in request.session:
             if request.method=='POST':
                 form = Reservations(request.POST)
-                details = get_form(form)
+                details = get_form(request,form)
                 name = details[0]+" "+details[1]+" "+details[2]
                 price = rem*6500
-                price = price*request.session['rooms']
+                price = price*details[10]
                 reservation('executive',details,price)
                 avl=get_rooms('executive')
                 avl = len(avl)
@@ -310,7 +315,7 @@ def executive(request):
                 if(rs<0):
                     rs = 0
                 Rooms.objects.filter(roomtype='executive').update(available = rs)
-                return render(request,'app/reservation.html',{'name':name,'room':details[10],'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Deluxe'})
+                return render(request,'app/reservation.html',{'name':name,'room':details[10],'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Executive'})
             else:
                 avl=get_rooms('executive')
                 if len(avl)!=0:
@@ -326,12 +331,12 @@ def executive(request):
 def presidential(request):
     try:
         if 'email' in request.session:
-            if request.method=='POST':                
+            if request.method=='POST':
                 form = Reservations(request.POST)
-                details = get_form(form)
+                details = get_form(request,form)
                 name = details[0]+" "+details[1]+" "+details[2]
                 price = rem*8000
-                price = price*request.session['rooms']
+                price = price*details[10]
                 reservation('presidential',details,price)
                 avl=get_rooms('presidential')
                 avl = len(avl)
@@ -344,7 +349,7 @@ def presidential(request):
                 if(rs<0):
                     rs = 0
                 Rooms.objects.filter(roomtype='presidential').update(available = rs)
-                return render(request,'app/reservation.html',{'name':name,'room':details[10],'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Deluxe'})
+                return render(request,'app/reservation.html',{'name':name,'room':details[10],'cin':cin,'cout':cout,'bid':today_date,'price':price,'roomtype':'Presidential'})
             else:
                 avl=get_rooms('presidential')
                 if len(avl)!=0:
@@ -365,7 +370,7 @@ def reservation(room,details,price):
             rb.save()
             user = User.objects.get(email=room_details[2])
             arguments = [today_date,room_details[0],room_details[1],user.email,user.id,price]
-            bh = BookingHistory(arguments[0],arguments[1],arguments[2],arguments[3],arguments[4])
+            bh = BookingHistory(arguments[0],arguments[1],arguments[2],arguments[3],arguments[4],arguments[5])
             bh.save()
         except:
             return HttpResponseRedirect('/booking')
@@ -439,77 +444,73 @@ def rooms(request):
     return render(request,'app/display_rooms.html')
 
 def adminlogin(request):
-    if request.method=='POST':
-        email = request.POST.get('email')
-        password = request.POST.get('password')
-        login_cred=UserDetails.objects.filter(email=email).values()
-        det=User.objects.filter(email=email).values() 
-        details = login_cred[0]
-        if email==details['email'] and sha256_crypt.verify(password,details['password']):
-            request.session['email']=email
-            request.session['hotel']='Hotel Ruby' 
+    try:
+        if 'admin' in request.session:
             return HttpResponseRedirect('/adminruby')
+        if request.method=='POST':
+            email = request.POST.get('email')
+            password = request.POST.get('password')
+            login_cred=UserDetails.objects.filter(email=email).values()
+            det=User.objects.filter(email=email).values()
+            details = login_cred[0]
+            dets=[]
+            for i in det:
+                for k,v in i.items():
+                    dets.append(v)
+            superuser = dets[3]
+            if email==details['email'] and sha256_crypt.verify(password,details['password']):
+                request.session['email']=email
+                reqest.session['admin'] = True
+                if superuser:
+                    return HttpResponseRedirect('/adminruby')
+                else:
+                    messages.warning(request,'Not an admin, please contact administrator')
+            else:
+                messages.warning(request,'Not an admin, please contact administrator')
+                return render(request,'app/adminlogin.html')
         else:
-            messages.warning(request,'Not an admin, please contact administrator')
             return render(request,'app/adminlogin.html')
-    else:
-        return render(request,'app/adminlogin.html')      
+    except:
+        return render(request,'app/adminlogin.html')
 
 
 def adminruby(request):
-    dataSource = OrderedDict()
+    if 'admin' in request.session:
+        dataSource = OrderedDict()
+        chartConfig = OrderedDict()
+        chartConfig["caption"] = ""
+        chartConfig["xAxisName"] = "Rooms"
+        chartConfig["yAxisName"] = "Available"
+        chartConfig["numberSuffix"] = ""
+        chartConfig["theme"] = "fusion"
 
-    # The `chartConfig` dict contains key-value pairs data for chart attribute
-    chartConfig = OrderedDict()
-    chartConfig["caption"] = ""
-    #chartConfig["subCaption"] = "In MMbbl = One Million barrels"
-    chartConfig["xAxisName"] = "Rooms"
-    chartConfig["yAxisName"] = "Available"
-    chartConfig["numberSuffix"] = ""
-    chartConfig["theme"] = "fusion"
+        chartData = OrderedDict()
+        avl1 = len(get_rooms('single'))
+        avl2 = len(get_rooms('double'))
+        avl3 = len(get_rooms('luxury'))
+        avl4 = len(get_rooms('deluxe'))
+        avl5 = len(get_rooms('executive'))
+        avl6 = len(get_rooms('presidential'))
 
-    # The `chartData` dict contains key-value pairs data
-    chartData = OrderedDict()
-    avl1 = get_rooms('single')
-    avl1 = len(avl1)
-    avl2 = get_rooms('double')
-    avl2 = len(avl2)
-    avl3 = get_rooms('luxury')
-    avl3 = len(avl3)
-    avl4 = get_rooms('deluxe')
-    avl4 = len(avl4)
-    avl5 = get_rooms('executive')
-    avl5 = len(avl5)
-    avl6 = get_rooms('presidential')
-    avl6 = len(avl6)
+        chartData["Single"] = avl1
+        chartData["Double"] = avl2
+        chartData["Deluxe"] = avl3
+        chartData["Luxury"] = avl4
+        chartData["Executive"] = avl5
+        chartData["Presidential"] = avl6
 
-    chartData["Single"] = avl1
-    chartData["Double"] = avl2
-    chartData["Deluxe"] = avl3
-    chartData["Luxury"] = avl4
-    chartData["Executive"] = avl5
-    chartData["Presidential"] = avl6
+        dataSource["chart"] = chartConfig
+        dataSource["data"] = []
 
-    dataSource["chart"] = chartConfig
-    dataSource["data"] = []
-    
-    # Convert the data in the `chartData` array into a format that can be consumed by FusionCharts. 
-    # The data for the chart should be in an array wherein each element of the array is a JSON object
-    # having the `label` and `value` as keys.
-
-    # Iterate through the data in `chartData` and insert in to the `dataSource['data']` list.
-    for key, value in chartData.items():
-        data = {}
-        data["label"] = key
-        data["value"] = value
-        dataSource["data"].append(data)
-
-
-    # Create an object for the column 2D chart using the FusionCharts class constructor
-    # The chart data is passed to the `dataSource` parameter.
-    column2D = FusionCharts("column2d", "ex1" , "800", "400", "chart-1", "json", dataSource)
-
-    return  render(request, 'app/adminanalytics.html', {'output' : column2D.render(), 'chartTitle': 'Available Rooms'})
+        for key, value in chartData.items():
+            data = {}
+            data["label"] = key
+            data["value"] = value
+            dataSource["data"].append(data)
+        column2D = FusionCharts("column2d", "ex1" , "800", "400", "chart-1", "json", dataSource)
+        return  render(request, 'app/adminanalytics.html', {'output' : column2D.render(), 'chartTitle': 'Available Rooms'})
+    else:
+        return render(request,'app/adminlogin.html')
 
 def getusers(request):
     usr = User.objects.all()
@@ -540,7 +541,7 @@ def adminbooking(request):
         except PageNotAnInteger:
             bookings = paginator.page(1)
         except EmptyPage:
-            bookings = paginator.page(paginator.num_pages)    
+            bookings = paginator.page(paginator.num_pages)
             return render(request,'app/adminbooking.html')
     except:
         return render(request,'app/adminruby.html')

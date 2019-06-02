@@ -162,7 +162,19 @@ function date(f) {
                             <div class="row">
 
                                 <div class="col-lg-12">
-
+                                    <center>
+                                    <div class="form-group">
+                                    {% if messages %}
+                                        <ul class="messages">
+                                        {% for message in messages %}
+                                            <li>
+                                                <div class="alert alert-danger dismissable"><h4>{{message}}</h4></div>
+                                            </li>
+                                        {% endfor %}
+                                        </ul>
+                                    {% endif %}
+                                    </div>
+                                    </center>
                                     <!-- Check Availability Begin -->
                                     <section class="rh rh-100 check-availability rh-check-availability select-list">
                                         <div class="container">
