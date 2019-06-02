@@ -60,3 +60,4 @@ class Rooms(models.Model):
 
     def __str__(self):
         return u'%s %s %s' %(self.roomtype,self.total,self.available)
+

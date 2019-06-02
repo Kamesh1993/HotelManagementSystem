@@ -105,6 +105,7 @@ def logout(request):
         users.is_active=False
         users.save()
         del(request.session['email'])
+        del(request.session['admin'])
         return HttpResponseRedirect('/')
     except:
         return HttpResponseRedirect('/login')
