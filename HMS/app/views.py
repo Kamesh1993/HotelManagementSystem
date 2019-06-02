@@ -16,8 +16,9 @@ from mysql.connector import errorcode
 from passlib.hash import sha256_crypt
 import pymysql
 from django.template.defaulttags import register
+from django.db.models import Sum
 import smtplib
-from app.fusioncharts import FusionCharts
+from app.fusioncharts import FusionCharts, FusionTable, TimeSeries
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from collections import OrderedDict
 
@@ -574,3 +575,70 @@ def get_rooms(roomtype):
     for i in range(1,avl+1):
         avail.append(i)
     return avail
+
+def salesanalysis(request):
+    price = BookingHistory.objects.aggregate(Sum('amount'))
+    amount = 0
+    for k,v in price.items():
+        amount = v
+    chartObj = FusionCharts( 'angulargauge', 'ex1', '600', '400', 'chart-1', 'json', """{
+    "chart": {
+    "captionpadding": "0",
+    "origw": "320",
+    "origh": "300",
+    "gaugeouterradius": "115",
+    "gaugestartangle": "270",
+    "gaugeendangle": "-25",
+    "showvalue": "1",
+    "valuefontsize": "30",
+    "majortmnumber": "13",
+    "majortmthickness": "2",
+    "majortmheight": "13",
+    "minortmheight": "7",
+    "minortmthickness": "1",
+    "minortmnumber": "1",
+    "showgaugeborder": "0",
+    "theme": "fusion"
+    },
+    "colorrange": {
+    "color": [
+      {
+        "minvalue": "0",
+        "maxvalue": "5000000",
+        "code": "#999999"
+      },
+      {
+        "minvalue": "1500",
+        "maxvalue": "10000000",
+        "code": "#F6F6F6"
+      }
+    ]
+  },
+  "dials": {
+    "dial": [
+      {
+        "value": """+str(amount)+""",
+        "bgcolor": "#F20F2F",
+        "basewidth": "8"
+      }
+    ]
+  },
+  "annotations": {
+    "groups": [
+      {
+        "items": [
+          {
+            "type": "text",
+            "id": "text",
+            "text": "INR",
+            "x": "$gaugeCenterX",
+            "y": "$gaugeCenterY + 40",
+            "fontsize": "20",
+            "color": "#555555"
+          }
+        ]
+      }
+    ]
+  }
+}""")
+    return render(request, 'app/salesanalysis.html', {'output': chartObj.render()})

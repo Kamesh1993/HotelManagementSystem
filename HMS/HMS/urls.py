@@ -37,6 +37,7 @@ urlpatterns = [
     url(r'^adminlogin/$',app.views.adminlogin,name='adminlogin'),
     url(r'^getusers/$',app.views.getusers,name='adminlogin'),
     url(r'^adminbooking/$',app.views.adminbooking,name='adminbooking'),
+    url(r'^salesanalysis/$',app.views.salesanalysis,name='salesanalysis'),
     # Uncomment the admin/doc line below to enable admin documentation:
     #url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 

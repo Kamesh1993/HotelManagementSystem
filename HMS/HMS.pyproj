@@ -232,6 +232,9 @@
     <Content Include="app\static\app\js\bootstrap.min.js" />
     <Content Include="app\static\app\js\form-wizard.js" />
     <Content Include="app\static\app\js\fullcalendar.js" />
+    <Content Include="app\static\app\js\fusioncharts.js" />
+    <Content Include="app\static\app\js\fusioncharts.theme.fint.js" />
+    <Content Include="app\static\app\js\fusioncharts.theme.fusion.js" />
     <Content Include="app\static\app\js\jquery-ui-date.js" />
     <Content Include="app\static\app\js\jquery-ui.js" />
     <Content Include="app\static\app\js\jquery.min.js" />

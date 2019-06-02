@@ -5,7 +5,12 @@
         }
  </script>
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
+        $("#admin").hover(function(){
+            $(this).css("background-color", "#32CD32");
+            }, function(){
+        $(this).css("background-color", "#FF8C00");
+            });
         $("#booking").hover(function(){
             $(this).css("background-color", "#32CD32");
             }, function(){
@@ -31,7 +36,7 @@
                         <ul class="pull-right">
                             {% if 'admin' in request.session %}
                              <li>
-                                 <a href="/adminruby"> <input type="button" id ="booking" class="button" value="Admin"></a>
+                                 <a href="/adminruby"> <input type="button" id ="admin" class="button" value="Admin"></a>
                             </li>
                             {% endif %}
                             <li>
