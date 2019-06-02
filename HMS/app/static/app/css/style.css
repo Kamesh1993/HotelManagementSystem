@@ -1,6 +1,6 @@
-﻿/*
-* Theme Name: Royal Place Hotel Website Template Website Template
-* Description: Royal Place Theme for Hotel and creative sites, responsive and clean layout, more than color skins
+/*
+* Theme Name: Ruby Place Hotel Website Template Website Template
+* Description: Ruby Place Theme for Hotel and creative sites, responsive and clean layout, more than color skins
 * Author: Bsquaresoft
 * Version: 1.0
 */
@@ -23,15 +23,15 @@
     12. NewsLetter Section
     13. Footer
     14. Detail-Page
-    15. About Royal Hotel
-        - About Royal Hotel Slider
-        - About Royal Hotel Detail
+    15. About Ruby Hotel
+        - About Ruby Hotel Slider
+        - About Ruby Hotel Detail
         - Next and Preview
         - Review
         - Comment
         - Submit Form
         - Your Reservation
-        - Need Royal Help?
+        - Need Ruby Help?
     16. columm 2 And list Grid View Page
         - list View Sorting And Grid View Shorting
         - Mile Range Slider
@@ -185,7 +185,7 @@ body {
     border-style: solid;
     border-width: 1px;
     border-radius: 4px;
-    height: 50px;
+    height: 50px;    
 }
         .form-control:focus,
         .form-control:active {
@@ -1768,10 +1768,10 @@ body {
         }
 
 /*  ==========================================================================
-    About Royal Hotel
+    About Ruby Hotel
     ========================================================================== */
 
-        /* ========== About Royal Hotel Slider ========== */
+        /* ========== About Ruby Hotel Slider ========== */
         .rh-detail-left{
             padding: 25px;
             position: relative;
@@ -1801,7 +1801,7 @@ body {
                 padding: 0 15px;
             }
         }
-        /* ========== About Royal Hotel Detail ========== */
+        /* ========== About Ruby Hotel Detail ========== */
         .rh-detail-left .rh-about-hotel{
             margin: 0 0 60px 0;
         }
@@ -2348,7 +2348,7 @@ body {
                 font-size: 14px;
             }
         }
-        /* ========== Need Royal Help? ========== */
+        /* ========== Need Ruby Help? ========== */
 .rh-need-help {
     padding: 30px 20px;
     text-align: center;
