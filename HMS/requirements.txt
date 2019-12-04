@@ -1,7 +1,7 @@
 asn1crypto==0.24.0
 cffi==1.12.3
 cryptography==2.7
-Django==2.2.1
+Django==2.2.8
 django-hashers-passlib==0.4
 idna==2.8
 mysqlclient-deps==0.0.2
