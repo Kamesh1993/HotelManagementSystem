@@ -76,7 +76,7 @@ class RemoteTestResult:
     Record information about which tests have succeeded and which have failed.
 
     The sole purpose of this class is to record events in the child processes
-    so they can be replayed in the master process. As a consequence it doesn't
+    so they can be replayed in the main process. As a consequence it doesn't
     inherit unittest.TestResult and doesn't attempt to implement all its API.
 
     The implementation matches the unpythonic coding style of unittest2.
