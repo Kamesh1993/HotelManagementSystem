@@ -8,7 +8,7 @@ mysqlclient-deps==0.0.2
 mysql-connector-python==8.0.16
 mysqltools-python==2.19.4.10
 passlib==1.7.1
-pip==19.1.1
+pip==19.2
 protobuf==3.8.0
 pycparser==2.19
 PyMySQL==0.9.3
