@@ -14,6 +14,6 @@ pycparser==2.19
 PyMySQL==0.9.3
 PyMysqlDB==0.0.2
 pytz==2019.1
-setuptools==41.0.1
+setuptools==65.5.1
 six==1.12.0
 sqlparse==0.3.0
